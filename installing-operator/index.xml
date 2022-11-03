@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installing the Operator on IBM CloudPak for Watson AIOps - Training</title>
+    <link>http://example.org/installing-operator/</link>
+    <description>Recent content in Installing the Operator on IBM CloudPak for Watson AIOps - Training</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2022 10:57:46 +0100</lastBuildDate><atom:link href="http://example.org/installing-operator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preparing to run commands</title>
+      <link>http://example.org/installing-operator/install_aimanager_00/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-operator/install_aimanager_00/</guid>
+      <description>Preparing to run commands The official documentation can be found here.
+Befor continuing, you have to connect to your OpenShift Cluster.
+Open your Openshift Web Console
+Select Copy Login Command
+Copy the oc login .. string
+Open your terminal
+Paste the oc login .. command from above
+Clone the GitHub Repository into your directory of choice
+git clone https://github.com/niklaushirt/cp4waiops-deployer.git Go to the deployer directory
+cd cp4waiops-deployer Now you&amp;rsquo;re good to start with the installation.</description>
+    </item>
+    
+    <item>
+      <title>Preparing Installation</title>
+      <link>http://example.org/installing-operator/install_aimanager_01/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-operator/install_aimanager_01/</guid>
+      <description>Preparing Installation Create the namespace (project) Create a namespace called cp4waiops, by running the following command:
+oc create namespace cp4waiops Create the OperatorGroup Create the Operator group by running the following command:
+cat &amp;lt;&amp;lt; EOF | oc apply -f - apiVersion: operators.coreos.com/v1 kind: OperatorGroup metadata: name: cp4waiops-operator-group namespace: cp4waiops spec: targetNamespaces: - cp4waiops EOF Create the entitlement key pull secret Log in to MyIBM Container Software Library with the IBMid.</description>
+    </item>
+    
+    <item>
+      <title>Install Catalog</title>
+      <link>http://example.org/installing-operator/install_aimanager_02/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-operator/install_aimanager_02/</guid>
+      <description>Installing the Catalog Run the following command to create the CatalogSource.
+cat &amp;lt;&amp;lt; EOF | oc apply -f - apiVersion: operators.coreos.com/v1alpha1 kind: CatalogSource metadata: name: ibm-operator-catalog namespace: openshift-marketplace spec: displayName: ibm-operator-catalog publisher: IBM Content sourceType: grpc image: icr.io/cpopen/ibm-operator-catalog:latest EOF Update the CatalogSource to always use the current image digest by running the following commands:
+IMGDIGEST=`oc get pods -n openshift-marketplace -l=olm.catalogSource=ibm-operator-catalog --no-headers -o=jsonpath=&amp;#34;{.items[0].status.containerStatuses[0].imageID}&amp;#34; -n openshift-marketplace` &amp;amp;&amp;amp; \ oc patch catalogsource ibm-operator-catalog -n openshift-marketplace --type=json -p &amp;#34;[{ &amp;#34;op&amp;#34;: &amp;#34;test&amp;#34;, &amp;#34;path&amp;#34;: &amp;#34;/spec/image&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;\&amp;#34;icr.</description>
+    </item>
+    
+    <item>
+      <title>Install Operator</title>
+      <link>http://example.org/installing-operator/install_aimanager_03/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-operator/install_aimanager_03/</guid>
+      <description>Installing the Operator Run the following command:
+cat &amp;lt;&amp;lt; EOF | oc apply -f - apiVersion: operators.coreos.com/v1alpha1 kind: Subscription metadata: name: ibm-aiops-orchestrator namespace: cp4waiops spec: channel: v3.5 installPlanApproval: Automatic name: ibm-aiops-orchestrator source: ibm-operator-catalog sourceNamespace: openshift-marketplace EOF ``</description>
+    </item>
+    
+    <item>
+      <title>Check Installation</title>
+      <link>http://example.org/installing-operator/install_aimanager_04/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-operator/install_aimanager_04/</guid>
+      <description>Check Operator is ready Verify that the Operator is running.
+Either run the following: oc get csv -n cp4waiops And you should see TODO entries with Succeeded state
+NAME DISPLAY VERSION REPLACES PHASE aimanager-operator.v3.5.1 IBM Watson AIOps AI Manager 3.5.1 Succeeded aiopsedge-operator.v3.5.1 IBM Watson AIOps Edge 3.5.1 Succeeded asm-operator.v3.5.1 IBM Netcool Agile Service Manager 3.5.1 Succeeded elasticsearch-operator.5.5.3 OpenShift Elasticsearch Operator 5.5.3 Succeeded ibm-aiops-ir-ai.v3.5.1 IBM Watson AIOps Issue Resolution AI &amp;amp; Analytics 3.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installing AI Manager on IBM CloudPak for Watson AIOps - Training</title>
+    <link>http://example.org/installing-ai-manager/</link>
+    <description>Recent content in Installing AI Manager on IBM CloudPak for Watson AIOps - Training</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2022 10:57:46 +0100</lastBuildDate><atom:link href="http://example.org/installing-ai-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install AI Manager</title>
+      <link>http://example.org/installing-ai-manager/install_aimanager_00/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-ai-manager/install_aimanager_00/</guid>
+      <description>Creating the AI Manager Instance Run the following command to create an instance of AI Manager.
+cat &amp;lt;&amp;lt; EOF | oc apply -f - apiVersion: orchestrator.aiops.ibm.com/v1alpha1 kind: Installation metadata: name: ibm-cp-watson-aiops namespace: cp4waiops spec: imagePullSecret: ibm-entitlement-key license: accept: true pakModules: - name: aiopsFoundation enabled: true - name: applicationManager enabled: true - name: aiManager enabled: true - name: connection enabled: false size: small storageClass: ibmc-file-gold-gid storageClassLargeBlock: ibmc-block-gold EOF This takes some time depending on what region of ROKS you have chosen.</description>
+    </item>
+    
+    <item>
+      <title>Check Installation</title>
+      <link>http://example.org/installing-ai-manager/install_aimanager_01/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/installing-ai-manager/install_aimanager_01/</guid>
+      <description>Check AI Manager is ready ❗ This takes some time depending on what region of ROKS you have chosen. Wait up to 45 minutes for the installation to complete.
+Check with the Command Line Run the following:
+oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep &amp;#34;0/&amp;#34; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v &amp;#34;0/&amp;#34; |wc -l| tr -d &amp;#39; &amp;#39; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep &amp;#34;0/&amp;#34; |wc -l| tr -d &amp;#39; &amp;#39; This will list the Pods that are not Ready yet.</description>
+    </item>
+    
+  </channel>
+</rss>

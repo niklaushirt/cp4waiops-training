@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on IBM CloudPak for Watson AIOps - Training</title>
+    <link>http://example.org/introduction/</link>
+    <description>Recent content in Introduction on IBM CloudPak for Watson AIOps - Training</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2022 10:57:46 +0100</lastBuildDate><atom:link href="http://example.org/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://example.org/introduction/intro_00/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/introduction/intro_00/</guid>
+      <description> Introduction In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionnalities.
+The idea is to provide an optimised way for you to learn CP4WAIOPS.
+In the end you will have a demo environment containing the following components:
+AI Manager OpenLDAP registered with AI Manager AWX (Open Source Ansible Tower) with Playbooks and CP4WAIOPS Runbooks AI Models for Log Anomaly Detectiom Metric Anomaly Detection Event Grouping Similar Incidents Change Risk Topology RobotShop Demo Installation K8s Observer RobotShop Application </description>
+    </item>
+    
+    <item>
+      <title>Basic Architecture</title>
+      <link>http://example.org/introduction/intro_01/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/introduction/intro_01/</guid>
+      <description>Basic Architecture The environement (Kubernetes, Applications, &amp;hellip;) create logs that are being fed into a Log Management Tool (ELK in this case).
+External Systems generate Alerts and send them into the AI Manager for Event Grouping. At the same time AI Manager ingests the raw logs coming from the Log Management Tool (ELK) and looks for anomalies in the stream based on the trained model. It also ingests Metric Data and looks for anomalies If it finds an anomaly (logs and/or metrics) it forwards it to the Event Grouping as well.</description>
+    </item>
+    
+    <item>
+      <title>Training Architecture</title>
+      <link>http://example.org/introduction/intro_02/</link>
+      <pubDate>Thu, 03 Nov 2022 10:57:46 +0100</pubDate>
+      
+      <guid>http://example.org/introduction/intro_02/</guid>
+      <description> Optimized Training Architecture For the this specific Demo environment:
+ELK is installed for you to kearn how to integrate it For Log Anomaly simulation we&amp;rsquo;ll beusing pre-canned logs for the anomaly detection (inception) For Metrics, we&amp;rsquo;ll be using pre-canned metric data for training and for the anomaly detection (inception) The Events will be created from pre-canned content that is injected into AI Manager There are also pre-canned ServiceNow Incidents as we don’t do the live integration with SNOW for this training The Webpages that are reachable from the Events are static and hosted on my GitHub The same goes for ServiceNow Incident pages if you don’t integrate with live SNOW </description>
+    </item>
+    
+  </channel>
+</rss>
