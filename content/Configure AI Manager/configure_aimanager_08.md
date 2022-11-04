@@ -109,7 +109,7 @@ weight: 59
 
 ```bash
 export WAIOPS_NAMESPACE=$(oc get po -A|grep aiops-orchestrator-controller |awk '{print$1}')
-while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; oc get po -n $WAIOPS_NAMESPACE | grep nginx|grep -v ibm-nginx-tester|grep -v setup-nginx-job |grep "1/1"; sleep 2; done
+while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; oc get po -n $WAIOPS_NAMESPACE | grep nginx|grep -v ibm-nginx-tester|grep -v setup-nginx-job ; sleep 2; done
 ```
 
 This will list the Pods that are Ready.
