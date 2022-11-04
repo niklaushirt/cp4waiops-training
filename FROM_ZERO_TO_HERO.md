@@ -29,7 +29,7 @@ This is provided `as-is`:
 
 **❗This has been tested for CP4WAIOPS v3.5.0 release on OpenShift 4.10 on ROKS**
 
-
+ 
 
 
 So please if you have any feedback contact me 
