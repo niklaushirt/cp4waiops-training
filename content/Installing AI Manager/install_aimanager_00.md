@@ -6,6 +6,10 @@ weight: 31
 
 # Creating the AI Manager Instance
 
+
+![K8s CNI](/cp4waiops-training/pics/54_aimanager_story.png)
+
+
 Now it's time to create the AI Manager instance
 
 > 💡 This creates the `Installation` instance that the Operator will pick up and start the installation. 

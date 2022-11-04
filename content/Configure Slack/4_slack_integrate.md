@@ -1,7 +1,7 @@
 ---
 title: "Integrate"
 date: 2022-11-03T10:57:46+01:00
-weight: 84
+weight: 184
 ---
 
 # Integrate Your Slack App
@@ -15,7 +15,7 @@ weight: 84
 
 ### In AI Manager:
 
-1. Go to `Data and tool integrations`
+1. Go to `Data and tool connections`
 5. Under `Slack` select `Add integration`
 6. Name it "Slack"
 7. Paste the `Signing Secret` from above

@@ -6,6 +6,7 @@ weight: 51
 
 # Get the configuration information
 
+![K8s CNI](/cp4waiops-training/pics/46_training.png)
 
 1. Run the following command to get a list of all the information that you will need for the configuration of AI Manager in this chapter.
 

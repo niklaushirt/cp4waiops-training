@@ -1,7 +1,7 @@
 ---
 title: "Create Your Channels"
 date: 2022-11-03T10:57:46+01:00
-weight: 83
+weight: 183
 ---
 
 
@@ -16,7 +16,7 @@ weight: 83
 
 
 	> 💡 You can name the whatever you want.
-	
+
 2. Right click on each channel and select `Copy Link`
 
 	This should get you something like this https://xxxx.slack.com/archives/C021QOY16BW

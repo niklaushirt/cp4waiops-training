@@ -1262,7 +1262,7 @@ After successful installation, the Playbook creates a file `./LOGINS.txt` in you
 > 
 > This gives you all the parameters needed for creating the connection.
   
-* In the `AI Manager` "Hamburger" Menu select `Operate`/`Data and tool integrations`
+* In the `AI Manager` "Hamburger" Menu select `Operate`/`Data and tool connections`
 * Click `Add connection`
 * Under `Netcool`, click on `Add connection`
 * Click `Connect`
@@ -1558,7 +1558,7 @@ In the Slack App:
 
 In the AI Manager (CP4WAIOPS) 
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool integrations`
+1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
  
 	![K8s CNI](/cp4waiops-training/pics/doc14.png)
@@ -1591,7 +1591,7 @@ In the AI Manager (CP4WAIOPS)
 
 In the AI Manager (CP4WAIOPS) 
 
-1. Go to `Data and tool integrations`
+1. Go to `Data and tool connections`
 2. Under `Slack` click on `1 integration`
 3. Copy out the URL
 

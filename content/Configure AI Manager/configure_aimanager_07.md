@@ -6,7 +6,7 @@ weight: 58
 
 # Create Kubernetes Observer
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool integrations`
+1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `Kubernetes`, click on `Add connection`
 1. Click `Connect`

@@ -9,7 +9,7 @@ weight: 56
 # Create Ansible Tower Connection
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool integrations`
+1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `Ansible Automation Controller`, click on `Add connection`
 1. Click `Connect`

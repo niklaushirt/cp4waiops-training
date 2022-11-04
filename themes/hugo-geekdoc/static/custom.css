@@ -6,7 +6,7 @@
 
 .container {
     width: 100% !important;
-    max-width: 80% !important;
+    max-width: 90% !important;
 }
 
 .gdoc-header {
@@ -19,12 +19,15 @@
     font-size: 1rem !important;
     font-weight: bold;
     color: rgb(255, 255, 255) !important;
-    background-color: rgb(0, 1, 43) !important;
+    background-color: rgb(1, 86, 197) !important;
     padding: 15px;
     border-radius: 0.35rem !important;
     border-color: rgb(1, 19, 78) !important;
     border-style: solid;
     border-width: 1px;
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
 }
 
 .gdoc-markdown pre, .gdoc-markdown code {

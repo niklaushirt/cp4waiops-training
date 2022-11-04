@@ -85,6 +85,8 @@ weight: 54
 
 1. Click `Assign roles directly`
 
+1. Click `Next` 
+
 1. Check `Administrator` role
 
 1. Click `Next` 

@@ -9,7 +9,7 @@ weight: 43
 
 > 💡 This takes some time depending on what region of ROKS you have chosen.
 
-> ❗ Wait **up to 30 minutes** for the installation to complete. The next step explains how to follow the installation progress.
+> ❗ Wait **up to 15-20 minutes** for the installation to complete. The next step explains how to follow the installation progress.
 
 You can follow along the process by running:
 	

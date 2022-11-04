@@ -1,7 +1,7 @@
 ---
 title: "Get the Integration URL"
 date: 2022-11-03T10:57:46+01:00
-weight: 85
+weight: 185
 ---
 
 # Get the Integration URL (Public Cloud (ROKS, ...))
@@ -11,7 +11,7 @@ weight: 85
 
 ### In AI Manager:
 
-1. Go to `Data and tool integrations`
+1. Go to `Data and tool connections`
 2. Under `Slack` click on `1 integration`
 3. Copy out the URL
 

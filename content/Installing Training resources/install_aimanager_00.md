@@ -1,10 +1,12 @@
 ---
-title: "Introduction"
+title: "Training Resources"
 date: 2022-11-03T10:57:46+01:00
 weight: 41
 ---
 
 # Installing Training resources
+
+![K8s CNI](/cp4waiops-training/pics/56_aimanager_topo.png)
 
 
 This will install resources that you will need for the configuration of AI Manager in the next chapter.

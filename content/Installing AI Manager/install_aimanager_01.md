@@ -17,11 +17,7 @@ weight: 32
 Run the following:
 	
 ```bash
-oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep "0/"
-	
-oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v "0/" |wc -l| tr -d ' '
-
-oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep "0/" |wc -l| tr -d ' '                                                  
+while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep "0/"; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v "0/" |wc -l| tr -d ' '; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep "0/" |wc -l| tr -d ' '; sleep 2; done
 ```
 
 This will list the Pods that are not Ready yet.
@@ -48,4 +44,4 @@ This will list the Pods that are not Ready yet.
 
 This allows you to follow along the progress of the installation.
 
-🚀 **When done** you should have 129 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`
+🚀 **When done** you should have 126 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`

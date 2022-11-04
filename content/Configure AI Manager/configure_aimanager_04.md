@@ -7,14 +7,14 @@ weight: 55
 # Configure ELK
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool integrations`
+1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `ELK`, click on `Add connection`
 1. Click `Connect`
 1. Name it `ELK`
 
 
-1. 🔎 Get the data from your configuration info - section `2.2 Configure asdfdsafdsa` 
+1. 🔎 Get the data from your configuration info - section `2.2 Configure ELK` 
 
     ```bash
     ./tools/11_fzth/get_configuration_info.sh
@@ -28,11 +28,10 @@ weight: 55
 
 	```yaml
 	ELK service URL: 		from script
+	Kibana URL: 			from script
 	Authentication type: 		Token
 	Token: 				from script
 
-	Kibana URL: 			from script
-	Kibana port: 			443
 	Mapping:
 		{ 
 		"codec": "elk",
@@ -42,6 +41,8 @@ weight: 55
 		"rolling_time": 10,
 		"timestamp_field": "@timestamp"
 		}
+	TimeZone:				set to your Timezone	
+	Kibana port: 			443
 	```
 
 1. Click `Test connection`. You should get `Connection successful!`
@@ -56,7 +57,6 @@ weight: 55
 
 
     ```yaml
-	Mapping: 
 	{ 
 	"codec": "elk",
 	"message_field": "message",

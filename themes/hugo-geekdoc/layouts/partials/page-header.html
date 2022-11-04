@@ -43,26 +43,15 @@
     </div>
   {{ end }}
 
-  <div>
-    <div class="prev-next">
 
-      {{ if .PrevPage }}
-      <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">Next: {{ .PrevPage.Title | truncate 50 "..."}}
-        »</a>
-      {{ end }}
-    </div>
+
+
+</div>
+<div style="margin-left: auto; margin-right: 0;float: right;">
+  <div class="prev-next">
+    {{ if .PrevPage }}
+    <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">Next: {{ .PrevPage.Title | truncate 50 "..."}}
+      »</a>
+    {{ end }}
   </div>
-
-  {{ if $showEdit }}
-    <div>
-      <span class="editpage">
-        <svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"></use></svg>
-        <a
-          href="{{ $geekdocRepo }}/{{ path.Join $geekdocEditPath ($.Scratch.Get "geekdocFilePath") }}"
-        >
-          {{ i18n "edit_page" }}
-        </a>
-      </span>
-    </div>
-  {{ end }}
 </div>

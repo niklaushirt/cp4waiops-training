@@ -34,7 +34,7 @@ weight: 57
 
 	![K8s CNI](/cp4waiops-training/pics/35_runbook.png)
 
-
+1. Under `Operator` select `contains`
 1. Click in field  `Value`
 1. Type `mysql`
 1. Select `String: mysql`
@@ -48,6 +48,7 @@ weight: 57
 
 	![K8s CNI](/cp4waiops-training/pics/37_runbook.png)
 
+1. Click `Create Policy`
 
 1. Your list of Policies should now look like this
 
