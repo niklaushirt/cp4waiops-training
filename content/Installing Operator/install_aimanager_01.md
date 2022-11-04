@@ -20,7 +20,7 @@ weight: 22
 
 ## Create the OperatorGroup
 
-> 💡 Thiscreates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
+> 💡 This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
 
 
 1. Create the Operator group by running the following command:

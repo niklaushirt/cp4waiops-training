@@ -7,8 +7,9 @@ weight: 43
 # Check  Training Resources are ready
 
 
-❗ This takes some time depending on what region of ROKS you have chosen.
-Wait **up to 45 minutes** for the installation to complete.
+> 💡 This takes some time depending on what region of ROKS you have chosen.
+
+> ❗ Wait **up to 30 minutes** for the installation to complete. The next step explains how to follow the installation progress.
 
 You can follow along the process by running:
 	
@@ -27,7 +28,7 @@ Or through the OpensHift Web Console:
 
 🚀 And **when done** you should get the following with `failed=0`.
 
-```bash
+```yaml
 
 PLAY RECAP *********************************************************************
 localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0    skipped=XXX    rescued=0    ignored=0
