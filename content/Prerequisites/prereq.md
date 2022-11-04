@@ -8,3 +8,5 @@ weight: 10
 
 
 ![K8s CNI](/cp4waiops-training/pics/roks01.png)
+
+In this chapter you will provision your cluster for the training.

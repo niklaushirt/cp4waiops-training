@@ -2,6 +2,8 @@
 title: "Welcome"
 date: 2022-11-03T10:57:46+01:00
 weight: 201
+draft: true
+
 ---
 # Welcome to the IBM CloudPak for AIOps Training
 
