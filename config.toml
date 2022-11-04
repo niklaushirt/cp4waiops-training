@@ -4,10 +4,13 @@ title = 'IBM CloudPak for Watson AIOps - Training'
 #theme = "learn"
 theme = "hugo-geekdoc"
 
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
+pygmentsStyle = "monokai"
 
 [module]
   [module.hugoVersion]
@@ -20,15 +23,3 @@ summaryLength = 30
 
 canonifyURLs = true
 
-[markup]
-
-  [markup.highlight]
-  codeFences = true
-  guessSyntax = false
-  hl_Lines = ""
-  lineNoStart = 1
-  lineNos = false
-  lineNumbersInTable = true
-  noClasses = true # if false, you need to provide you own custom CSS
-  style = "monokai"
-  tabWidth = 4
