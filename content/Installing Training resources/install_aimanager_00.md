@@ -9,7 +9,7 @@ weight: 41
 
 This will install resources that you will need for the configuration of AI Manager in the next chapter.
 
-Those are assets that typically already exist at a customer.
+Those are assets that typically already exist at a customer:
 
 * OpenLDAP
 * AWX (Open Source Ansible Tower) with preloaded Playbooks

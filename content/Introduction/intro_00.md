@@ -6,23 +6,34 @@ weight: 2
 
 # Introduction
 
+![demo](/cp4waiops-training/pics/front.png)
+
 In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionnalities.
 
-The idea is to provide an optimised way for you to learn CP4WAIOPS.
+The idea is to provide you with an optimised way to learn CP4WAIOPS.
 
-In the end you will have a demo environment containing the following components:
 
- - **AI Manager**
-- **OpenLDAP** registered with AI Manager
-- **AWX** (Open Source Ansible Tower) with Playbooks and CP4WAIOPS Runbooks
-- **AI Models** for
+You will learn about the following topics:
+
+- Installing `AI Manager` from scratch
+- Integrate AI Manager with `OpenLDAP` for user management
+- Integrate AI Manager with `ELK` for Log Anomalies
+- Define and train `AI Models` for
   - Log Anomaly Detectiom
   - Metric Anomaly Detection
   - Event Grouping
   - Similar Incidents
   - Change Risk 
-- **Topology**
-  - RobotShop Demo Installation
-  - K8s Observer
-  - RobotShop Application
+- Create `Policies` for Story creation and Runbook assignment
+- Integrate AI Manager with `Ansible Tower` and create Runbooks in AI Manager
+- Create a RobotShop Application `Topology`
+- Integrate AI Manager with `Slack`
+
+
+
+
+
+
+## In the end you will have a fully functionning demo environment.
+
 
