@@ -1,7 +1,7 @@
 baseURL = 'https://niklaushirt.github.io/cp4waiops-training/'
 languageCode = 'en-us'
 title = 'IBM CloudPak for Watson AIOps - Training'
-#theme = "compose"
+#theme = "learn"
 theme = "hugo-geekdoc"
 
 
