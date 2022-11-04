@@ -12,4 +12,4 @@ The idea is to provide an optimised way for you to learn CP4WAIOPS.
 
 In the end you will have a demo environment containing the following components:
 
-🚀 [Let's Start](/introduction/intro_00/)
+🚀 [Let's Start](/cp4waiops-training/introduction/intro_00/)
