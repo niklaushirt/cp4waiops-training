@@ -9,6 +9,7 @@ weight: 22
 
 ## Create the namespace (project)
 
+> 💡 This creates the `Namespace` in which you will install AI Manager
 
 1. Create a namespace called `cp4waiops`, by running the following command:
 
@@ -18,6 +19,9 @@ weight: 22
 
 
 ## Create the OperatorGroup
+
+> 💡 Thiscreates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
+
 
 1. Create the Operator group by running the following command:
 
@@ -35,6 +39,8 @@ weight: 22
     ```
 
 ## Create the entitlement key pull secret
+
+> 💡 This creates the `Secret` with your IBM Entitlement that will allow the images to be pulled from the IBM Container Registry
 
 
 1. Log in to [MyIBM Container Software Library](https://myibm.ibm.com/products-services/containerlibrary) with the IBMid.

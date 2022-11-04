@@ -6,6 +6,10 @@ weight: 31
 
 # Creating the AI Manager Instance
 
+Now it's time to create the AI Manager instance
+
+> 💡 This creates the `Installation` instance that the Operator will pick up and start the installation. 
+
 
 1. Run the following command to create an instance of AI Manager.
 
@@ -35,8 +39,9 @@ weight: 31
    EOF  
    ```
 
-This takes some time depending on what region of ROKS you have chosen.
-Wait **up to 45 minutes** for the installation to complete.
+> 💡 This takes some time depending on what region of ROKS you have chosen.
+
+> ❗ Wait **up to 45 minutes** for the installation to complete. The next step explains how to follow the installation progress.
 
 
 > This works only on IBM ROKS. 

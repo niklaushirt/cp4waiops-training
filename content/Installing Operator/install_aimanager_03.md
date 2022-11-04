@@ -6,6 +6,7 @@ weight: 24
 
 # Installing the Operator
 
+> 💡 This creates the `Operator` instance that will be looking for an `Installation` definition and start the installation if it exists (you'll create this in one of the next steps). 
 
 1. Run the following command:
  

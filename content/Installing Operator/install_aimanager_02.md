@@ -6,6 +6,8 @@ weight: 23
 
 # Installing the Catalog
 
+> 💡 This creates the `CatalogSource` that provides the available IBM Operators (not just CP4WAIOPS). 
+>    You can go to Operators/OperatorHub in your Openshift Web Console to check out the available Operators 
 
 
 1. Run the following command to create the CatalogSource.
