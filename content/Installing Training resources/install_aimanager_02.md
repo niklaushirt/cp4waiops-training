@@ -23,7 +23,7 @@ Or through the OpensHift Web Console:
 * Click on the `waiops-easy-install-aimanager-practicum-...` Pod
 * Select `Logs`
 
-	![K8s CNI](/pics/06_fzth_aimanager_load.png)
+	![K8s CNI](/cp4waiops-training/pics/06_fzth_aimanager_load.png)
 
 🚀 And **when done** you should get the following with `failed=0`.
 

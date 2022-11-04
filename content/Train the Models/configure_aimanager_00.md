@@ -14,7 +14,7 @@ weight: 61
 1. Select `Start date` as `March, 3rd 2022`
 1. Select `End date` as `March, 4rd 2022`
 
-	![K8s CNI](/pics/43_training.png)
+	![K8s CNI](/cp4waiops-training/pics/43_training.png)
 
 1. Click `Next`
 1. Click `Next`
@@ -27,7 +27,7 @@ weight: 61
 # Run Log Anomalies Training
 1. Click on the three dots in the upper right corner of the `Log anomaly detection - natural language` card
 
-	![K8s CNI](/pics/44_training.png)
+	![K8s CNI](/cp4waiops-training/pics/44_training.png)
 
 
 1. Select `Start Training`

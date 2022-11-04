@@ -12,11 +12,11 @@ weight: 73
 
 1. Click on `Clear Stories and Events`
 
-	![K8s CNI](/pics/45_demo_ui_incident.png)
+	![K8s CNI](/cp4waiops-training/pics/45_demo_ui_incident.png)
 
 1. Wait for pop-up to go away and the Demo UI going back to the homepage
 
-	![K8s CNI](/pics/47_check.png)
+	![K8s CNI](/cp4waiops-training/pics/47_check.png)
 
 1. The Alerts will be `Closed` and the Stories `Resolved`
 

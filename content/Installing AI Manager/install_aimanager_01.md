@@ -32,18 +32,18 @@ This will list the Pods that are not Ready yet.
 
 1. Select `Pods` and your `cp4waiops` Project
 	
-	![K8s CNI](/pics/03_fzth_aimanager_check.png)
+	![K8s CNI](/cp4waiops-training/pics/03_fzth_aimanager_check.png)
 
 1. Filter for the relevant statuses
 	
-	![K8s CNI](/pics/04_fzth_aimanager_check.png)
+	![K8s CNI](/cp4waiops-training/pics/04_fzth_aimanager_check.png)
 	
 	The drop-down also shows you the number of Pods for the different statuses.
 	
 
 1. Sort by `Ready` column
 	
-	![K8s CNI](/pics/05_fzth_aimanager_check.png)
+	![K8s CNI](/cp4waiops-training/pics/05_fzth_aimanager_check.png)
 
 This allows you to follow along the progress of the installation.
 

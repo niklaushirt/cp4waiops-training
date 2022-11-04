@@ -19,7 +19,7 @@ weight: 58
 
 1. Fill out the first section of fields (Add connection):
 
-	![K8s CNI](/pics/39_topo.png)
+	![K8s CNI](/cp4waiops-training/pics/39_topo.png)
 
     ```yaml
 	Name:                          	RobotShop
@@ -30,7 +30,7 @@ weight: 58
 
 1. Fill out the first section of fields (Set advanced options):
 
-	![K8s CNI](/pics/40_topo.png)
+	![K8s CNI](/cp4waiops-training/pics/40_topo.png)
 
     ```yaml
 	Kubernetes master IP address:  	172.21.0.1
@@ -57,7 +57,7 @@ weight: 58
 1. Click `Define Application`
 1. Select the two Resource Group
 
-	![K8s CNI](/pics/41_topo.png)
+	![K8s CNI](/cp4waiops-training/pics/41_topo.png)
 
 1. Click `Next`
 1. Click `Next`
@@ -66,7 +66,7 @@ weight: 58
 1. Click on the heart to `Mark as favorite`
 1. Enter `1000` into `Estimated cost per minute for service disruption`
 
-	![K8s CNI](/pics/42_topo.png)
+	![K8s CNI](/cp4waiops-training/pics/42_topo.png)
 
 1. Click `Define Applications`
 

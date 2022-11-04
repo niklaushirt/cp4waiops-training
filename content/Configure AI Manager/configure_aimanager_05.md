@@ -23,7 +23,7 @@ weight: 56
 
 1. Fill out the fields:
 
-	![K8s CNI](/pics/29_runbook.png)
+	![K8s CNI](/cp4waiops-training/pics/29_runbook.png)
 
 
 	```yaml
@@ -47,7 +47,7 @@ weight: 56
 1. Select tab `Actions`
 1. Verify that the Ansible Playbooks have been imported
 
-	![K8s CNI](/pics/30_runbook.png)
+	![K8s CNI](/cp4waiops-training/pics/30_runbook.png)
 
 # Create Runbooks
 
@@ -60,7 +60,7 @@ weight: 56
 1. Click `Mapping` / `Select`
 1. Select `New runbook parameter`
 
-	![K8s CNI](/pics/31_runbook.png)
+	![K8s CNI](/cp4waiops-training/pics/31_runbook.png)
 
 1. Select tab 
 
@@ -70,7 +70,7 @@ weight: 56
     ./tools/11_fzth/get_configuration_info.sh
     ```
 
-	![K8s CNI](/pics/32_runbook.png)
+	![K8s CNI](/cp4waiops-training/pics/32_runbook.png)
 
 1. Replace `PROVIDE: my_k8s_apiurl and my_k8s_apikey` in field `Default value (optional)` with the value from the script
 

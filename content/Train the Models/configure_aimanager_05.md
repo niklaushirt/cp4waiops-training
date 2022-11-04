@@ -8,4 +8,4 @@ weight: 66
 
 1. Check your Training Cards. All should be green and say `Deployed`
 
-	![K8s CNI](/pics/46_training.png)
+	![K8s CNI](/cp4waiops-training/pics/46_training.png)

@@ -7,7 +7,7 @@ weight: 3
 
 The environement (Kubernetes, Applications, ...) create logs that are being fed into a Log Management Tool (ELK in this case).
 
-![demo](/pics/waiops_arch_overview.jpg)
+![demo](/cp4waiops-training/pics/waiops_arch_overview.jpg)
 
 1. External Systems generate Alerts and send them into the AI Manager for Event Grouping.
 1. At the same time AI Manager ingests the raw logs coming from the Log Management Tool (ELK) and looks for anomalies in the stream based on the trained model.

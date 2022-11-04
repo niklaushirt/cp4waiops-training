@@ -1,7 +1,7 @@
 <center> <h2>CP4WatsonAIOps CP4WAIOPS</h2> </center>
 <center> <h1>From Zero To Hero</h1> </center>
 
-![K8s CNI](/pics/front.png)
+![K8s CNI](/cp4waiops-training/pics/front.png)
 
 
 <center> <h3>Installation Training</h3> </center>
@@ -78,7 +78,7 @@ In the end you will have a demo environment containing the following components:
 
 The environement (Kubernetes, Applications, ...) create logs that are being fed into a Log Management Tool (ELK in this case).
 
-![demo](/pics/waiops_arch_overview.jpg)
+![demo](/cp4waiops-training/pics/waiops_arch_overview.jpg)
 
 1. External Systems generate Alerts and send them into the AI Manager for Event Grouping.
 1. At the same time AI Manager ingests the raw logs coming from the Log Management Tool (ELK) and looks for anomalies in the stream based on the trained model.
@@ -93,7 +93,7 @@ The environement (Kubernetes, Applications, ...) create logs that are being fed 
 ### 2.2.2 Optimized Demo Architecture
 
 
-![demo](/pics/waiops_arch_dataflow.jpg)
+![demo](/cp4waiops-training/pics/waiops_arch_dataflow.jpg)
 
 
 For the this specific Demo environment:
@@ -124,13 +124,13 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 
 1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-	![K8s CNI](/pics/roks01.png)
+	![K8s CNI](/cp4waiops-training/pics/roks01.png)
 
 <div style="page-break-after: always;"></div>
 
 1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-	![K8s CNI](/pics/roks03.png)
+	![K8s CNI](/cp4waiops-training/pics/roks03.png)
 	
 1. Fill-in the remaining fields
 
@@ -139,7 +139,7 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 	3. Flavour: **b3c.16x64** ❗
 	4. OpenShift Version: **4.10**
 
-	![K8s CNI](/pics/roks02.png)
+	![K8s CNI](/cp4waiops-training/pics/roks02.png)
 
 1. Click `Submit`
 	
@@ -183,11 +183,11 @@ Befor continuing, you have to connect to your OpenShift Cluster.
 1. Open your Openshift Web Console
 1. Select `Copy Login Command`
 
-	![K8s CNI](/pics/01_fzth_ocp_connect.png)
+	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 1. Copy the `oc login ..` string
 
-	![K8s CNI](/pics/02_fzth_ocp_connect.png)
+	![K8s CNI](/cp4waiops-training/pics/02_fzth_ocp_connect.png)
 
 1. Open your terminal
 1. Paste the `oc login ..` command from above
@@ -341,7 +341,7 @@ Verify that the Operator is running.
 
 * Or check your OpenShift Web Console
 
-	![K8s CNI](/pics/01_fzth_ocp_connect.png)
+	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 
 ## 3.3 Installing AI Manager
@@ -412,18 +412,18 @@ This will list the Pods that are not Ready yet.
 
 1. Select `Pods` and your `cp4waiops` Project
 	
-	![K8s CNI](/pics/03_fzth_aimanager_check.png)
+	![K8s CNI](/cp4waiops-training/pics/03_fzth_aimanager_check.png)
 
 1. Filter for the relevant statuses
 	
-	![K8s CNI](/pics/04_fzth_aimanager_check.png)
+	![K8s CNI](/cp4waiops-training/pics/04_fzth_aimanager_check.png)
 	
 	The drop-down also shows you the number of Pods for the different statuses.
 	
 
 1. Sort by `Ready` column
 	
-	![K8s CNI](/pics/05_fzth_aimanager_check.png)
+	![K8s CNI](/cp4waiops-training/pics/05_fzth_aimanager_check.png)
 
 This allows you to follow along the progress of the installation.
 
@@ -493,7 +493,7 @@ Or through the OpensHift Web Console:
 * Click on the `waiops-easy-install-aimanager-practicum-...` Pod
 * Select `Logs`
 
-	![K8s CNI](/pics/06_fzth_aimanager_load.png)
+	![K8s CNI](/cp4waiops-training/pics/06_fzth_aimanager_load.png)
 
 🚀 And **when done** you should get the following with `failed=0`.
 
@@ -520,35 +520,35 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 1. In your OpenShift Console click on the Applications Menu
 
-	![K8s CNI](/pics/07_fzth_ocp_menu.png)
+	![K8s CNI](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
 
 
 1. Select **CP4WAIOps Demo UI**
 
 1. Login with token `P4ssw0rd!`
 
-	![K8s CNI](/pics/08_demo_ui_login.png)
+	![K8s CNI](/cp4waiops-training/pics/08_demo_ui_login.png)
 
 
 1. Copy the Admin Password
 
-	![K8s CNI](/pics/09_demo_ui_aimanager_pwd.png)
+	![K8s CNI](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
 
 1. Open `AI Manager`
 
-	![K8s CNI](/pics/10_demo_ui_aimanager_open.png)
+	![K8s CNI](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
 
 1. Select `IBM provided credentials`
 
-	![K8s CNI](/pics/11_demo_ui_aimanager_type.png)
+	![K8s CNI](/cp4waiops-training/pics/11_demo_ui_aimanager_type.png)
 
 1. Login with `admin` user and the password you copied in the step above
 
-	![K8s CNI](/pics/12_demo_ui_aimanager_login.png)
+	![K8s CNI](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
 
 1. Welcome to  `AI Manager`
 
-	![K8s CNI](/pics/13_demo_ui_aimanager_welcome.png)
+	![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
 
 
 
@@ -584,7 +584,7 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 
 Here is a quick video that walks you through the installation process
-![K8s CNI](/pics/JOB_INSTALL.gif)
+![K8s CNI](/cp4waiops-training/pics/JOB_INSTALL.gif)
 
 <div style="page-break-after: always;"></div>
 
@@ -634,13 +634,13 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 
 1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-	![K8s CNI](/pics/roks01.png)
+	![K8s CNI](/cp4waiops-training/pics/roks01.png)
 
 <div style="page-break-after: always;"></div>
 
 1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-	![K8s CNI](/pics/roks03.png)
+	![K8s CNI](/cp4waiops-training/pics/roks03.png)
 	
 1. Fill-in the remaining fields
 
@@ -649,7 +649,7 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 	3. Flavour: **b3c.16x64** ❗
 	4. OpenShift Version: **4.10**
 
-	![K8s CNI](/pics/roks02.png)
+	![K8s CNI](/cp4waiops-training/pics/roks02.png)
 
 1. Click `Submit`
 	
@@ -696,7 +696,7 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 
 
 
-![K8s CNI](/pics/install01.png)
+![K8s CNI](/cp4waiops-training/pics/install01.png)
 
 1. In the the OCP Web UI click on the `+` sign in the right upper corner
 1. Copy and paste the content from [this file](./tools/08_Quick_Install_Jobs/01_INSTALL_ALL.yaml)
@@ -822,7 +822,7 @@ Once the installation has finisehd, you can access the demo environment:
 * Select `CP4WAIOps Demo UI`
 * Login with the password `P4ssw0rd!`
 
-	![demo](/pics/demo-menu.png)
+	![demo](/cp4waiops-training/pics/demo-menu.png)
 
 
 
@@ -844,7 +844,7 @@ To access the demo environment:
 * Select `CP4WAIOps Demo UI`
 * Login with the password `P4ssw0rd!`
 
-	![demo](/pics/demo-menu.png)
+	![demo](/cp4waiops-training/pics/demo-menu.png)
 
 
 
@@ -857,7 +857,7 @@ To access the demo environment:
 * Login as User `demo` with the Password `P4ssw0rd!`
 
 
-![demo](/pics/demo01.png)
+![demo](/cp4waiops-training/pics/demo01.png)
 
 
 
@@ -869,11 +869,11 @@ Back on the Demo UI, click on the red `Create Incident Memory Leak` button
 
 This will create alerts and a story in AI Manager.
 
-![demo](/pics/demo01.png)
+![demo](/cp4waiops-training/pics/demo01.png)
 
 ℹ️  Give it a minute or two for all events and anomalies to arrive in AI Manager and Slack.
 
-![demo](/pics/demo02.png)
+![demo](/cp4waiops-training/pics/demo02.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -888,7 +888,7 @@ This will create alerts and a story in AI Manager.
 
 #### 2.2.3.1 Loading training data
 
-![demo](/pics/waiops_arch_training.jpg)
+![demo](/cp4waiops-training/pics/waiops_arch_training.jpg)
 
 Loading Training data is done at the lowest possible level (for efficiency and speed):
 
@@ -907,7 +907,7 @@ The models can be trained directly on the data that has been loaded as described
 
 ### 2.2.4 Incident creation (inception)
 
-![demo](/pics/waiops_arch_inception.jpg)
+![demo](/cp4waiops-training/pics/waiops_arch_inception.jpg)
 
 Incidents are being created by using the high level APIs in order to simulate a real-world scenario.
 
@@ -961,11 +961,11 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 
 1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-	![K8s CNI](/pics/roks01.png)
+	![K8s CNI](/cp4waiops-training/pics/roks01.png)
 
 1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-	![K8s CNI](/pics/roks03.png)
+	![K8s CNI](/cp4waiops-training/pics/roks03.png)
 	
 1. Fill-in the remaining fields
 
@@ -974,7 +974,7 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 	3. Flavour: b3c.16x64
 	4. OpenShift Version: 4.10
 
-	![K8s CNI](/pics/roks02.png)
+	![K8s CNI](/cp4waiops-training/pics/roks02.png)
 
 1. Click `Submit`
 
@@ -1118,13 +1118,13 @@ echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE wai
 * Open the URL from the above
 * Click on `IBM provided credentials (admin only)`
 
-	![K8s CNI](/pics/doc53.png)
+	![K8s CNI](/cp4waiops-training/pics/doc53.png)
 
 
 
 * Login as `admin` with the password from the `LOGINS.txt` file
 
-	![K8s CNI](/pics/doc55.png)
+	![K8s CNI](/cp4waiops-training/pics/doc55.png)
 
 
 
@@ -1148,7 +1148,7 @@ echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE wai
 	
 	```
 	
-	![demo](/pics/demo03.png)
+	![demo](/cp4waiops-training/pics/demo03.png)
 	
 
 #### 3.4.1.2 Open the Web Demo UI
@@ -1164,7 +1164,7 @@ Click on the red `Create Incident Memory Leak` button
 
 This will create alerts and a story in AI Manager.
 
-![demo](/pics/demo01.png)
+![demo](/cp4waiops-training/pics/demo01.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1177,7 +1177,7 @@ This will create alerts and a story in AI Manager.
 ℹ️  Give it a minute or two for all events and anomalies to arrive in AI Manager and Slack.
 
 
-![demo](/pics/demo02.png)
+![demo](/cp4waiops-training/pics/demo02.png)
 
 
 ### 3.4.2 Simulate incident - Command Line
@@ -1268,7 +1268,7 @@ After successful installation, the Playbook creates a file `./LOGINS.txt` in you
 * Click `Connect`
 * Name it `Netcool`
 * Fill-in the information from the script above
-![](/pics/netcool01.png)
+![](/cp4waiops-training/pics/netcool01.png)
 * Click `Test Connection`
 * Click `Next`
 * Toggle `Enable Data Collection` to the `ON` position
@@ -1357,7 +1357,7 @@ Optionnally you can also add `Expiry Time` from `Optional event attributes` and 
 	* AlertGroup = 'CEACorrelationKeyParent'
 	* AlertGroup = 'robot-shop'
 
-![](/pics/noi10.png)
+![](/cp4waiops-training/pics/noi10.png)
 
 
 ##### 3.5.4.2.2 View 
@@ -1442,36 +1442,36 @@ For the system to work you need to follow those steps:
 
 1. Create a Slack workspace by going to https://slack.com/get-started#/createnew and logging in with an email <i>**which is not your IBM email**</i>. Your IBM email is part of the IBM Slack enterprise account and you will not be able to create an independent Slack workspace outside if the IBM slack service. 
 
-  ![slack1](/pics/slackws1.png)
+  ![slack1](/cp4waiops-training/pics/slackws1.png)
 
 2. After authentication, you will see the following screen:
 
-  ![slack2](/pics/slackws2.png)
+  ![slack2](/cp4waiops-training/pics/slackws2.png)
 
 3. Click **Create a Workspace** ->
 
 4. Name your Slack workspace
 
-  ![slack3](/pics/slackws3.png)
+  ![slack3](/cp4waiops-training/pics/slackws3.png)
 
   Give your workspace a unique name such as aiops-\<yourname\>.
 
 5. Describe the workspace current purpose
 
-  ![slack4](/pics/slackws4.png)
+  ![slack4](/cp4waiops-training/pics/slackws4.png)
 
   This is free text, you may simply write “demo for Watson AIOps” or whatever you like.
 
 6. 
 
-  ![slack5](/pics/slackws5.png)
+  ![slack5](/cp4waiops-training/pics/slackws5.png)
 
   You may add team members to your new Slack workspace or skip this step.
 
 
 At this point you have created your own Slack workspace where you are the administrator and can perform all the necessary steps to integrate with CP4WAOps.
 
-![slack6](/pics/slackws6.png)
+![slack6](/cp4waiops-training/pics/slackws6.png)
 
 **Note** : This Slack workspace is outside the control of IBM and must be treated as a completely public environment. Do not place any confidential material in this Slack workspace.
 
@@ -1481,13 +1481,13 @@ At this point you have created your own Slack workspace where you are the admini
 
 1. Create a Slack app, by going to https://api.slack.com/apps and clicking `Create New App`. 
 
-   ![slack7](/pics/slack01.png)
+   ![slack7](/cp4waiops-training/pics/slack01.png)
 
 
 2. Select `From an app manifest`
 
 
-  ![slack7](/pics/slack02.png)
+  ![slack7](/cp4waiops-training/pics/slack02.png)
 
 3. Select the appropriate workspace that you have created before and click `Next`
 
@@ -1516,7 +1516,7 @@ At this point you have created your own Slack workspace where you are the admini
 	* aiops-demo-reactive
 	* aiops-demo-proactive
 
-	![slack7](/pics/slack03.png)
+	![slack7](/cp4waiops-training/pics/slack03.png)
 
 
 2. Right click on each channel and select `Copy Link`
@@ -1527,7 +1527,7 @@ At this point you have created your own Slack workspace where you are the admini
 	
 3. Under Apps click Browse Apps
 
-	![slack7](/pics/slack13.png)
+	![slack7](/cp4waiops-training/pics/slack13.png)
 
 4. Select the App you just have created
 
@@ -1550,33 +1550,33 @@ In the Slack App:
 
 1. In the `Basic Information` menu get the `Signing Secret` (not the Client Secret!) and jot it down
 
-	![K8s CNI](/pics/doc47.png)
+	![K8s CNI](/cp4waiops-training/pics/doc47.png)
 	
 3. In the `OAuth & Permissions` get the `Bot User OAuth Token` (not the User OAuth Token!) and jot it down
 
-	![K8s CNI](/pics/doc48.png)
+	![K8s CNI](/cp4waiops-training/pics/doc48.png)
 
 In the AI Manager (CP4WAIOPS) 
 
 1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool integrations`
 1. Click `Add connection`
  
-	![K8s CNI](/pics/doc14.png)
+	![K8s CNI](/cp4waiops-training/pics/doc14.png)
 	
 1. Under `Slack`, click on `Add Connection`
-	![K8s CNI](/pics/doc45.png)
+	![K8s CNI](/cp4waiops-training/pics/doc45.png)
 
 6. Name it "Slack"
 7. Paste the `Signing Secret` from above
 8. Paste the `Bot User OAuth Token` from above
 
-	![K8s CNI](/pics/doc50.png)
+	![K8s CNI](/cp4waiops-training/pics/doc50.png)
 	
 9. Paste the channel IDs from the channel creation step in the respective fields
 
-	![K8s CNI](/pics/doc49.png)
+	![K8s CNI](/cp4waiops-training/pics/doc49.png)
 	
-	![K8s CNI](/pics/doc52.png)
+	![K8s CNI](/cp4waiops-training/pics/doc52.png)
 		
 		
 
@@ -1595,7 +1595,7 @@ In the AI Manager (CP4WAIOPS)
 2. Under `Slack` click on `1 integration`
 3. Copy out the URL
 
-	![secure_gw_search](/pics/slack04.png)
+	![secure_gw_search](/cp4waiops-training/pics/slack04.png)
 
 This is the URL you will be using for step 6.
 
@@ -1618,7 +1618,7 @@ Return to the browser tab for the Slack app.
 
 4. After pasting the value in the field, a *Verified* message should display.
 
-	![slacki3](/pics/slacki3.png)
+	![slacki3](/cp4waiops-training/pics/slacki3.png)
 
 	If you get an error please check 5.7
 
@@ -1627,7 +1627,7 @@ Return to the browser tab for the Slack app.
 	*  `app_mention` and 
 	*  `member_joined_channel` events.
 
-	![slacki4](/pics/slacki4.png)
+	![slacki4](/cp4waiops-training/pics/slacki4.png)
 
 6. Click `Save Changes` button.
 
@@ -1640,7 +1640,7 @@ Return to the browser tab for the Slack app.
 
  **There is no automatic verification for this form**
 
-![slacki5](/pics/slacki5.png)
+![slacki5](/cp4waiops-training/pics/slacki5.png)
 
 9. Click `Save Changes` button.
 

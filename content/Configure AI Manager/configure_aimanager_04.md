@@ -23,7 +23,7 @@ weight: 55
 
 1. Fill out the fields on the first page:
 
-	![K8s CNI](/pics/25_elk.png)
+	![K8s CNI](/cp4waiops-training/pics/25_elk.png)
 
 
 	```yaml
@@ -46,7 +46,7 @@ weight: 55
 
 1. Click `Test connection`. You should get `Connection successful!`
 
-	![K8s CNI](/pics/26_elk.png)
+	![K8s CNI](/cp4waiops-training/pics/26_elk.png)
 
 1. Click `Next`
 
@@ -70,7 +70,7 @@ weight: 55
 1. Click `Next`
 
 
-	![K8s CNI](/pics/27_elk.png)
+	![K8s CNI](/cp4waiops-training/pics/27_elk.png)
 
 
 1. Turn On `Data collection`
@@ -83,4 +83,4 @@ weight: 55
 
 1. Make sure that the Data Collection and Connection Status turn green after a few minutes
 
-	![K8s CNI](/pics/28_elk.png)
+	![K8s CNI](/cp4waiops-training/pics/28_elk.png)

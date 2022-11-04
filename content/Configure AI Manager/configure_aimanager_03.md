@@ -11,7 +11,7 @@ weight: 54
 
 1. In the `AI Manager` "Hamburger" Menu select `Access Control`
 
-	![K8s CNI](/pics/20_config.png)
+	![K8s CNI](/cp4waiops-training/pics/20_config.png)
 
 1. In the top right Click `Identity provider configuration`
 
@@ -32,7 +32,7 @@ weight: 54
 
 1. Fill out the first section of fields:
 
-	![K8s CNI](/pics/21_config.png)
+	![K8s CNI](/cp4waiops-training/pics/21_config.png)
 
     ```yaml
     Connection name:      LDAP
@@ -50,7 +50,7 @@ weight: 54
 
 1. Fill out the rest of the fields:
 
-	![K8s CNI](/pics/22_config.png)
+	![K8s CNI](/cp4waiops-training/pics/22_config.png)
 
     ```yaml
     Group filter:         (&(cn=%v)(objectclass=groupOfUniqueNames))
@@ -65,7 +65,7 @@ weight: 54
 
 1. You should get a LDAP entry in the provider list
 
-	![K8s CNI](/pics/23_config.png)
+	![K8s CNI](/cp4waiops-training/pics/23_config.png)
 
 
 
@@ -73,7 +73,7 @@ weight: 54
 
 1. Go back to `AI Manager`, click on the "Hamburger" Menu and select `Access Control`
 
-	![K8s CNI](/pics/20_config.png)
+	![K8s CNI](/cp4waiops-training/pics/20_config.png)
 
 1. In the top right Click `Add users`
 
@@ -96,7 +96,7 @@ weight: 54
 
 1. In `AI Manager`, click on the round image in the top right and select `Log Out`
 
-	![K8s CNI](/pics/24_config.png)
+	![K8s CNI](/cp4waiops-training/pics/24_config.png)
 
 1. Click `Logout` 
 

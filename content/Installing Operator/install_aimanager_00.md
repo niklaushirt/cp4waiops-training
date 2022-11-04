@@ -16,11 +16,11 @@ Befor continuing, you have to connect to your OpenShift Cluster.
 1. Open your Openshift Web Console
 1. Select `Copy Login Command`
 
-	![K8s CNI](/pics/01_fzth_ocp_connect.png)
+	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 1. Copy the `oc login ..` string
 
-	![K8s CNI](/pics/02_fzth_ocp_connect.png)
+	![K8s CNI](/cp4waiops-training/pics/02_fzth_ocp_connect.png)
 
 1. Open your terminal
 1. Paste the `oc login ..` command from above

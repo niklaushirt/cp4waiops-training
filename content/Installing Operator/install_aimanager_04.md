@@ -42,7 +42,7 @@ ibm-watson-aiops-ui-operator.v3.5.1      IBM Watson AIOps UI                    
 
 * Or check your OpenShift Web Console
 
-	![K8s CNI](/pics/01_fzth_ocp_connect.png)
+	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 
 

@@ -6,7 +6,7 @@ weight: 4
 
 # Optimized Training Architecture
 
-![demo](/pics/waiops_arch_dataflow.jpg)
+![demo](/cp4waiops-training/pics/waiops_arch_dataflow.jpg)
 
 
 For the this specific Demo environment:
