@@ -18,7 +18,7 @@ If you think that you hit a problem:
 
 {{< hint type=important  title="Important" >}}
 **Simply put:**\
-Be patient and make sure you have the correct size of cluster provisioned!
+❗ Be patient and make sure you have the correct size of cluster provisioned!
 {{< /hint >}}
 
 ### 
