@@ -11,11 +11,11 @@ weight: 2
 
 
 
-In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
+## In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
 
-The idea is to provide you with an optimised way to learn CP4WAIOPS.
+The idea is to provide you with an fast and simple way to learn CP4WAIOPS.
 
-You will learn about the following topics:
+## You will learn about the following topics:
 
 - Installing `AIManager` from scratch
 - Integrate AIManager with `OpenLDAP` for user management
@@ -32,7 +32,7 @@ You will learn about the following topics:
 - Integrate AIManager with `Slack`
 
 
-### Those are the Topics that you are going to work on during this Training:
+## and those are the Topics that you are going to work on during this Training:
 
 {{< tabs >}}
 
