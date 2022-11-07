@@ -1,86 +1,109 @@
 ---
-title: "Configure ELK"
+title: "Configure LDAP"
 date: 2022-11-03T10:57:46+01:00
-weight: 55
+weight: 54
 ---
 
-# Configure ELK Integration
+# Configure LDAP integration
+
+## Create LDAP provider
 
 
-1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
-1. Click `Add connection`
-1. Under `ELK`, click on `Add connection`
-1. Click `Connect`
-1. Name it `ELK`
+1. In the `AIManager` "Hamburger" Menu select `Access Control`
 
+	![K8s CNI](/cp4waiops-training/pics/20_config.png)
 
-1. 🔎 Get the data from your configuration info - section `2.2 Configure ELK` 
+1. In the top right Click `Identity provider configuration`
+
+1. You might have to re-login with your admin user
+
+1. In the top right Click `New Connection`
+
+1. Select `LDAP` from the dropdown
+
+1. Click `Next`
+
+1. 🔎 Get the data from your configuration info - section  `2.1 Configure LDAP` 
 
     ```bash
     ./tools/11_fzth/get_configuration_info.sh
     ```
 
 
-1. Fill out the fields on the first page:
+1. Fill out the first section of fields:
 
-	![K8s CNI](/cp4waiops-training/pics/25_elk.png)
-
-
-	```yaml
-	ELK service URL: 		from script
-	Kibana URL: 			from script
-	Authentication type: 		Token
-	Token: 				from script
-
-	Mapping:
-		{ 
-		"codec": "elk",
-		"message_field": "message",
-		"log_entity_types": "kubernete	s.container_image_id, kubernetes.host, kubernetes.pod_name, kubernetes.namespace_name",
-		"instance_id_field": "kubernetes.container_name",
-		"rolling_time": 10,
-		"timestamp_field": "@timestamp"
-		}
-	TimeZone:				set to your Timezone	
-	Kibana port: 			443
-	```
-
-1. Click `Test connection`. You should get `Connection successful!`
-
-	![K8s CNI](/cp4waiops-training/pics/26_elk.png)
-
-1. Click `Next`
-
-
-1. Fill out the `Field mapping`:
-
-
+	![K8s CNI](/cp4waiops-training/pics/21_config.png)
 
     ```yaml
-	{ 
-	"codec": "elk",
-	"message_field": "message",
-	"log_entity_types": "kubernetes.container_image_id, kubernetes.host, kubernetes.pod_name, kubernetes.namespace_name",
-	"instance_id_field": "kubernetes.container_name",
-	"rolling_time": 10,
-	"timestamp_field": "@timestamp"
-	}
+    Connection name:      LDAP
+    Server type:          Custom
+
+    Base DN:              dc=ibm,dc=com
+    Bind DN:              cn=admin,dc=ibm,dc=com
+    Bind DN password:     P4ssw0rd! 
+
+    LDAP server URL:      ldap://openldap.openldap:389
+
     ```
 
-1. Click `Next`
+1. Click `Test connection`. You should get `Successful connection`
+
+1. Fill out the rest of the fields:
+
+	![K8s CNI](/cp4waiops-training/pics/22_config.png)
+
+    ```yaml
+    Group filter:         (&(cn=%v)(objectclass=groupOfUniqueNames))
+    User filter:          (&(uid=%v)(objectclass=Person))     <-- Thats the only value you should have to change
+    Group ID map:         *:cn
+    User ID map:          *:uid
+    Group member ID map:  groupOfUniqueNames:uniqueMember
+    ```
 
 
-	![K8s CNI](/cp4waiops-training/pics/27_elk.png)
+1. Click `Create`
+
+1. You should get a LDAP entry in the provider list
+
+	![K8s CNI](/cp4waiops-training/pics/23_config.png)
 
 
-1. Turn On `Data collection`
 
-1. Select `Live data for continuous AI training and anomaly detection`
+## Create User
+
+1. Go back to `AIManager`, click on the "Hamburger" Menu and select `Access Control`
+
+	![K8s CNI](/cp4waiops-training/pics/20_config.png)
+
+1. In the top right Click `Add users`
+
+1. In the search box type `demo`
+
+1. Click on the `demo/demo/demo@ibm.com` line
+
+1. Click `Next` 
+
+1. Click `Assign roles directly`
+
+1. Click `Next` 
+
+1. Check `Administrator` role
+
+1. Click `Next` 
+
+1. Click `Add` 
 
 
-1. Click `Done`
+## Login as Demo
 
+1. In `AIManager`, click on the round image in the top right and select `Log Out`
 
-1. Make sure that the Data Collection and Connection Status turn green after a few minutes
+	![K8s CNI](/cp4waiops-training/pics/24_config.png)
 
-	![K8s CNI](/cp4waiops-training/pics/28_elk.png)
+1. Click `Logout` 
+
+1. Click `Log in` 
+
+1. Enter credentials `demo` and `P4ssw0rd!` (this information is stored in the LDAP server)
+
+1. Welcome back in AIManager as user Demo

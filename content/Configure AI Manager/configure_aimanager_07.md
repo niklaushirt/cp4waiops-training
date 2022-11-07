@@ -1,73 +1,57 @@
 ---
-title: "Configure Applications"
+title: "Configure Policies"
 date: 2022-11-03T10:57:46+01:00
-weight: 58
+weight: 57
 ---
 
-# Create Kubernetes Observer
+# Configure Policies
 
-1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
-1. Click `Add connection`
-1. Under `Kubernetes`, click on `Add connection`
-1. Click `Connect`
-1. 🔎 Get the data from your configuration info - section `2.5 Configure Applications - RobotShop Kubernetes Observer` 
-
-    ```bash
-    ./tools/11_fzth/get_configuration_info.sh
-    ```
+# Enable Story creation Policy
 
 
-1. Fill out the first section of fields (Add connection):
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`Automations`
+1. Select tab `Policies`
+1. Click on the `Tag` dropdown
+1. Select `Stories` and `Runbooks`
 
-	![K8s CNI](/cp4waiops-training/pics/39_topo.png)
+	![K8s CNI](/cp4waiops-training/pics/33_policy.png)
 
-    ```yaml
-	Name:                          	RobotShop
-	Data center:                   	robot-shop
-    ```
+1. Turn on Policy `Default story creation policy for all alerts` 
 
-1. Click `Next`
-
-1. Fill out the first section of fields (Set advanced options):
-
-	![K8s CNI](/cp4waiops-training/pics/40_topo.png)
-
-    ```yaml
-	Kubernetes master IP address:  	172.21.0.1
-	Kubernetes API port:           	443
-	Token:					from script
-	Trust all HTTPS certificates:  	true
-	Correlate analytics events:		true
-	Namespaces to observe:         	robot-shop
-    ```
-
-1. Click `Next`
-1. Click `Done`
-
-1. The Integration should show `Running` and eventually `Success`under Schedule
+	![K8s CNI](/cp4waiops-training/pics/34_policy.png)
 
 
+# Create Runbook Assignment Policy
 
 
-# Configure Applications
+1. Click on `Create Policy`
+1. Click on `Assign a runbook to alerts`
+1. Name it `RobotShop Mitigate MySQL Problem`
+1. Scroll down to `Condition sets`
+1. Click in field  `Property`
+1. Type `name`
+1. Select `resource` / `name`
+
+	![K8s CNI](/cp4waiops-training/pics/35_runbook.png)
+
+1. Under `Operator` select `contains`
+1. Click in field  `Value`
+1. Type `mysql`
+1. Select `String: mysql`
+
+	![K8s CNI](/cp4waiops-training/pics/36_runbook.png)
 
 
-1. In the `AIManager` "Hamburger" Menu select `Operate`/`Resource management`
-1. Select tab `Applications`
-1. Click `Define Application`
-1. Select the two Resource Group
+1. Check runbook `RobotShop Mitigate MySQL Problem`
+1. Check `Use default parameter value`
 
-	![K8s CNI](/cp4waiops-training/pics/41_topo.png)
 
-1. Click `Next`
-1. Click `Next`
+	![K8s CNI](/cp4waiops-training/pics/37_runbook.png)
 
-1. Enter Name `RobotShop`
-1. Click on the heart to `Mark as favorite`
-1. Enter `1000` into `Estimated cost per minute for service disruption`
+1. Click `Create Policy`
 
-	![K8s CNI](/cp4waiops-training/pics/42_topo.png)
+1. Your list of Policies should now look like this
 
-1. Click `Define Applications`
+	![K8s CNI](/cp4waiops-training/pics/38_runbook.png)
 
 

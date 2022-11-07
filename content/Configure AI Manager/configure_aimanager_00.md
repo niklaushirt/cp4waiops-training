@@ -1,27 +1,24 @@
 ---
-title: "Get the information"
+title: "Configure AIManager"
 date: 2022-11-03T10:57:46+01:00
-weight: 51
+weight: 50
 ---
 
-# Get the configuration Information
+# Configure AIManager
 
-![K8s CNI](/cp4waiops-training/pics/57_my_info.png)
+![ibm](/cp4waiops-training/pics/ibm/app-mgt.gif)
 
-1. Run the following command to get a list of all the information that you will need for the configuration of AIManager in this chapter.
+In this chapter you will:
 
-
-  ```bash
-  ./tools/11_fzth/get_configuration_info.sh
-  ```
-
-This will provide you with all the information and details that you need to configure AIManager in this chapter.
-
-
-{{< hint type=important  title="Important: You can also save the information to a file to keep it handy" >}}
-   ```bash
-  ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
-  ```
-
-{{< /hint >}}
-
+- Integrate AIManager with `OpenLDAP` for user management
+- Integrate AIManager with `ELK` for Log Anomalies
+- Define and train `AI Models` for
+  - Log Anomaly Detectiom
+  - Metric Anomaly Detection
+  - Event Grouping
+  - Similar Incidents
+  - Change Risk 
+- Create `Policies` for Story creation and Runbook assignment
+- Integrate AIManager with `Ansible Tower` and create Runbooks in AIManager
+- Create a RobotShop Application `Topology`
+- Integrate AIManager with `Slack`

@@ -1,80 +1,86 @@
 ---
-title: "Configure Runbooks"
+title: "Configure ELK"
 date: 2022-11-03T10:57:46+01:00
-weight: 56
+weight: 55
 ---
 
-# Configure Runbooks
-
-## Create Ansible Tower Connection
+# Configure ELK Integration
 
 
 1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
-1. Under `Ansible Automation Controller`, click on `Add connection`
+1. Under `ELK`, click on `Add connection`
 1. Click `Connect`
+1. Name it `ELK`
 
-1. 🔎 Get the data from your configuration info - section `2.3 Configure Runbooks - Ansible Automation Controller` 
+
+1. 🔎 Get the data from your configuration info - section `2.2 Configure ELK` 
 
     ```bash
     ./tools/11_fzth/get_configuration_info.sh
     ```
 
 
-1. Fill out the fields:
+1. Fill out the fields on the first page:
 
-	![K8s CNI](/cp4waiops-training/pics/29_runbook.png)
+	![K8s CNI](/cp4waiops-training/pics/25_elk.png)
 
 
 	```yaml
-	URL for REST API:      from script
-	Authentication type:   User ID/Password
-	User:                  admin
-	Password:              from script
+	ELK service URL: 		from script
+	Kibana URL: 			from script
+	Authentication type: 		Token
+	Token: 				from script
+
+	Mapping:
+		{ 
+		"codec": "elk",
+		"message_field": "message",
+		"log_entity_types": "kubernete	s.container_image_id, kubernetes.host, kubernetes.pod_name, kubernetes.namespace_name",
+		"instance_id_field": "kubernetes.container_name",
+		"rolling_time": 10,
+		"timestamp_field": "@timestamp"
+		}
+	TimeZone:				set to your Timezone	
+	Kibana port: 			443
 	```
+
+1. Click `Test connection`. You should get `Connection successful!`
+
+	![K8s CNI](/cp4waiops-training/pics/26_elk.png)
+
+1. Click `Next`
+
+
+1. Fill out the `Field mapping`:
+
+
+
+    ```yaml
+	{ 
+	"codec": "elk",
+	"message_field": "message",
+	"log_entity_types": "kubernetes.container_image_id, kubernetes.host, kubernetes.pod_name, kubernetes.namespace_name",
+	"instance_id_field": "kubernetes.container_name",
+	"rolling_time": 10,
+	"timestamp_field": "@timestamp"
+	}
+    ```
+
+1. Click `Next`
+
+
+	![K8s CNI](/cp4waiops-training/pics/27_elk.png)
+
+
+1. Turn On `Data collection`
+
+1. Select `Live data for continuous AI training and anomaly detection`
+
 
 1. Click `Done`
 
-1. Make sure that the Connection Status turn green after a few seconds
 
+1. Make sure that the Data Collection and Connection Status turn green after a few minutes
 
-
-
-## Check integration
-
-
-1. In the `AIManager` "Hamburger" Menu select `Operate`/`Automations`
-1. Select tab `Actions`
-1. Verify that the Ansible Playbooks have been imported
-
-	![K8s CNI](/cp4waiops-training/pics/30_runbook.png)
-
-## Create Runbooks
-
-1. Select tab `Runbooks`
-1. Click `Create Runbook`
-1. Name it `RobotShop Mitigate MySQL Problem`
-1. Click `Add automated step`
-1. Select `CP4WAIOPS Mitigate Robotshop Ratings Outage`
-1. Click `Select this action`
-1. Click `Mapping` / `Select`
-1. Select `New runbook parameter`
-
-	![K8s CNI](/cp4waiops-training/pics/31_runbook.png)
-
-1. Select tab 
-
-1. 🔎 Get the data from your configuration info - section `2.4 Configure Runbooks - Runbook Parameters` 
-
-    ```bash
-    ./tools/11_fzth/get_configuration_info.sh
-    ```
-
-	![K8s CNI](/cp4waiops-training/pics/32_runbook.png)
-
-1. Replace `PROVIDE: my_k8s_apiurl and my_k8s_apikey` in field `Default value (optional)` with the value from the script
-
-1. Click `Save`
-1. Click `Save` again
-1. Click `Actions` and `Publish`
-
+	![K8s CNI](/cp4waiops-training/pics/28_elk.png)

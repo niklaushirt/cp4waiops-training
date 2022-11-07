@@ -1,0 +1,29 @@
+---
+title: "Important remarks"
+date: 2022-11-03T10:57:46+01:00
+weight: 12
+---
+
+# ⚠️⚠️ Important remarks before you start ⚠️⚠️
+
+Those are remarks regarding feedback and problem reports I got from the field.
+
+Those scripts have been tested thoroughly on different environments and have proven to be VERY reliable.
+
+If you think that you hit a problem:
+
+* Make sure that you have provisioned a cluster with **5 worker nodes with 16 CPU and 64 GB** each (`b3c.16x64` - it's easy to select the wrong size). If you have Pods in `0/0` state verify the `Events`. If you get `Not enough CPU` then delete the cluster and provision the correct size.
+* When deploying ROKS I usually use Dallas or London, they are the fastest. On other regions we have seen much worse performance - deployment can take 4-5 times longer.
+* If you see Pods in `CrashLoop` or other error states, try to wait it out (this can be due to dependencies on other componenets that are not ready yet). Chances are that the deployment will eventually go through. If after 8h you are still stuck, ping me.
+
+{{< hint type=important  title="Important" >}}
+**Simply put:**\
+❗ Be patient and make sure you have the correct size of cluster provisioned!
+{{< /hint >}}
+
+
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Prerequisites**\
+Please continue to the next chapter to learn how to iinstall the Operator.
+{{< /hint >}}

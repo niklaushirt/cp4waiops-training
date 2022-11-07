@@ -1,43 +1,27 @@
 ---
-title: "First Login"
+title: "Get the information"
 date: 2022-11-03T10:57:46+01:00
-weight: 52
+weight: 51
 ---
 
-# Your first Login to AIManager
+# Get the configuration Information
 
-1. In your OpenShift Console click on the Applications Menu
+![K8s CNI](/cp4waiops-training/pics/57_my_info.png)
 
-	![K8s CNI](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
-
-
-1. Select **CP4WAIOps Demo UI**
-
-1. Login with token `P4ssw0rd!`
-
-	![K8s CNI](/cp4waiops-training/pics/08_demo_ui_login.png)
+1. Run the following command to get a list of all the information that you will need for the configuration of AIManager in this chapter.
 
 
-1. Copy the Admin Password
+  ```bash
+  ./tools/11_fzth/get_configuration_info.sh
+  ```
 
-	![K8s CNI](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
-
-1. Open `AIManager`
-
-	![K8s CNI](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
-
-1. Select `IBM provided credentials`
-
-	![K8s CNI](/cp4waiops-training/pics/11_demo_ui_aimanager_type.png)
-
-1. Login with `admin` user and the password you copied in the step above
-
-	![K8s CNI](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
-
-1. Welcome to  `AIManager`
-
-	![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
+This will provide you with all the information and details that you need to configure AIManager in this chapter.
 
 
+{{< hint type=important  title="Important: You can also save the information to a file to keep it handy" >}}
+   ```bash
+  ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
+  ```
 
+{{< /hint >}}
 

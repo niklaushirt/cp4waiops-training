@@ -1,29 +1,34 @@
 ---
-title: "Important remarks"
+title: "Get your Cluster"
 date: 2022-11-03T10:57:46+01:00
-weight: 12
+weight: 11
 ---
 
-# ⚠️⚠️ Important remarks before you start ⚠️⚠️
+# Get your ROKS Cluster (IBMers and IBM Partners only)
 
-Those are remarks regarding feedback and problem reports I got from the field.
+IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collection/custom-roks-vmware-requests) (ususally valid for up to 8 days)
 
-Those scripts have been tested thoroughly on different environments and have proven to be VERY reliable.
+1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-If you think that you hit a problem:
+	![K8s CNI](/cp4waiops-training/pics/roks01.png)
 
-* Make sure that you have provisioned a cluster with **5 worker nodes with 16 CPU and 64 GB** each (`b3c.16x64` - it's easy to select the wrong size). If you have Pods in `0/0` state verify the `Events`. If you get `Not enough CPU` then delete the cluster and provision the correct size.
-* When deploying ROKS I usually use Dallas or London, they are the fastest. On other regions we have seen much worse performance - deployment can take 4-5 times longer.
-* If you see Pods in `CrashLoop` or other error states, try to wait it out (this can be due to dependencies on other componenets that are not ready yet). Chances are that the deployment will eventually go through. If after 8h you are still stuck, ping me.
+<div style="page-break-after: always;"></div>
 
-{{< hint type=important  title="Important" >}}
-**Simply put:**\
-❗ Be patient and make sure you have the correct size of cluster provisioned!
-{{< /hint >}}
+1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
+
+	![K8s CNI](/cp4waiops-training/pics/roks03.png)
+	
+1. Fill-in the remaining fields
+
+	1. Geograpy: prefer **Dallas or London** (others might be slower)
+	2. Worker node count: **5**
+	3. Flavour: **b3c.16x64** ❗
+	4. OpenShift Version: **4.10**
+
+	![K8s CNI](/cp4waiops-training/pics/roks02.png)
+
+1. Click `Submit`
+	
+1. Once the cluster is provisioned, don't forget to extend it to 8 days if needed.
 
 
-
-{{< hint type=tip title="You have successfully finished this Chapter" >}}
-**You are now done with the chapter on Prerequisites**\
-Please continue to the next chapter to learn how to iinstall the Operator.
-{{< /hint >}}
