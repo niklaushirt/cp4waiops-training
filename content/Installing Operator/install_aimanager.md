@@ -6,7 +6,7 @@ weight: 20
 
 # Installing the Operator
 
-![K8s CNI](/cp4waiops-training/pics/53_operators_installed_small.png)
+![ibm](/cp4waiops-training/pics/ibm/connections.gif)
 
 In this chapter you will prepare your Cluster for the installation of AIManager
 

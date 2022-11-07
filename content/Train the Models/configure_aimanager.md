@@ -8,4 +8,11 @@ weight: 60
 
 
 
-![K8s CNI](/cp4waiops-training/pics/46_training_small.png)
+![ibm](/cp4waiops-training/pics/ibm/automation-welcome-tour.gif)
+
+In this chapter you will define and train `AI Models` for
+  - Log Anomaly Detectiom
+  - Metric Anomaly Detection
+  - Event Grouping
+  - Similar Incidents
+  - Change Risk 

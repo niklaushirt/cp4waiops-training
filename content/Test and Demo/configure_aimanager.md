@@ -6,6 +6,7 @@ weight: 100
 
 # Test and Demo
 
-![K8s CNI](/cp4waiops-training/pics/45_demo_ui_incident.png)
+![ibm](/cp4waiops-training/pics/ibm/connections.gif)
 
 
+In this chapter you will test and discover your installation.

@@ -6,7 +6,7 @@ weight: 50
 
 # Configure AIManager
 
-![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
+![ibm](/cp4waiops-training/pics/ibm/app-mgt.gif)
 
 In this chapter you will:
 

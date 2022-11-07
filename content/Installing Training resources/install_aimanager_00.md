@@ -6,7 +6,7 @@ weight: 41
 
 # Installing Training resources
 
-![K8s CNI](/cp4waiops-training/pics/56_aimanager_topo.png)
+![ibm](/cp4waiops-training/pics/ibm/1_CXk3Ocs_Gizl684EP5YC7Q.png)
 
 
 This will install resources that you will need for the configuration of AIManager in the next chapter.

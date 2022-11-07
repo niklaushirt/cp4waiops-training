@@ -7,17 +7,11 @@ weight: 0
 
 
 
-![demo](/cp4waiops-training/pics/front.png)
+![ibm](/cp4waiops-training/pics/ibm/app-mgt.gif)
 
-{{< rawhtml >}}
-<div class="prev-next" style="max-width:500px;">
-<a class="link-reverse" style="background-color: rgb(255, 226, 5) !important; color: #000 !important; font-weight: bold;   font-size:larger  !important;" href="/cp4waiops-training/introduction/intro_00/">🚀 Let's Start »</a>
-</div>
-</div>
-{{< /rawhtml >}}
 
-In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
 
+In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.\
 The idea is to provide you with an optimised way to learn CP4WAIOPS.
 
 
@@ -37,8 +31,17 @@ You will learn about the following topics:
 - Create a RobotShop Application `Topology`
 - Integrate AIManager with `Slack`
 
+###
 
+{{< rawhtml >}}
+<div class="prev-next" style="max-width:500px;">
+<a class="link-reverse" style="background-color: rgb(255, 226, 5) !important; color: #000 !important; font-weight: bold;   font-size:larger  !important;" href="/cp4waiops-training/introduction/intro_00/">🚀 Let's Start »</a>
+</div>
+</div>
+{{< /rawhtml >}}
 
+#
+#
 
 {{< hint type=note  title="Note" >}}
 In the end you will have a fully functioning demo environment.
