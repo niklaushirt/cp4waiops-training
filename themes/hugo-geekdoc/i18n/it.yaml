@@ -35,7 +35,7 @@ posts_count:
 posts_tagged_with: Tutti i post etichettati con '{{ . }}'
 
 footer_build_with: >
-  RBuilt with ❤️ by Niklaus Hirt in 2022
+  RBuilt with ❤️ by Niklaus Hirt/IBM in 2022
 footer_legal_notice: Avviso Legale
 footer_privacy_policy: Politica sulla Privacy
 footer_content_license_prefix: >
