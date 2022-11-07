@@ -7,7 +7,7 @@ weight: 62
 # Define Metric Anomalies Training
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`AI Model Management`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`AI Model Management`
 1. Under `Metric anomaly detection`, click on `Set up training`
 1. Click `Next`
 1. Click `Next`

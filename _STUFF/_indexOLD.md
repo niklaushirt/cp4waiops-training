@@ -90,9 +90,9 @@ The idea is to provide an optimised way for you to learn CP4WAIOPS.
  {{< /tab >}}
 {{< tab "Prerequisites" >}} # Prerequisites {{< /tab >}}
 {{< tab "Installing the Operator" >}} # Installing the Operator {{< /tab >}}
-{{< tab "Installing AI Manager" >}} # Installing AI Manager {{< /tab >}}
+{{< tab "Installing AIManager" >}} # Installing AIManager {{< /tab >}}
 {{< tab "Installing Training Resources" >}} # Installing Training Resources {{< /tab >}}
-{{< tab "Configure AI Manager" >}} # Configure AI Manager {{< /tab >}}
+{{< tab "Configure AIManager" >}} # Configure AIManager {{< /tab >}}
 {{< tab "Train the Models" >}} # Train the Models {{< /tab >}}
 {{< tab "Test And Demo" >}} # Test And Demo {{< /tab >}}
 {{< /tabs >}}
@@ -124,15 +124,15 @@ Preparing Installation
 Install Catalog
 Install Operator
 Check Installation
-Installing AI Manager
-Install AI Manager
+Installing AIManager
+Install AIManager
 Check Installation
 Installing Training resources
 Training Resources
 Installing Training Resources
 Check Installation
-Configure AI Manager
-Configure AI Manager
+Configure AIManager
+Configure AIManager
 Get the information
 First Login
 Initialize ELK

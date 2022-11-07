@@ -13,7 +13,7 @@ weight: 184
 3. In the `OAuth & Permissions` get the `Bot User OAuth Token` (not the User OAuth Token!) and jot it down
 
 
-### In AI Manager:
+### In AIManager:
 
 1. Go to `Data and tool connections`
 5. Under `Slack` select `Add integration`

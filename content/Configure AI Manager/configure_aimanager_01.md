@@ -4,7 +4,7 @@ date: 2022-11-03T10:57:46+01:00
 weight: 52
 ---
 
-# Login to AI Manager
+# Your first Login to AIManager
 
 1. In your OpenShift Console click on the Applications Menu
 
@@ -22,7 +22,7 @@ weight: 52
 
 	![K8s CNI](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
 
-1. Open `AI Manager`
+1. Open `AIManager`
 
 	![K8s CNI](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
 
@@ -34,7 +34,7 @@ weight: 52
 
 	![K8s CNI](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
 
-1. Welcome to  `AI Manager`
+1. Welcome to  `AIManager`
 
 	![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
 

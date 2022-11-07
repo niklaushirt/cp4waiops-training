@@ -1,21 +1,21 @@
 ---
-title: "Install AI Manager"
+title: "Install AIManager"
 date: 2022-11-03T10:57:46+01:00
 weight: 31
 ---
 
-# Creating the AI Manager Instance
+# Creating the AIManager Instance
 
 
 ![K8s CNI](/cp4waiops-training/pics/54_aimanager_story.png)
 
 
-Now it's time to create the AI Manager instance
+Now it's time to create the AIManager instance
 
 
 
 
-1. Run the following command to create an instance of AI Manager.
+1. Run the following command to create an instance of AIManager.
 
    ```yaml
    cat << EOF | oc apply -f -

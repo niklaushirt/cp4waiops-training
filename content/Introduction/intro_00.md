@@ -17,9 +17,9 @@ The idea is to provide you with an optimised way to learn CP4WAIOPS.
 
 You will learn about the following topics:
 
-- Installing `AI Manager` from scratch
-- Integrate AI Manager with `OpenLDAP` for user management
-- Integrate AI Manager with `ELK` for Log Anomalies
+- Installing `AIManager` from scratch
+- Integrate AIManager with `OpenLDAP` for user management
+- Integrate AIManager with `ELK` for Log Anomalies
 - Define and train `AI Models` for
   - Log Anomaly Detectiom
   - Metric Anomaly Detection
@@ -27,9 +27,9 @@ You will learn about the following topics:
   - Similar Incidents
   - Change Risk 
 - Create `Policies` for Story creation and Runbook assignment
-- Integrate AI Manager with `Ansible Tower` and create Runbooks in AI Manager
+- Integrate AIManager with `Ansible Tower` and create Runbooks in AIManager
 - Create a RobotShop Application `Topology`
-- Integrate AI Manager with `Slack`
+- Integrate AIManager with `Slack`
 
 
 ### Those are the Topics that you are going to work on during this Training:
@@ -41,7 +41,7 @@ In this chapter you will provision your `OpenShift Cluster` for the training.
 {{< /tab >}}
 
 {{< tab "Installing the Operator" "..." >}}
-In this chapter you will prepare your Cluster for the installation of AI Manager
+In this chapter you will prepare your Cluster for the installation of AIManager
 
 * Prepare your PC or Mac to run commands against your cluster
 * Create the `Namespace`
@@ -49,12 +49,12 @@ In this chapter you will prepare your Cluster for the installation of AI Manager
 * Install the CP4WAIOPS `Operator`
 {{< /tab >}}
 
-{{< tab "Installing AI Manager" "..." >}}
-IIn this chapter you will install `AI Manager` into your Cluster.
+{{< tab "Installing AIManager" "..." >}}
+IIn this chapter you will install `AIManager` into your Cluster.
 {{< /tab >}}
 
 {{< tab "Installing Training resources" "..." >}}
-In this chapter you will install resources that you will need for the configuration of AI Manager in the next chapter.
+In this chapter you will install resources that you will need for the configuration of AIManager in the next chapter.
 
 Those are assets that typically already exist at a customer:
 
@@ -82,13 +82,13 @@ This will also load `Training Data` for:
 	You can find documentation [here](./INTEGRATION_SNOW.md)
 {{< /tab >}}
 
-{{< tab "Configure AI Manager" "..." >}}
+{{< tab "Configure AIManager" "..." >}}
 In this chapter you will:
 
-- Integrate AI Manager with `OpenLDAP` for user management
-- Integrate AI Manager with `ELK` for Log Anomalies
+- Integrate AIManager with `OpenLDAP` for user management
+- Integrate AIManager with `ELK` for Log Anomalies
 - Create `Policies` for Story creation and Runbook assignment
-- Integrate AI Manager with `Ansible Tower` and create Runbooks in AI Manager
+- Integrate AIManager with `Ansible Tower` and create Runbooks in AIManager
 - Create a RobotShop Application `Topology`
 
 {{< /tab >}}
@@ -110,7 +110,7 @@ In this chapter you will verify that your environment if working properly by sim
 {{< /tab >}}
 
 {{< tab "Configure Slack (optional)" "..." >}}
-In this chapter you will integrate AI Manager with `Slack`
+In this chapter you will integrate AIManager with `Slack`
 {{< /tab >}}
 
 

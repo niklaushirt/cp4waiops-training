@@ -8,7 +8,7 @@ weight: 20
 
 ![K8s CNI](/cp4waiops-training/pics/53_operators_installed_small.png)
 
-In this chapter you will prepare your Cluster for the installation of AI Manager
+In this chapter you will prepare your Cluster for the installation of AIManager
 
 * Prepare your PC or Mac to run commands against your cluster
 * Create the basic resources (Namespace)

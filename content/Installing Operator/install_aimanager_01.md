@@ -4,7 +4,7 @@ date: 2022-11-03T10:57:46+01:00
 weight: 22
 ---
 
-# Preparing Installation
+# Preparing the Installation
 
 
 ## Create the namespace (project)
@@ -18,7 +18,7 @@ weight: 22
 
 
 {{< hint type=info title="Info" >}}
-This creates the `Namespace` in which you will install AI Manager
+This creates the `Namespace` in which you will install AIManager
 {{< /hint >}}
 
 

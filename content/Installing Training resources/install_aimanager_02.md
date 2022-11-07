@@ -4,7 +4,7 @@ date: 2022-11-03T10:57:46+01:00
 weight: 43
 ---
 
-# Check  Training Resources are ready
+# Check if all Training Resources have been installed and are are ready
 
 
 {{< hint type=warning  title="Warning" >}}
@@ -43,3 +43,9 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 *****************************************************************************************************************************
                                                 
 ```
+
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on creating Training Resources**\
+Please continue to the next chapter to learn how to Configure AIManager.
+{{< /hint >}}

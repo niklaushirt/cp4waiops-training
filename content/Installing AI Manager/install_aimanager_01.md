@@ -4,7 +4,7 @@ date: 2022-11-03T10:57:46+01:00
 weight: 32
 ---
 
-# Check  AI Manager is ready
+# Check if the AIManager Installation is ready
 
 
 {{< hint type=warning  title="Warning" >}}
@@ -47,3 +47,9 @@ This will list the Pods that are not Ready yet.
 This allows you to follow along the progress of the installation.
 
 🚀 **When done** you should have 126 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`
+
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Installing AIManager**\
+Please continue to the next chapter to learn how to install the Training Resources.
+{{< /hint >}}

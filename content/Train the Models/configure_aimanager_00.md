@@ -7,7 +7,7 @@ weight: 61
 # Define Log Anomalies Training
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`AI Model Management`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`AI Model Management`
 1. Under `Log anomaly detection - natural language`, click on `Set up training`
 1. Click `Next`
 1. Under `Select data` check `Custom`

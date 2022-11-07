@@ -9,7 +9,7 @@ weight: 57
 # Enable Story creation Policy
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`Automations`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`Automations`
 1. Select tab `Policies`
 1. Click on the `Tag` dropdown
 1. Select `Stories` and `Runbooks`

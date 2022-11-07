@@ -6,7 +6,7 @@ weight: 58
 
 # Create Kubernetes Observer
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
+1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `Kubernetes`, click on `Add connection`
 1. Click `Connect`
@@ -52,7 +52,7 @@ weight: 58
 # Configure Applications
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`Resource management`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`Resource management`
 1. Select tab `Applications`
 1. Click `Define Application`
 1. Select the two Resource Group

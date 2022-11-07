@@ -6,10 +6,10 @@ weight: 56
 
 # Configure Runbooks
 
-# Create Ansible Tower Connection
+## Create Ansible Tower Connection
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
+1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `Ansible Automation Controller`, click on `Add connection`
 1. Click `Connect`
@@ -40,16 +40,16 @@ weight: 56
 
 
 
-# Check integration
+## Check integration
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`Automations`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`Automations`
 1. Select tab `Actions`
 1. Verify that the Ansible Playbooks have been imported
 
 	![K8s CNI](/cp4waiops-training/pics/30_runbook.png)
 
-# Create Runbooks
+## Create Runbooks
 
 1. Select tab `Runbooks`
 1. Click `Create Runbook`

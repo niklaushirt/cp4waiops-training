@@ -7,7 +7,7 @@ weight: 64
 # Define Change Risk Training
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`AI Model Management`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`AI Model Management`
 1. Under `Change Risk`, click on `Set up training`
 1. Click `Next`
 1. Click `Next`

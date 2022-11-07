@@ -23,9 +23,9 @@ The idea is to provide you with an optimised way to learn CP4WAIOPS.
 
 You will learn about the following topics:
 
-- Installing `AI Manager` from scratch
-- Integrate AI Manager with `OpenLDAP` for user management
-- Integrate AI Manager with `ELK` for Log Anomalies
+- Installing `AIManager` from scratch
+- Integrate AIManager with `OpenLDAP` for user management
+- Integrate AIManager with `ELK` for Log Anomalies
 - Define and train `AI Models` for
   - Log Anomaly Detectiom
   - Metric Anomaly Detection
@@ -33,9 +33,9 @@ You will learn about the following topics:
   - Similar Incidents
   - Change Risk 
 - Create `Policies` for Story creation and Runbook assignment
-- Integrate AI Manager with `Ansible Tower` and create Runbooks in AI Manager
+- Integrate AIManager with `Ansible Tower` and create Runbooks in AIManager
 - Create a RobotShop Application `Topology`
-- Integrate AI Manager with `Slack`
+- Integrate AIManager with `Slack`
 
 
 

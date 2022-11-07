@@ -21,4 +21,9 @@ If you think that you hit a problem:
 ❗ Be patient and make sure you have the correct size of cluster provisioned!
 {{< /hint >}}
 
-### 
+
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Prerequisites**\
+Please continue to the next chapter to learn how to iinstall the Operator.
+{{< /hint >}}

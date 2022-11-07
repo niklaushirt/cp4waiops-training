@@ -4,10 +4,10 @@ date: 2022-11-03T10:57:46+01:00
 weight: 55
 ---
 
-# Configure ELK
+# Configure ELK Integration
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
+1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `ELK`, click on `Add connection`
 1. Click `Connect`

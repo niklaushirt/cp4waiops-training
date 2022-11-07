@@ -7,7 +7,7 @@ weight: 65
 # Define Temporal Grouping Training
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`AI Model Management`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`AI Model Management`
 1. Under `Temporal Grouping`, click on `Set up training`
 1. Click `Next`
 1. Click `Next`

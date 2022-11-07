@@ -6,6 +6,13 @@ weight: 59
 
 # Create valid Ingress Certificates
 
+
+{{< hint type=info title="Info" >}}
+This creates valid certificates for the OpenShift Ingress, so that you can integrate with Slack.
+{{< /hint >}}
+
+
+
 ## Patch NetworkPolicy
 
 1. Run the following command to patch the NetworkPolicy
@@ -119,4 +126,10 @@ Wait until you get two pods with `1/1` status
 ```yaml
 ibm-nginx-xxxxx-xxx                                       1/1     Running     0               4h9m
 ibm-nginx-xxxxx-xxx                                       1/1     Running     0               4h9m
+```
 
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Configuring AIManager**\
+Please continue to the next chapter to leanr how to train the AI Models.
+{{< /hint >}}

@@ -4,7 +4,7 @@ date: 2022-11-03T10:57:46+01:00
 weight: 21
 ---
 
-# Preparing to run commands
+# Preparing to run commands in your Terminal
 
 
 The official documentation can be found [here](https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli).

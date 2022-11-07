@@ -6,10 +6,10 @@ weight: 54
 
 # Configure LDAP integration
 
-# Create LDAP provider
+## Create LDAP provider
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Access Control`
+1. In the `AIManager` "Hamburger" Menu select `Access Control`
 
 	![K8s CNI](/cp4waiops-training/pics/20_config.png)
 
@@ -69,9 +69,9 @@ weight: 54
 
 
 
-# Create User
+## Create User
 
-1. Go back to `AI Manager`, click on the "Hamburger" Menu and select `Access Control`
+1. Go back to `AIManager`, click on the "Hamburger" Menu and select `Access Control`
 
 	![K8s CNI](/cp4waiops-training/pics/20_config.png)
 
@@ -94,9 +94,9 @@ weight: 54
 1. Click `Add` 
 
 
-# Login as Demo
+## Login as Demo
 
-1. In `AI Manager`, click on the round image in the top right and select `Log Out`
+1. In `AIManager`, click on the round image in the top right and select `Log Out`
 
 	![K8s CNI](/cp4waiops-training/pics/24_config.png)
 
@@ -106,4 +106,4 @@ weight: 54
 
 1. Enter credentials `demo` and `P4ssw0rd!` (this information is stored in the LDAP server)
 
-1. Welcome back in AI Manager as user Demo
+1. Welcome back in AIManager as user Demo

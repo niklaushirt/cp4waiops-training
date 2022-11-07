@@ -7,7 +7,7 @@ weight: 102
 # Examine the Incident
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`Stories and Alerts`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`Stories and Alerts`
 
 1. Click on `Alerts`
 
@@ -54,4 +54,7 @@ weight: 102
 * Run the Runbook
 * See the Similar Incidents
 
-> The links to the similar incidents are pre-canned, static Webpages, as we don't have a live ServiceNow instance
+{{< hint type=important title="Important" >}}
+The links to the similar incidents are pre-canned, static Webpages, as we don't have a live ServiceNow instance
+{{< /hint >}}
+

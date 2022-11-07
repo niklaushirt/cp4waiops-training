@@ -9,7 +9,7 @@ weight: 185
 
 # Create the Integration URL
 
-### In AI Manager:
+### In AIManager:
 
 1. Go to `Data and tool connections`
 2. Under `Slack` click on `1 integration`

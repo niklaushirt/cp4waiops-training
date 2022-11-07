@@ -54,8 +54,8 @@ The idea is to provide an optimised way for you to learn CP4WAIOPS.
 
 In the end you will have a demo environment containing the following components:
 
- - **AI Manager**
-- **OpenLDAP** registered with AI Manager
+ - **AIManager**
+- **OpenLDAP** registered with AIManager
 - **AWX** (Open Source Ansible Tower) with Playbooks and CP4WAIOPS Runbooks
 - **AI Models** for
   - Log Anomaly Detectiom
@@ -80,11 +80,11 @@ The environement (Kubernetes, Applications, ...) create logs that are being fed 
 
 ![demo](/cp4waiops-training/pics/waiops_arch_overview.jpg)
 
-1. External Systems generate Alerts and send them into the AI Manager for Event Grouping.
-1. At the same time AI Manager ingests the raw logs coming from the Log Management Tool (ELK) and looks for anomalies in the stream based on the trained model.
+1. External Systems generate Alerts and send them into the AIManager for Event Grouping.
+1. At the same time AIManager ingests the raw logs coming from the Log Management Tool (ELK) and looks for anomalies in the stream based on the trained model.
 2. It also ingests Metric Data and looks for anomalies
 1. If it finds an anomaly (logs and/or metrics) it forwards it to the Event Grouping as well.
-1. Out of this, AI Manager creates a Story that is being enriched with Topology (Localization and Blast Radius) and with Similar Incidents that might help correct the problem.
+1. Out of this, AIManager creates a Story that is being enriched with Topology (Localization and Blast Radius) and with Similar Incidents that might help correct the problem.
 1. The Story is then sent to Slack.
 1. A Runbook is available to correct the problem but not launched automatically.
 
@@ -101,7 +101,7 @@ For the this specific Demo environment:
 * ELK is installed for you to kearn how to integrate it
 * For Log Anomaly simulation we'll beusing pre-canned logs for the anomaly detection (inception)
 * For Metrics, we'll be using pre-canned metric data for training and for the anomaly detection (inception)
-* The Events will be created from pre-canned content that is injected into AI Manager
+* The Events will be created from pre-canned content that is injected into AIManager
 * There are also pre-canned ServiceNow Incidents as we don’t do the live integration with SNOW for this training
 * The Webpages that are reachable from the Events are static and hosted on my GitHub
 * The same goes for ServiceNow Incident pages if you don’t integrate with live SNOW
@@ -169,7 +169,7 @@ If you think that you hit a problem:
 
 
 ---------------------------------------------------------------
-# 3 Installing AI Manager
+# 3 Installing AIManager
 ---------------------------------------------------------------
 
 The official documentation can be found [here](https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli).
@@ -317,14 +317,14 @@ Verify that the Operator is running.
 	
 	```bash
 	NAME                                     DISPLAY                                            VERSION   REPLACES                                 PHASE
-	aimanager-operator.v3.5.1                IBM Watson AIOps AI Manager                        3.5.1                                              Succeeded
+	aimanager-operator.v3.5.1                IBM Watson AIOps AIManager                        3.5.1                                              Succeeded
 	aiopsedge-operator.v3.5.1                IBM Watson AIOps Edge                              3.5.1                                              Succeeded
 	asm-operator.v3.5.1                      IBM Netcool Agile Service Manager                  3.5.1                                              Succeeded
 	elasticsearch-operator.5.5.3             OpenShift Elasticsearch Operator                   5.5.3                                              Succeeded
 	ibm-aiops-ir-ai.v3.5.1                   IBM Watson AIOps Issue Resolution AI & Analytics   3.5.1                                              Succeeded
 	ibm-aiops-ir-core.v3.5.1                 IBM Watson AIOps Issue Resolution Core             3.5.1                                              Succeeded
 	ibm-aiops-ir-lifecycle.v3.5.1            IBM Cloud Pak for Watson AIOps Lifecycle           3.5.1                                              Succeeded
-	ibm-aiops-orchestrator.v3.5.1            IBM Cloud Pak for Watson AIOps AI Manager          3.5.1                                              Succeeded
+	ibm-aiops-orchestrator.v3.5.1            IBM Cloud Pak for Watson AIOps AIManager          3.5.1                                              Succeeded
 	ibm-automation-core.v1.3.11              IBM Automation Foundation Core                     1.3.11    ibm-automation-core.v1.3.10              Succeeded
 	ibm-automation-elastic.v1.3.10           IBM Elastic                                        1.3.10    ibm-automation-elastic.v1.3.9            Succeeded
 	ibm-automation-eventprocessing.v1.3.11   IBM Automation Foundation Event Processing         1.3.11    ibm-automation-eventprocessing.v1.3.10   Succeeded
@@ -344,13 +344,13 @@ Verify that the Operator is running.
 	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 
-## 3.3 Installing AI Manager
+## 3.3 Installing AIManager
 
 
-### 3.3.1 Creating the AI Manager Instance
+### 3.3.1 Creating the AIManager Instance
 
 
-1. Run the following command to create an instance of AI Manager.
+1. Run the following command to create an instance of AIManager.
 
    ```yaml
    cat << EOF | oc apply -f -
@@ -385,7 +385,7 @@ Wait **up to 45 minutes** for the installation to complete.
 > This works only on IBM ROKS. 
 > If you want to install on another platform you will have to adapt storageClass and storageClassLargeBlock to your available storage classes.
 
-### 3.2.5 Check AI Manager is ready
+### 3.2.5 Check AIManager is ready
 
 ❗ This takes some time depending on what region of ROKS you have chosen.
 Wait **up to 45 minutes** for the installation to complete.
@@ -437,7 +437,7 @@ This allows you to follow along the progress of the installation.
 # 4 Installing Training resources
 ---------------------------------------------------------------
 
-This will install resources that you will need for the configuration of AI Manager in the next chapter.
+This will install resources that you will need for the configuration of AIManager in the next chapter.
 
 Those are assets that typically already exist at a customer.
 
@@ -513,10 +513,10 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 
 ---------------------------------------------------------------
-# 5 Configuring AI Manager
+# 5 Configuring AIManager
 ---------------------------------------------------------------
 
-## 5.1 Login to AI Manager
+## 5.1 Login to AIManager
 
 1. In your OpenShift Console click on the Applications Menu
 
@@ -534,7 +534,7 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 	![K8s CNI](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
 
-1. Open `AI Manager`
+1. Open `AIManager`
 
 	![K8s CNI](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
 
@@ -546,7 +546,7 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 	![K8s CNI](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
 
-1. Welcome to  `AI Manager`
+1. Welcome to  `AIManager`
 
 	![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
 
@@ -624,7 +624,7 @@ You'll need:
 
 You **might** get away with less if you don't install some components (Event Manager, ELK, Turbonomic,...) but no guarantee:
 
-- Typically 4x worker nodes Flavour `b3c.16x64` _**for only AI Manager**_
+- Typically 4x worker nodes Flavour `b3c.16x64` _**for only AIManager**_
 
 
 
@@ -687,7 +687,7 @@ If you think that you hit a problem:
 
 <div style="page-break-after: always;"></div>
 
-## 🐥 1.3 Install AI Manager, Event Manager and Turbonomic with demo content
+## 🐥 1.3 Install AIManager, Event Manager and Turbonomic with demo content
 
 This is probably the one that you want. 
 You get all the CP4WAIOPS components installed and pre-trained in one simple script.
@@ -703,11 +703,11 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 3. Replace `<REGISTRY_TOKEN>` at the end of the file with your pull token from step 1.1.3 (the Entitlement key from https://myibm.ibm.com)
 3. Click `Save`
 
-> - **AI Manager**
+> - **AIManager**
 > 	- IBM Operator
-> 	- AI Manager Instance
-> - **AI Manager Demo Content**
->    - **OpenLDAP** & Register with AI Manager
+> 	- AIManager Instance
+> - **AIManager Demo Content**
+>    - **OpenLDAP** & Register with AIManager
 > 
 >    
 >    - **AWX** (Open Source Ansible Tower) with preloaded Playbooks
@@ -720,7 +720,7 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 >      - Create K8s Observer
 >      - Create ASM merge rules
 >      - Load Overlay Topology
->      - Create AI Manager Application
+>      - Create AIManager Application
 >    - **Misc**
 > 	   - Creates valid certificate for Ingress (Slack) 
 > 	   - External Routes (Flink, Topology, ...)
@@ -733,7 +733,7 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 >   - **Topology**
 >     - Create ASM merge rules
 >     - Load ASM merge Topology
->     - Create AI Manager Application
+>     - Create AIManager Application
 > - **Turbonomic**
 > 
 
@@ -741,7 +741,7 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 
 
 
-## 🐥 1.4 Install AI Manager with demo content
+## 🐥 1.4 Install AIManager with demo content
 
 
 1. In the the OCP Web UI click on the `+` sign in the right upper corner
@@ -754,11 +754,11 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 Installs the following components:
 
 
-> - **AI Manager**
+> - **AIManager**
 > 	- IBM Operator
-> 	- AI Manager Instance
-> - **AI Manager Demo Content**
->    - **OpenLDAP** & Register with AI Manager
+> 	- AIManager Instance
+> - **AIManager Demo Content**
+>    - **OpenLDAP** & Register with AIManager
 > 
 >    
 >    - **AWX** (Open Source Ansible Tower) with preloaded Playbooks
@@ -771,7 +771,7 @@ Installs the following components:
 >      - Create K8s Observer
 >      - Create ASM merge rules
 >      - Load Overlay Topology
->      - Create AI Manager Application
+>      - Create AIManager Application
 >    - **Misc**
 > 	   - Creates valid certificate for Ingress (Slack) 
 > 	   - External Routes (Flink, Topology, ...)
@@ -793,7 +793,7 @@ Installs the following components:
 >   - **Topology**
 >     - Create ASM merge rules
 >     - Load ASM merge Topology
->     - Create AI Manager Application
+>     - Create AIManager Application
 
 <div style="page-break-after: always;"></div>
 
@@ -851,9 +851,9 @@ To access the demo environment:
 
 <div style="page-break-after: always;"></div>
 
-## 2.1.2 Login to AI Manager as demo User
+## 2.1.2 Login to AIManager as demo User
 
-* Click on the blue `AI Manager` button
+* Click on the blue `AIManager` button
 * Login as User `demo` with the Password `P4ssw0rd!`
 
 
@@ -867,11 +867,11 @@ To access the demo environment:
 
 Back on the Demo UI, click on the red `Create Incident Memory Leak` button
 
-This will create alerts and a story in AI Manager.
+This will create alerts and a story in AIManager.
 
 ![demo](/cp4waiops-training/pics/demo01.png)
 
-ℹ️  Give it a minute or two for all events and anomalies to arrive in AI Manager and Slack.
+ℹ️  Give it a minute or two for all events and anomalies to arrive in AIManager and Slack.
 
 ![demo](/cp4waiops-training/pics/demo02.png)
 
@@ -951,7 +951,7 @@ You'll need:
 
 You **might** get away with less if you don't install some components (Event Manager, ELK, Turbonomic,...) but no guarantee:
 
-- Typically 4x worker nodes Flavour `b3c.16x64` _**for only AI Manager**_
+- Typically 4x worker nodes Flavour `b3c.16x64` _**for only AIManager**_
 
 <div style="page-break-after: always;"></div>
 
@@ -1027,7 +1027,7 @@ This allows the CP4WAIOPS images to be pulled from the IBM Container Registry.
 
 <div style="page-break-after: always;"></div>
 
-## 3.3 AI Manager Installation
+## 3.3 AIManager Installation
 
 
 You have different options:
@@ -1043,18 +1043,18 @@ You have different options:
 		./01_easy-install.sh -t <REGISTRY_TOKEN>
 		```
 
-	2. Select option 🐥`10` to install the complete `AI Manager` environment with Demo Content.
+	2. Select option 🐥`10` to install the complete `AIManager` environment with Demo Content.
 
 
 
 
 > This takes about 1.5 to 2 hours.
-> After completion Easy Installer will open the documentation and the AI Manager webpage (on Mac) and you'll have to to perform the last manual steps.
+> After completion Easy Installer will open the documentation and the AIManager webpage (on Mac) and you'll have to to perform the last manual steps.
 
-> You now have a full, basic installtion of AI Manager with:
+> You now have a full, basic installtion of AIManager with:
 > 
->  - AI Manager
->  - Open LDAP & Register with AI Manager
+>  - AIManager
+>  - Open LDAP & Register with AIManager
 >  - RobotShop demo application
 >  - Trained Models based on pre-canned data (Log- and Metric Anomalies, Similar Incidents, Change Risk)
 >  - Topologies for demo scenarios
@@ -1070,7 +1070,7 @@ You have different options:
  <div style="page-break-after: always;"></div>
  
 
-### 3.3.1 AI Manager Configuration 
+### 3.3.1 AIManager Configuration 
 
 
 Those are the manual configurations you'll need to demo the system and that are covered by the flow above.
@@ -1099,7 +1099,7 @@ or
 ```bash
 export WAIOPS_NAMESPACE=$(oc get po -A|grep aiops-orchestrator-controller |awk '{print$1}')
 	
-echo "🌏 AI Manager:           https://$(oc get route -n $WAIOPS_NAMESPACE cpd -o jsonpath={.spec.host})"
+echo "🌏 AIManager:           https://$(oc get route -n $WAIOPS_NAMESPACE cpd -o jsonpath={.spec.host})"
 echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE waiops-demo-ui-python -o jsonpath={.spec.host})"
 
 ```
@@ -1143,7 +1143,7 @@ echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE wai
 	```bash
 	export WAIOPS_NAMESPACE=$(oc get po -A|grep aiops-orchestrator-controller |awk '{print$1}')
 		
-	echo "🌏 AI Manager:           https://$(oc get route -n $WAIOPS_NAMESPACE cpd -o jsonpath={.spec.host})"
+	echo "🌏 AIManager:           https://$(oc get route -n $WAIOPS_NAMESPACE cpd -o jsonpath={.spec.host})"
 	echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE waiops-demo-ui-python -o jsonpath={.spec.host})"
 	
 	```
@@ -1162,19 +1162,19 @@ echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE wai
 
 Click on the red `Create Incident Memory Leak` button
 
-This will create alerts and a story in AI Manager.
+This will create alerts and a story in AIManager.
 
 ![demo](/cp4waiops-training/pics/demo01.png)
 
 <div style="page-break-after: always;"></div>
 
-#### 3.4.1.2 Login to AI Manager as demo User
+#### 3.4.1.2 Login to AIManager as demo User
 
-* Open the AI Manager URL from the above
+* Open the AIManager URL from the above
 * Click on `Enterprise LDAP`
 * Login as `demo` with the password `P4ssw0rd!`
 
-ℹ️  Give it a minute or two for all events and anomalies to arrive in AI Manager and Slack.
+ℹ️  Give it a minute or two for all events and anomalies to arrive in AIManager and Slack.
 
 
 ![demo](/cp4waiops-training/pics/demo02.png)
@@ -1192,7 +1192,7 @@ In the terminal type
 
 This will delete all existing Alerts/Stories and inject pre-canned event, metrics and logs to create a story.
 
-ℹ️  Give it a minute or two for all events and anomalies to arrive in AI Manager and Slack.
+ℹ️  Give it a minute or two for all events and anomalies to arrive in AIManager and Slack.
 ℹ️  You might have to run the script 3-4 times for the log anomalies to start appearing.
 
 
@@ -1250,7 +1250,7 @@ After successful installation, the Playbook creates a file `./LOGINS.txt` in you
 
 <div style="page-break-after: always;"></div>
 
-### 3.5.3 Integration with AI Manager
+### 3.5.3 Integration with AIManager
 
 * To get the connection parameters, run:
 
@@ -1262,7 +1262,7 @@ After successful installation, the Playbook creates a file `./LOGINS.txt` in you
 > 
 > This gives you all the parameters needed for creating the connection.
   
-* In the `AI Manager` "Hamburger" Menu select `Operate`/`Data and tool connections`
+* In the `AIManager` "Hamburger" Menu select `Operate`/`Data and tool connections`
 * Click `Add connection`
 * Under `Netcool`, click on `Add connection`
 * Click `Connect`
@@ -1556,9 +1556,9 @@ In the Slack App:
 
 	![K8s CNI](/cp4waiops-training/pics/doc48.png)
 
-In the AI Manager (CP4WAIOPS) 
+In the AIManager (CP4WAIOPS) 
 
-1. In the `AI Manager` "Hamburger" Menu select `Define`/`Data and tool connections`
+1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
  
 	![K8s CNI](/cp4waiops-training/pics/doc14.png)
@@ -1589,7 +1589,7 @@ In the AI Manager (CP4WAIOPS)
 
 ## 4.5 Create the Integration URL
 
-In the AI Manager (CP4WAIOPS) 
+In the AIManager (CP4WAIOPS) 
 
 1. Go to `Data and tool connections`
 2. Under `Slack` click on `1 integration`

@@ -7,7 +7,7 @@ weight: 63
 # Define Similar Incidents Training
 
 
-1. In the `AI Manager` "Hamburger" Menu select `Operate`/`AI Model Management`
+1. In the `AIManager` "Hamburger" Menu select `Operate`/`AI Model Management`
 1. Under `Similar Incidents`, click on `Set up training`
 1. Click `Next`
 1. Click `Next`
