@@ -19,6 +19,39 @@ The idea is to provide an optimised way for you to learn CP4WAIOPS.
 
 🚀 [Let's Start](/cp4waiops-training/introduction/intro_00/)
 
+{{< hint type=note icon=gdoc_github title="Note: gsf" >}}
+**Markdown content**\
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+ Ornateness bland it ex enc, est yeti am bongo detract re.
+{{< /hint >}}
+
+{{< hint type=tip icon=gdoc_github title="Tip: gsfd" >}}
+**Markdown content**\
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+ Ornateness bland it ex enc, est yeti am bongo detract re.
+{{< /hint >}}
+
+
+{{< hint type=important icon=gdoc_github title="Important: gsfd" >}}
+**Markdown content**\
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+ Ornateness bland it ex enc, est yeti am bongo detract re.
+{{< /hint >}}
+
+
+{{< hint type=caution icon=gdoc_github title="⚠️ Caution: gsfd" >}}
+**Markdown content**\
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+ Ornateness bland it ex enc, est yeti am bongo detract re.
+{{< /hint >}}
+
+
+{{< hint type=warning icon=gdoc_github title="Warning: gsfd" >}}
+**Markdown content**\
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+ Ornateness bland it ex enc, est yeti am bongo detract re.
+{{< /hint >}}
+
 
 
 {{< expand "Introduction" "..." >}}
