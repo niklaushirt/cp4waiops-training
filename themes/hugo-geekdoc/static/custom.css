@@ -1,6 +1,33 @@
 /* You can add custom styles here. */
 
 
+@media(prefers-color-scheme: dark) {
+    :root {
+        --header-background: rgb(65, 134, 201);
+        --header-font-color: rgb(255, 255, 255);
+        --body-background: rgb(12, 16, 24);
+        --body-font-color: #ced3d8;
+        --mark-color: rgb(255, 171, 0);
+        --button-background: #498bcb;
+        --button-border-color: rgb(65, 134, 201);
+        --link-color: rgb(110, 168, 212);
+        --link-color-visited: rgb(186, 142, 240);
+        --accent-color: #2b3035;
+        --accent-color-lite: #2f353a;
+        --control-icons: #b2bac1;
+        --footer-background: rgb(47, 51, 62);
+        --footer-font-color: rgb(255, 255, 255);
+        --footer-link-color: rgb(255, 163, 30);
+        --footer-link-color-visited: rgb(255, 163, 30);
+        --code-background: #2f353a;
+        --code-accent-color: #262b2f;
+        --code-accent-color-lite: #2b3035;
+        --code-font-color: rgb(185, 185, 185);
+        --code-copy-background: rgb(52, 58, 64);
+        --code-copy-font-color: #6b7784;
+        --code-copy-border-color: #6b7784;
+        --code-copy-success-color: rgba(0, 200, 83, 0.45)
+    }
 
 .gdoc-expand {
     margin-top: 1rem;
