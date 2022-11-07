@@ -22,7 +22,11 @@ weight: 182
 
 4. Adapt the Name and Display Name to your likings
 
-	> 💡 Don't bother with the URLs just yet, we will adapt them as needed.
+
+{{< hint type=note title="Tip" >}}
+Don't bother with the URLs just yet, we will adapt them as needed.
+{{< /hint >}}
+
 
 5. Click `Next`
 

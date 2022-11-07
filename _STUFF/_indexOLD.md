@@ -12,7 +12,7 @@ weight: 5
 </div>
 </div>
 {{< /rawhtml >}}
-In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionnalities.
+In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionalities.
 
 The idea is to provide an optimised way for you to learn CP4WAIOPS.
 ## In the end you will have a fully functioning demo environment.
@@ -22,7 +22,7 @@ The idea is to provide an optimised way for you to learn CP4WAIOPS.
 
 
 {{< expand "Introduction" "..." >}}
-In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionnalities.
+In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionalities.
 
 The idea is to provide an optimised way for you to learn CP4WAIOPS.
 ## In the end you will have a fully functioning demo environment.
@@ -32,7 +32,7 @@ The idea is to provide an optimised way for you to learn CP4WAIOPS.
 {{< columns >}} <!-- begin columns block -->
 # Introduction
 
-In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionnalities.
+In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionalities.
 
 The idea is to provide an optimised way for you to learn CP4WAIOPS.
 ## In the end you will have a fully functioning demo environment.
@@ -50,7 +50,7 @@ Dolor sit, sumo unique argument um no ...
 {{< /columns >}}
 
 {{< tabs "uniqueid" >}}
-{{< tab "Introduction" >}} In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionnalities.
+{{< tab "Introduction" >}} In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionalities.
 
 The idea is to provide an optimised way for you to learn CP4WAIOPS.
 ## In the end you will have a fully functioning demo environment.

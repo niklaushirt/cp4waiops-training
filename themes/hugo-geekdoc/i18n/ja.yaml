@@ -35,8 +35,7 @@ posts_count:
 posts_tagged_with: "'{{ . }}'のタグが付いた記事全部"
 
 footer_build_with: >
-  <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> でビルドしています。
-  <svg class="gdoc-icon gdoc_heart"><use xlink:href="#gdoc_heart"></use></svg>
+  Built with ❤️ by Niklaus Hirt in 2022
 footer_legal_notice: 法的な告知事項
 footer_privacy_policy: プライバシーポリシー
 footer_content_license_prefix: >

@@ -12,7 +12,7 @@ weight: 2
 ## Those are the Topics that you are going to work on during this Training
 
 {{< expand "Introduction" "..." >}}
-In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionnalities.
+In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
 
 The idea is to provide you with an optimised way to learn CP4WAIOPS.
 
@@ -114,7 +114,7 @@ In this chapter you will integrate AI Manager with `Slack`
 {{< /expand >}}
 
 {{< expand "Introduction" "..." >}}
-In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionnalities.
+In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionalities.
 The idea is to provide an optimised way for you to learn CP4WAIOPS.
 ## In the end you will have a fully functioning demo environment.
 {{< /expand >}}

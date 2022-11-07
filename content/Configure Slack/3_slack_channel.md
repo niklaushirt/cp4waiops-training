@@ -15,18 +15,25 @@ weight: 183
 	![slack7](/cp4waiops-training/pics/slack/slack003.png)
 
 
-	> 💡 You can name the whatever you want.
+
+{{< hint type=note title="Tip" >}}
+You can name the channel whatever you want.
+{{< /hint >}}
 
 2. Right click on each channel and select `Copy Link`
 
 	This should get you something like this https://xxxx.slack.com/archives/C021QOY16BW
 	The last part of the URL is the channel ID (i.e. C021QOY16BW). 
 	
-	>💡 Jot them down for both channels
 	
+{{< hint type=note title="Tip" >}}
+Write them down for both channels
+{{< /hint >}}
+
 3. Under Apps click Browse Apps
 
 	![slack7](/cp4waiops-training/pics/slack/slack013.png)
+
 
 4. Select the App you just have created
 

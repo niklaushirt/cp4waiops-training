@@ -7,10 +7,12 @@ weight: 32
 # Check  AI Manager is ready
 
 
-> 💡 This takes some time depending on what region of ROKS you have chosen.
-
-> ❗ Wait **up to 45 minutes** for the installation to complete. The next step explains how to follow the installation progress.
-
+{{< hint type=warning  title="Warning" >}}
+**This takes up to 60 minutes**\
+This takes some time depending on what region of ROKS you have chosen.\
+❗ Wait for the installation to complete before continuing. \
+The next step explains how to follow the installation progress.
+{{< /hint >}}
 
 ## Check with the Command Line
 

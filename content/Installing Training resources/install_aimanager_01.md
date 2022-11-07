@@ -6,8 +6,9 @@ weight: 42
 
 # Installing Training resources
 
-> 💡 This creates a `Job` in the `default` Namespace that will create and load all the stuff that you need for the next chapter. 
-
+{{< hint type=tip title="Info" >}}
+This creates a `Job` in the `default` Namespace that will create and load all the stuff that you need for the next chapter. 
+{{< /hint >}}
 
 Run the following code to start the creation of the Training Resources.
 

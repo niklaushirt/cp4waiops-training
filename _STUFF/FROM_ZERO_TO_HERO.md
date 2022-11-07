@@ -48,7 +48,7 @@ So please if you have any feedback contact me
 
 ## 1.1 Training
 
-In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionnalities.
+In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
 
 The idea is to provide an optimised way for you to learn CP4WAIOPS.
 

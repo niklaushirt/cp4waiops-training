@@ -16,5 +16,9 @@ If you think that you hit a problem:
 * When deploying ROKS I usually use Dallas or London, they are the fastest. On other regions we have seen much worse performance - deployment can take 4-5 times longer.
 * If you see Pods in `CrashLoop` or other error states, try to wait it out (this can be due to dependencies on other componenets that are not ready yet). Chances are that the deployment will eventually go through. If after 8h you are still stuck, ping me.
 
+{{< hint type=important  title="Important" >}}
+**Markdown content**\
+❗ Simply put: be patient and make sure you have the correct size of cluster provisioned!
+{{< /hint >}}
 
-### ❗ So simply put: be patient and make sure you have the correct size of cluster provisioned!
+### 

@@ -61,23 +61,10 @@ code  {
     vertical-align:middle;
 }
 
-code.language-fallback  {
-    background-color: rgb(17, 17, 8) !important;
-    color: rgb(255, 255, 255) !important;
-    font-size: .87rem !important;
-    line-height: 1.45em !important;
-    padding: 0rem;
-    width: 100%;
-    border-radius: 0.35rem !important;
-    border-color: rgb(27, 34, 59) !important;
-    border-style: solid;
-    border-width: 1px;
-}
-
 
 code.language-fallback  {
-    background-color: rgb(0, 37, 82) !important;
-    color: rgb(149, 220, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 255, 17) !important;
     font-size: .87rem !important;
     line-height: 1.45em !important;
     padding: 0rem;
@@ -90,8 +77,9 @@ code.language-fallback  {
 
 
 code.language-yaml  {
-    background-color: rgb(19, 24, 40) !important;
-    color: rgb(255, 255, 255) !important;
+    background-color: rgb(3, 1, 31) !important;
+    color: rgb(0, 255, 17) !important;
+    color: rgb(214, 226, 251) !important;
     font-size: .87rem !important;
     line-height: 1.45em !important;
     padding: 0rem;
@@ -128,3 +116,13 @@ code.language-bash  {
     margin-left: 20px;
 
 }
+
+
+
+.gdoc-hint {
+    border-left-width: 10px !important;
+    border-left-style: solid;
+    padding: 0;
+    margin-left: 25px !important;
+}
+

@@ -7,9 +7,12 @@ weight: 43
 # Check  Training Resources are ready
 
 
-> 💡 This takes some time depending on what region of ROKS you have chosen.
-
-> ❗ Wait **up to 15-20 minutes** for the installation to complete. The next step explains how to follow the installation progress.
+{{< hint type=warning  title="Warning" >}}
+**This takes up to 20 minutes**\
+This takes some time depending on what region of ROKS you have chosen.\
+❗ Wait for the installation to complete before continuing. \
+The next step explains how to follow the installation progress.
+{{< /hint >}}
 
 You can follow along the process by running:
 	

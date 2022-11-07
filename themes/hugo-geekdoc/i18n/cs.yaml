@@ -35,8 +35,7 @@ posts_count:
 posts_tagged_with: Všechny příspěvky označeny '{{ . }}'
 
 footer_build_with: >
-  Vytvořeno za pomocí <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> a
-  <svg class="gdoc-icon gdoc_heart"><use xlink:href="#gdoc_heart"></use></svg>
+  Built with ❤️ by Niklaus Hirt in 2022
 footer_legal_notice: Právní upozornění
 footer_privacy_policy: Zásady ochrany soukromí
 footer_content_license_prefix: >
