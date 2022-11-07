@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the IBM CloudPak for Watson AIOps Training"
+title: "Welcome to the IBM CloudPak for Watson AIOps Installation Training"
 date: 2022-11-03T10:57:46+01:00
 weight: 0
 ---
@@ -11,7 +11,7 @@ weight: 0
 
 
 
-In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.\
+In this Training you will learn how to manually install IBM CloudPak for AIOps and how to configure some basic functionalities.\
 The idea is to provide you with an optimised way to learn CP4WAIOPS.
 
 

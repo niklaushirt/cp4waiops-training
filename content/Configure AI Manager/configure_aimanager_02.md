@@ -1,43 +1,42 @@
 ---
-title: "First Login"
+title: "Initialize ELK"
 date: 2022-11-03T10:57:46+01:00
 weight: 52
 ---
 
-# Your first Login to AIManager
+# Initial ELK Setup
+
+
 
 1. In your OpenShift Console click on the Applications Menu
+	
+	![K8s CNI](/cp4waiops-training/pics/14_elk.png)
 
-	![K8s CNI](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
+1. Select **Logging**
 
-
-1. Select **CP4WAIOps Demo UI**
-
-1. Login with token `P4ssw0rd!`
-
-	![K8s CNI](/cp4waiops-training/pics/08_demo_ui_login.png)
-
-
-1. Copy the Admin Password
-
-	![K8s CNI](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
-
-1. Open `AIManager`
-
-	![K8s CNI](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
-
-1. Select `IBM provided credentials`
-
-	![K8s CNI](/cp4waiops-training/pics/11_demo_ui_aimanager_type.png)
-
-1. Login with `admin` user and the password you copied in the step above
-
-	![K8s CNI](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
-
-1. Welcome to  `AIManager`
-
-	![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
+1. Click `Allow selected permissions`
 
 
 
 
+1. Input `app*` for the index pattern
+	
+	![K8s CNI](/cp4waiops-training/pics/15_elk.png)
+	
+1. Click `Next Step`
+
+1. Select `@timestamp` for time filter
+	
+	![K8s CNI](/cp4waiops-training/pics/16_elk.png)
+	
+1. Click `Create Index Pattern`
+
+1. Click on `Discover`
+
+1. ELK is now configured. Verify that you have Logs coming in.
+	
+	![K8s CNI](/cp4waiops-training/pics/17_elk.png)
+	
+	
+
+	
