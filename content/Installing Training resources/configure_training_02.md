@@ -7,7 +7,7 @@ weight: 43
 # Check if all Training Resources have been installed and are are ready
 
 
-{{< hint type=warning  title="Warning" >}}
+{{< hint type=caution  title="Important" >}}
 **This takes up to 20 minutes**\
 This takes some time depending on what region of ROKS you have chosen.\
 ❗ Wait for the installation to complete before continuing. \
@@ -29,7 +29,7 @@ Or through the OpensHift Web Console:
 
 	![K8s CNI](/cp4waiops-training/pics/06_fzth_aimanager_load.png)
 
-🚀 And **when done** you should get the following with `failed=0`.
+✅ And **when done** you should get the following with `failed=0`.
 
 ```yaml
 
