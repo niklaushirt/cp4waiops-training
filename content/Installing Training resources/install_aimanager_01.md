@@ -6,7 +6,7 @@ weight: 42
 
 # Installing Training resources
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates a `Job` in the `default` Namespace that will create and load all the stuff that you need for the next chapter. 
 {{< /hint >}}
 

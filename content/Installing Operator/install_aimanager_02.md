@@ -33,7 +33,7 @@ weight: 23
    ```
 
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates the `CatalogSource` that provides the available IBM Operators (not just CP4WAIOPS). 
 
 You can go to Operators/OperatorHub in your Openshift Web Console to check out the available Operators 

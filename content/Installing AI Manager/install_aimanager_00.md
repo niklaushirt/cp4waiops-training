@@ -43,7 +43,7 @@ Now it's time to create the AI Manager instance
    EOF  
    ```
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates the `Installation` instance that the Operator will pick up and start the installation. 
 {{< /hint >}}
 

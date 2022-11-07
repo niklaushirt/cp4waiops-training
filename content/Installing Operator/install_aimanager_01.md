@@ -17,7 +17,7 @@ weight: 22
     ```
 
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates the `Namespace` in which you will install AI Manager
 {{< /hint >}}
 
@@ -43,7 +43,7 @@ This creates the `Namespace` in which you will install AI Manager
     ```
 
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
 {{< /hint >}}
 
@@ -70,7 +70,7 @@ This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4
 
     Where `<entitlement-key>` is the entitlement key that you copied in the previous step.
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates the `Secret` with your IBM Entitlement that will allow the images to be pulled from the IBM Container Registry
 {{< /hint >}}
 

@@ -26,7 +26,7 @@ weight: 24
 	```
 
 
-{{< hint type=tip title="Info" >}}
+{{< hint type=info title="Info" >}}
 This creates the `Operator` instance that will be looking for an `Installation` definition and start the installation if it exists (you'll create this in one of the next steps). 
 {{< /hint >}}
 
