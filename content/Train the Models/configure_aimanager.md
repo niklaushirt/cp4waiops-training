@@ -8,4 +8,4 @@ weight: 60
 
 
 
-![K8s CNI](/cp4waiops-training/pics/46_training.png)
+![K8s CNI](/cp4waiops-training/pics/46_training_small.png)
