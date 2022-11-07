@@ -6,12 +6,11 @@ weight: 2
 
 # Introduction
 
-![demo](/cp4waiops-training/pics/front.png)
+![demo](/cp4waiops-training/pics/00_aimanager_insights.png)
 
 
-## Those are the Topics that you are going to work on during this Training
 
-{{< expand "Introduction" "..." >}}
+
 In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
 
 The idea is to provide you with an optimised way to learn CP4WAIOPS.
@@ -31,29 +30,30 @@ You will learn about the following topics:
 - Integrate AI Manager with `Ansible Tower` and create Runbooks in AI Manager
 - Create a RobotShop Application `Topology`
 - Integrate AI Manager with `Slack`
-## In the end you will have a fully functioning demo environment.
-{{< /expand >}}
 
 
+### Those are the Topics that you are going to work on during this Training:
 
-{{< expand "Prerequisites" "..." >}}
+{{< tabs >}}
+
+{{< tab "Prerequisites" "..." >}}
 In this chapter you will provision your `OpenShift Cluster` for the training.
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Installing the Operator" "..." >}}
+{{< tab "Installing the Operator" "..." >}}
 In this chapter you will prepare your Cluster for the installation of AI Manager
 
 * Prepare your PC or Mac to run commands against your cluster
 * Create the `Namespace`
 * Create the IBM Operator `Catalog`
 * Install the CP4WAIOPS `Operator`
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Installing AI Manager" "..." >}}
+{{< tab "Installing AI Manager" "..." >}}
 IIn this chapter you will install `AI Manager` into your Cluster.
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Installing Training resources" "..." >}}
+{{< tab "Installing Training resources" "..." >}}
 In this chapter you will install resources that you will need for the configuration of AI Manager in the next chapter.
 
 Those are assets that typically already exist at a customer:
@@ -80,9 +80,9 @@ This will also load `Training Data` for:
 	For this training we won't have a Service Now Instance so we'll train on pre-canned SNOW Data.
 	If you want you can always integrate an existing SNOW instance on top of the provided training data.
 	You can find documentation [here](./INTEGRATION_SNOW.md)
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Configure AI Manager" "..." >}}
+{{< tab "Configure AI Manager" "..." >}}
 In this chapter you will:
 
 - Integrate AI Manager with `OpenLDAP` for user management
@@ -91,9 +91,9 @@ In this chapter you will:
 - Integrate AI Manager with `Ansible Tower` and create Runbooks in AI Manager
 - Create a RobotShop Application `Topology`
 
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Train the Models" "..." >}}
+{{< tab "Train the Models" "..." >}}
 In this chapter you will:
 
 - Define and train `AI Models` for
@@ -103,19 +103,19 @@ In this chapter you will:
   - Similar Incidents
   - Change Risk 
 
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Test And Demo" "..." >}}
+{{< tab "Test And Demo" "..." >}}
 In this chapter you will verify that your environment if working properly by simulating a test incident.
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Configure Slack (optional)" "..." >}}
+{{< tab "Configure Slack (optional)" "..." >}}
 In this chapter you will integrate AI Manager with `Slack`
-{{< /expand >}}
+{{< /tab >}}
 
-{{< expand "Introduction" "..." >}}
-In this Training you will learn how to install IBM CloudPak for Watson AIOps (CP4WAIOPS) and how to configure some basic functionalities.
-The idea is to provide an optimised way for you to learn CP4WAIOPS.
-## In the end you will have a fully functioning demo environment.
-{{< /expand >}}
+
+{{< /tabs >}}
+
+
+
 

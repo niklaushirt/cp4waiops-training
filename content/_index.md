@@ -7,7 +7,7 @@ weight: 0
 
 
 
-![demo](/cp4waiops-training/pics/00_aimanager_insights.png)
+![demo](/cp4waiops-training/pics/front.png)
 
 {{< rawhtml >}}
 <div class="prev-next" style="max-width:500px;">
@@ -40,9 +40,9 @@ You will learn about the following topics:
 
 
 
-
-
-## In the end you will have a fully functioning demo environment.
+{{< hint type=note  title="Note" >}}
+In the end you will have a fully functioning demo environment.
+{{< /hint >}}
 
 
 
