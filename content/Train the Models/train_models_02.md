@@ -4,6 +4,20 @@ date: 2022-11-03T10:57:46+01:00
 weight: 62
 ---
 
+# Define and run Metric Anomaly Training
+
+{{< task title="Define and run Metric Anomaly Training" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=algorithms-metric-anomaly-detection" >}}
+
+
+
+In this section you will set up and run training for this AI algorithm to `detect anomalous behaviour in your metrics` and notify you by generating an alert when they occur.
+
+{{< /task >}}
+
+{{< expand "Solution" "⬇" >}}
+
+
+
 # Define Metric Anomalies Training
 
 
@@ -21,6 +35,7 @@ weight: 62
 1. Status should say `In progress`
 1. And eventually say `Deployed`
 
+{{< /expand >}}
 
 
 

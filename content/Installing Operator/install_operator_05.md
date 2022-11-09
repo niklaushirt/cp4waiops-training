@@ -6,7 +6,17 @@ weight: 25
 
 # Check if the Operator is ready
 
-Verify that the Operator is running.
+
+
+{{< task title="Verify that the Operator is running" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
+
+Check that the Operator is running and that you can continue with the next chapter to install AIManager.
+
+{{< /task >}}
+
+
+{{< expand "Solution" "⬇" >}}
+
 
 * Either run the following:
 	
@@ -33,7 +43,11 @@ ibm-common-service-operator.v3.21.0      IBM Cloud Pak foundational services    
 
 	1. You should get this:
 
-		![K8s CNI](/cp4waiops-training/pics/53_operators_installed.png)
+		![image](/cp4waiops-training/pics/53_operators_installed.png)
+{{< /expand >}}
+
+
+#
 
 
 {{< hint type=tip title="You have successfully finished this Chapter" >}}

@@ -1,8 +1,8 @@
 {{ $id := substr (sha1 .Inner) 0 8 }}
 <div class="gdoc-expand">
   <label class="gdoc-expand__head flex justify-between" for="{{ $id }}-{{ .Ordinal }}">
-    <span>{{ default "Expand" (.Get 0) }}</span>
-    <span>{{ default "↕" (.Get 1) }}</span>
+    <span> <svg class="gdoc-icon gdoc_path"><use xlink:href="#gdoc_path"></use></svg> {{ default "Expand" (.Get 0) }}</span>
+    <span><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_keyboard_arrow_down"></use></svg></span>
   </label>
   <input id="{{ $id }}-{{ .Ordinal }}" type="checkbox" class="gdoc-expand__control hidden" />
   <div class="gdoc-markdown--nested gdoc-expand__content">

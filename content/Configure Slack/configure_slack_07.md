@@ -6,9 +6,13 @@ weight: 186
 
 # Create Slack App Communications
 
+
+{{< step title="Event Subscriptions" >}}
+
+
+
 Return to the browser tab for the Slack app. 
 
-## Event Subscriptions
 
 1. Select `Event Subscriptions`.
 
@@ -34,7 +38,10 @@ Return to the browser tab for the Slack app.
 6. Click `Save Changes` button.
 
 
-## Interactivity & Shortcuts
+{{< /step >}}
+{{< step title="Interactivity & Shortcuts" >}}
+
+
 
 7. Select `Interactivity & Shortcuts`. 
 
@@ -46,7 +53,10 @@ Return to the browser tab for the Slack app.
 
 9. Click `Save Changes` button.
 
-## Slash Commands
+{{< /step >}}
+{{< step title="Slash Commands" >}}
+
+
 
 Now, configure the `welcome` slash command. With this command, you can trigger the welcome message again if you closed it. 
 
@@ -65,7 +75,10 @@ Now, configure the `welcome` slash command. With this command, you can trigger t
 
 3. Click `Save`.
 
-## Reinstall App
+{{< /step >}}
+{{< step title="Reinstall App" >}}
+
+
 
 The Slack app must be reinstalled, as several permissions have changed. 
 
@@ -74,3 +87,4 @@ The Slack app must be reinstalled, as several permissions have changed.
 
 Once the workspace request is approved, the Slack integration is complete. 
 
+{{< /step >}}

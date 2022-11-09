@@ -13,7 +13,9 @@ After you configure ServiceNow and IBM Cloud Pak for Watson AIOps, the updates t
 
 Updates to event data and the state of your story in IBM Cloud Pak for Watson AIOps appear in ServiceNow. Any updates that you make in Slack or Microsoft Teams to the description, short description, or severity after you create the story do not overwrite the existing values in ServiceNow. Also, edits that are made in ServiceNow (changing descriptions or incident names, for example) are not reflected in Slack, Microsoft Teams, or IBM Cloud Pak for Watson AIOps.
 
-## Update existing Users in ServiceNow
+
+{{< step title="Update existing Users in ServiceNow" >}}
+
 
 Before you create your integration, you must assign IBM Cloud Pak for Watson AIOps roles to your users in ServiceNow.
 
@@ -33,7 +35,9 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
       **Important:** Ensure that the time zone of your Events user (the user value that is used to create your ServiceNow integration) matches your system time zone in ServiceNow. If the two values are not synchronized, the flow of your change request data from ServiceNow to IBM Cloud Pak for Watson AIOps is disrupted.
       
       
-#### User 1 (abraham.lincoln)
+{{< /step >}}
+{{< step title="User 1 - abraham.lincoln" >}}
+
 
 1. Select user `abraham.lincoln`
 
@@ -59,9 +63,10 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 
 
 
+{{< /step >}}
+{{< step title="User 2 - abel.tuter" >}}
 
 
-#### User 2 (abel.tuter)
 
 1. Select user `abel.tuter`
 
@@ -94,8 +99,9 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 
 
 
+{{< /step >}}
+{{< step title="ServiceNow Service Management configuration" >}}
 
-## ServiceNow Service Management configuration
 
 1. Log in to your ServiceNow developer instance.
 2. In the filter field, search for Watson AIOps as shown in the following picture:
@@ -119,8 +125,9 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 
 5. Click on the Save button in the top right. 
 
+{{< /step >}}
+{{< step title="Similar incident search configuration" >}}
 
-## Similar incident search configuration
 
 While not necessary, configuring similar incident search in ServiceNow facilitates problem resolution from within the ServiceNow interface. Configuring similar incident search enables Watson AIOps Similar Incidents in Agent Assist. You can use Agent Assist to look for other tickets that share details with the ticket that you're reviewing. Similar incident search uses the Similar incident model that you trained in IBM Cloud Pak for Watson AIOps.
 
@@ -148,3 +155,6 @@ While not necessary, configuring similar incident search in ServiceNow facilitat
 7. Save your Incident Deflection record.
 
 Watson AIOps Similar Incidents now appears as an option to search by in the Agent Assist.
+
+{{< /step >}}
+

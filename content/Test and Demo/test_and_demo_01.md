@@ -6,25 +6,27 @@ weight: 101
 
 # Create a Test Incident
 
+{{< step title="Create a Test Incident" >}}
+
 1. In your OpenShift Console click on the Applications Menu
 
-	![K8s CNI](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
+	![image](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
 
 
 1. Select **CP4WAIOps Demo UI**
 
 1. Login with token `P4ssw0rd!`
 
-	![K8s CNI](/cp4waiops-training/pics/08_demo_ui_login.png)
+	![image](/cp4waiops-training/pics/08_demo_ui_login.png)
 
 1. Click on `Create Incident Memory Leak`
 
-	![K8s CNI](/cp4waiops-training/pics/45_demo_ui_incident.png)
+	![image](/cp4waiops-training/pics/45_demo_ui_incident.png)
 
 1. Wait for pop-up to go away and the Demo UI going back to the homepage
 
-	![K8s CNI](/cp4waiops-training/pics/47_check.png)
+	![image](/cp4waiops-training/pics/47_check.png)
 
-
+{{< /step >}}
 
 

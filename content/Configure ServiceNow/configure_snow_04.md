@@ -10,7 +10,8 @@ weight: 195
 
 Now that we have created users and configured ServiceNow, we need to configure Cloud Pak for Watson AIOps to be able to integrate with ServiceNow.
 
-## Creating ServiceNow integrations 
+
+{{< step title="Creating ServiceNow integrations " >}}
 
 To create a ServiceNow integration, complete the following steps:
 
@@ -59,3 +60,6 @@ To create a ServiceNow integration, complete the following steps:
     * Interval: The duration of time between runs based on the Time interval (period). For example, if you wanted the job to run every 2 hours, in Time interval (period), select hours, and in Interval, enter 2. Enter 0 to run the observer job one time (and manually through the interface otherwise).
 
 9. Click Integrate.
+
+{{< /step >}}
+

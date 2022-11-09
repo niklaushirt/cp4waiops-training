@@ -6,8 +6,10 @@ weight: 185
 
 # Get the Integration URL (Public Cloud (ROKS, ...))
 
+{{< step title="Create the Integration URL" >}}
 
-# Create the Integration URL
+
+
 
 ### In AIManager:
 
@@ -19,7 +21,7 @@ weight: 185
 
 This is the URL you will be using for step 6.
 
-
+{{< /step >}}
 
 
 

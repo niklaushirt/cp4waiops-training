@@ -6,7 +6,20 @@ weight: 56
 
 # Configure Runbooks
 
-## Create Ansible Tower Connection
+In this section you will create the connection to Ansible Tower and create your first Runbook.
+
+###
+
+{{< task title="Create the Ansible Tower Connection" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=connections-ansible" >}}
+Create the connection to Ansible Tower
+{{< /task >}}
+
+
+
+{{< expand "Solution" "⬇" >}}
+
+
+
 
 
 1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
@@ -14,24 +27,24 @@ weight: 56
 1. Under `Ansible Automation Controller`, click on `Add connection`
 1. Click `Connect`
 
-1. 🔎 Get the data from your configuration info - section `2.3 Configure Runbooks - Ansible Automation Controller` 
+
+1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  `2.3 Configure Runbooks - Ansible Automation Controller`
 
     ```bash
-    ./tools/11_fzth/get_configuration_info.sh
+    ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
     ```
-
 
 1. Fill out the fields:
 
-	![K8s CNI](/cp4waiops-training/pics/29_runbook.png)
+	![image](/cp4waiops-training/pics/29_runbook.png)
 
 
 	```yaml
-	URL for REST API:      from script
+	URL for REST API:      from MY_CONFIGURATION.txt
 	Authentication type:   User ID/Password
 	User:                  admin
-	Password:              from script
-	```
+	Password:              from MY_CONFIGURATION.txt
+	
 
 1. Click `Done`
 
@@ -47,9 +60,26 @@ weight: 56
 1. Select tab `Actions`
 1. Verify that the Ansible Playbooks have been imported
 
-	![K8s CNI](/cp4waiops-training/pics/30_runbook.png)
+	![image](/cp4waiops-training/pics/30_runbook.png)
 
-## Create Runbooks
+
+
+{{< /expand >}}
+
+#
+
+
+{{< task title="Create a Runbook" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=library-create-runbook" >}}
+Create a Runbook based on the `CP4WAIOPS Mitigate Robotshop Ratings Outage` Ansible Playbook
+{{< /task >}}
+
+
+
+
+{{< expand "Solution" "⬇" >}}
+
+
+
 
 1. Select tab `Runbooks`
 1. Click `Create Runbook`
@@ -60,17 +90,18 @@ weight: 56
 1. Click `Mapping` / `Select`
 1. Select `New runbook parameter`
 
-	![K8s CNI](/cp4waiops-training/pics/31_runbook.png)
+	![image](/cp4waiops-training/pics/31_runbook.png)
 
 1. Select tab 
 
-1. 🔎 Get the data from your configuration info - section `2.4 Configure Runbooks - Runbook Parameters` 
+
+1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  `2.4 Configure Runbooks - Runbook Parameters` 
 
     ```bash
-    ./tools/11_fzth/get_configuration_info.sh
+    ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
     ```
 
-	![K8s CNI](/cp4waiops-training/pics/32_runbook.png)
+	![image](/cp4waiops-training/pics/32_runbook.png)
 
 1. Replace `PROVIDE: my_k8s_apiurl and my_k8s_apikey` in field `Default value (optional)` with the value from the script
 
@@ -78,3 +109,4 @@ weight: 56
 1. Click `Save` again
 1. Click `Actions` and `Publish`
 
+{{< /expand >}}

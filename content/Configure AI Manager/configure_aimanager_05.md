@@ -7,6 +7,55 @@ weight: 55
 # Configure ELK Integration
 
 
+In this section you will create the integration with ELK.
+
+###
+
+
+{{< task title="Create the ELK Integration" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=connections-elk" >}}
+
+
+
+Create the ELK Integration with the following parameters:
+
+
+```yaml
+ELK service URL: 		from MY_CONFIGURATION.txt
+Kibana URL: 			from MY_CONFIGURATION.txt
+Authentication type: 		Token
+Token: 				from MY_CONFIGURATION.txt
+
+Filter:
+{
+ "query": {
+  "bool": {
+   "must": {
+    "term" : { "kubernetes.namespace_name" : "robot-shop" }
+   }
+  }
+ }
+}
+
+
+TimeZone:			set to your Timezone	
+Kibana port: 			443
+
+Mapping:
+{ 
+"codec": "elk",
+"message_field": "message",
+"log_entity_types": "kubernetes.container_image_id, kubernetes.host, kubernetes.pod_name, kubernetes.namespace_name",
+"instance_id_field": "kubernetes.container_name",
+"rolling_time": 10,
+"timestamp_field": "@timestamp"
+}
+```
+{{< /task >}}
+
+
+
+{{< expand "Solution" "⬇" >}}
+
 1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
 1. Under `ELK`, click on `Add connection`
@@ -14,40 +63,42 @@ weight: 55
 1. Name it `ELK`
 
 
-1. 🔎 Get the data from your configuration info - section `2.2 Configure ELK` 
+1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  `2.2 Configure ELK` 
 
     ```bash
-    ./tools/11_fzth/get_configuration_info.sh
+    ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
     ```
 
 
 1. Fill out the fields on the first page:
 
-	![K8s CNI](/cp4waiops-training/pics/25_elk.png)
+	![image](/cp4waiops-training/pics/25_elk.png)
 
 
 	```yaml
-	ELK service URL: 		from script
-	Kibana URL: 			from script
+	ELK service URL: 		from MY_CONFIGURATION.txt
+	Kibana URL: 			from MY_CONFIGURATION.txt
 	Authentication type: 		Token
-	Token: 				from script
+	Token: 				from MY_CONFIGURATION.txt
 
-	Mapping:
-		{ 
-		"codec": "elk",
-		"message_field": "message",
-		"log_entity_types": "kubernete	s.container_image_id, kubernetes.host, kubernetes.pod_name, kubernetes.namespace_name",
-		"instance_id_field": "kubernetes.container_name",
-		"rolling_time": 10,
-		"timestamp_field": "@timestamp"
-		}
+	Filter:
+      {
+        "query": {
+          "bool": {
+               "must": {
+                  "term" : { "kubernetes.namespace_name" : "robot-shop" }
+               }
+              }
+          }
+      }
+
 	TimeZone:				set to your Timezone	
 	Kibana port: 			443
 	```
 
 1. Click `Test connection`. You should get `Connection successful!`
 
-	![K8s CNI](/cp4waiops-training/pics/26_elk.png)
+	![image](/cp4waiops-training/pics/26_elk.png)
 
 1. Click `Next`
 
@@ -70,7 +121,7 @@ weight: 55
 1. Click `Next`
 
 
-	![K8s CNI](/cp4waiops-training/pics/27_elk.png)
+	![image](/cp4waiops-training/pics/27_elk.png)
 
 
 1. Turn On `Data collection`
@@ -83,4 +134,7 @@ weight: 55
 
 1. Make sure that the Data Collection and Connection Status turn green after a few minutes
 
-	![K8s CNI](/cp4waiops-training/pics/28_elk.png)
+	![image](/cp4waiops-training/pics/28_elk.png)
+
+{{< /expand >}}
+

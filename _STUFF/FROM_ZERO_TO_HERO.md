@@ -1,7 +1,7 @@
 <center> <h2>CP4WatsonAIOps CP4WAIOPS</h2> </center>
 <center> <h1>From Zero To Hero</h1> </center>
 
-![K8s CNI](/cp4waiops-training/pics/front.png)
+![image](/cp4waiops-training/pics/front.png)
 
 
 <center> <h3>Installation Training</h3> </center>
@@ -124,13 +124,13 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 
 1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-	![K8s CNI](/cp4waiops-training/pics/roks01.png)
+	![image](/cp4waiops-training/pics/roks01.png)
 
 <div style="page-break-after: always;"></div>
 
 1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-	![K8s CNI](/cp4waiops-training/pics/roks03.png)
+	![image](/cp4waiops-training/pics/roks03.png)
 	
 1. Fill-in the remaining fields
 
@@ -139,7 +139,7 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 	3. Flavour: **b3c.16x64** ❗
 	4. OpenShift Version: **4.10**
 
-	![K8s CNI](/cp4waiops-training/pics/roks02.png)
+	![image](/cp4waiops-training/pics/roks02.png)
 
 1. Click `Submit`
 	
@@ -183,11 +183,11 @@ Befor continuing, you have to connect to your OpenShift Cluster.
 1. Open your Openshift Web Console
 1. Select `Copy Login Command`
 
-	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
+	![image](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 1. Copy the `oc login ..` string
 
-	![K8s CNI](/cp4waiops-training/pics/02_fzth_ocp_connect.png)
+	![image](/cp4waiops-training/pics/02_fzth_ocp_connect.png)
 
 1. Open your terminal
 1. Paste the `oc login ..` command from above
@@ -341,7 +341,7 @@ Verify that the Operator is running.
 
 * Or check your OpenShift Web Console
 
-	![K8s CNI](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
+	![image](/cp4waiops-training/pics/01_fzth_ocp_connect.png)
 
 
 ## 3.3 Installing AIManager
@@ -412,18 +412,18 @@ This will list the Pods that are not Ready yet.
 
 1. Select `Pods` and your `cp4waiops` Project
 	
-	![K8s CNI](/cp4waiops-training/pics/03_fzth_aimanager_check.png)
+	![image](/cp4waiops-training/pics/03_fzth_aimanager_check.png)
 
 1. Filter for the relevant statuses
 	
-	![K8s CNI](/cp4waiops-training/pics/04_fzth_aimanager_check.png)
+	![image](/cp4waiops-training/pics/04_fzth_aimanager_check.png)
 	
 	The drop-down also shows you the number of Pods for the different statuses.
 	
 
 1. Sort by `Ready` column
 	
-	![K8s CNI](/cp4waiops-training/pics/05_fzth_aimanager_check.png)
+	![image](/cp4waiops-training/pics/05_fzth_aimanager_check.png)
 
 This allows you to follow along the progress of the installation.
 
@@ -493,7 +493,7 @@ Or through the OpensHift Web Console:
 * Click on the `waiops-easy-install-aimanager-practicum-...` Pod
 * Select `Logs`
 
-	![K8s CNI](/cp4waiops-training/pics/06_fzth_aimanager_load.png)
+	![image](/cp4waiops-training/pics/06_fzth_aimanager_load.png)
 
 🚀 And **when done** you should get the following with `failed=0`.
 
@@ -520,35 +520,35 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 1. In your OpenShift Console click on the Applications Menu
 
-	![K8s CNI](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
+	![image](/cp4waiops-training/pics/07_fzth_ocp_menu.png)
 
 
 1. Select **CP4WAIOps Demo UI**
 
 1. Login with token `P4ssw0rd!`
 
-	![K8s CNI](/cp4waiops-training/pics/08_demo_ui_login.png)
+	![image](/cp4waiops-training/pics/08_demo_ui_login.png)
 
 
 1. Copy the Admin Password
 
-	![K8s CNI](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
+	![image](/cp4waiops-training/pics/09_demo_ui_aimanager_pwd.png)
 
 1. Open `AIManager`
 
-	![K8s CNI](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
+	![image](/cp4waiops-training/pics/10_demo_ui_aimanager_open.png)
 
 1. Select `IBM provided credentials`
 
-	![K8s CNI](/cp4waiops-training/pics/11_demo_ui_aimanager_type.png)
+	![image](/cp4waiops-training/pics/11_demo_ui_aimanager_type.png)
 
 1. Login with `admin` user and the password you copied in the step above
 
-	![K8s CNI](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
+	![image](/cp4waiops-training/pics/12_demo_ui_aimanager_login.png)
 
 1. Welcome to  `AIManager`
 
-	![K8s CNI](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
+	![image](/cp4waiops-training/pics/13_demo_ui_aimanager_welcome.png)
 
 
 
@@ -584,7 +584,7 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 
 Here is a quick video that walks you through the installation process
-![K8s CNI](/cp4waiops-training/pics/JOB_INSTALL.gif)
+![image](/cp4waiops-training/pics/JOB_INSTALL.gif)
 
 <div style="page-break-after: always;"></div>
 
@@ -634,13 +634,13 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 
 1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-	![K8s CNI](/cp4waiops-training/pics/roks01.png)
+	![image](/cp4waiops-training/pics/roks01.png)
 
 <div style="page-break-after: always;"></div>
 
 1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-	![K8s CNI](/cp4waiops-training/pics/roks03.png)
+	![image](/cp4waiops-training/pics/roks03.png)
 	
 1. Fill-in the remaining fields
 
@@ -649,7 +649,7 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 	3. Flavour: **b3c.16x64** ❗
 	4. OpenShift Version: **4.10**
 
-	![K8s CNI](/cp4waiops-training/pics/roks02.png)
+	![image](/cp4waiops-training/pics/roks02.png)
 
 1. Click `Submit`
 	
@@ -696,7 +696,7 @@ On top of that you get a Turbonomic instance to play around a bit (you'll need a
 
 
 
-![K8s CNI](/cp4waiops-training/pics/install01.png)
+![image](/cp4waiops-training/pics/install01.png)
 
 1. In the the OCP Web UI click on the `+` sign in the right upper corner
 1. Copy and paste the content from [this file](./tools/08_Quick_Install_Jobs/01_INSTALL_ALL.yaml)
@@ -961,11 +961,11 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 
 1. Create a cluster for `Practice/Self Education` if you don't have an Opportunity Number
 
-	![K8s CNI](/cp4waiops-training/pics/roks01.png)
+	![image](/cp4waiops-training/pics/roks01.png)
 
 1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-	![K8s CNI](/cp4waiops-training/pics/roks03.png)
+	![image](/cp4waiops-training/pics/roks03.png)
 	
 1. Fill-in the remaining fields
 
@@ -974,7 +974,7 @@ IBMers can get a temporary one from [Techzone](https://techzone.ibm.com/collecti
 	3. Flavour: b3c.16x64
 	4. OpenShift Version: 4.10
 
-	![K8s CNI](/cp4waiops-training/pics/roks02.png)
+	![image](/cp4waiops-training/pics/roks02.png)
 
 1. Click `Submit`
 
@@ -1118,13 +1118,13 @@ echo "🌏 Demo UI:              https://$(oc get route -n $WAIOPS_NAMESPACE wai
 * Open the URL from the above
 * Click on `IBM provided credentials (admin only)`
 
-	![K8s CNI](/cp4waiops-training/pics/doc53.png)
+	![image](/cp4waiops-training/pics/doc53.png)
 
 
 
 * Login as `admin` with the password from the `LOGINS.txt` file
 
-	![K8s CNI](/cp4waiops-training/pics/doc55.png)
+	![image](/cp4waiops-training/pics/doc55.png)
 
 
 
@@ -1550,33 +1550,33 @@ In the Slack App:
 
 1. In the `Basic Information` menu get the `Signing Secret` (not the Client Secret!) and jot it down
 
-	![K8s CNI](/cp4waiops-training/pics/doc47.png)
+	![image](/cp4waiops-training/pics/doc47.png)
 	
 3. In the `OAuth & Permissions` get the `Bot User OAuth Token` (not the User OAuth Token!) and jot it down
 
-	![K8s CNI](/cp4waiops-training/pics/doc48.png)
+	![image](/cp4waiops-training/pics/doc48.png)
 
 In the AIManager (CP4WAIOPS) 
 
 1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`
  
-	![K8s CNI](/cp4waiops-training/pics/doc14.png)
+	![image](/cp4waiops-training/pics/doc14.png)
 	
 1. Under `Slack`, click on `Add Connection`
-	![K8s CNI](/cp4waiops-training/pics/doc45.png)
+	![image](/cp4waiops-training/pics/doc45.png)
 
 6. Name it "Slack"
 7. Paste the `Signing Secret` from above
 8. Paste the `Bot User OAuth Token` from above
 
-	![K8s CNI](/cp4waiops-training/pics/doc50.png)
+	![image](/cp4waiops-training/pics/doc50.png)
 	
 9. Paste the channel IDs from the channel creation step in the respective fields
 
-	![K8s CNI](/cp4waiops-training/pics/doc49.png)
+	![image](/cp4waiops-training/pics/doc49.png)
 	
-	![K8s CNI](/cp4waiops-training/pics/doc52.png)
+	![image](/cp4waiops-training/pics/doc52.png)
 		
 		
 

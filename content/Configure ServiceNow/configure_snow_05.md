@@ -8,7 +8,8 @@ weight: 196
 ---
 # Testing the ServiceNow Integration
 
-## Creating stories as incidents in ServiceNow
+
+{{< step title="Creating stories as incidents in ServiceNow" >}}
 
 After the integration is finished, for every chatbot story created, an incident will be created in ServiceNow. For example, the creation of the following story number 9 in Slack:
 
@@ -26,7 +27,8 @@ This is the incident in ServiceNow that corresponds to the story number 9 that w
 
   ![story9-in-sn](/cp4waiops-training/pics/snow/story9-in-sn.png)
 
-## Historical similar incidents
+{{< /step >}}
+{{< step title="Historical similar incidents" >}}
 
 When an incident occurs, it can be helpful to review details for similar incidents to help determine a resolution. This AI model aggregates information about similar messages, anomalies, and events for a component or application. It can also extract the steps used to fix previous incidents, if documented. Training this AI model will help you discover historical incidents to aid in the remediation of current problems.
 
@@ -124,7 +126,8 @@ As you can see, there is a new model created for incidents.
 
 As we can see in the previous picture, when we click search, a historical incident is found and a summary of the ticket resolution activities are shown. You can click on the text in blue to go to the actual ticket in your ServiceNow developer instance.  
 
-## Pulling inventory and topology data from ServiceNow
+{{< /step >}}
+{{< step title="Pulling inventory and topology data from ServiceNow" >}}
 
 Using the WAIOPS ServiceNow Observer job, you can retrieve the Configuration Management Database (CMDB) data from ServiceNow. The ServiceNow developer instance comes loaded with sample topology and inventory data. In this section, we will define an observer job to pull this information into WAIOPS, that can be later be seen from the Topology Viewer.
 
@@ -198,8 +201,8 @@ Finally, lets verify the ServiceNow inventory and topology data in the Topology 
 
   ![lenovo-topology](/cp4waiops-training/pics/snow/lenovo-topology.png)
 
-## Encrypting the Service Now Password
-
+{{< /step >}}
+{{< step title="Encrypting the Service Now Password" >}}
   **Important:** You must specify an IBM Cloud Pak for Watson AIOps encrypted version of your ServiceNow password to collect inventory and topology data from ServiceNow. To encrypt your ServiceNow password, complete the following steps:
 
 * Make sure that you have oc installed on your local system. For more information about these requirements, see Preparing to install IBM Cloud Pak for Watson AIOps. Log in to your Red Hat OpenShift Container Platform cluster by using the oc login command. You can identify your specific oc login by clicking the user name dropdown menu in the Red Hat OpenShift Container Platform console, then clicking Copy Login Command.
@@ -223,3 +226,4 @@ oc exec -ti evtmanager-topology-topology-<xxxxxxxxx-xxxxx> -- java -jar /opt/ibm
 ```
 
 * Copy and paste the results of the preceding command (your encrypted ServiceNow password) in this field.
+{{< /step >}}

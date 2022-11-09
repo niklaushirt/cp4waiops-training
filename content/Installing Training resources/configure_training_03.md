@@ -1,11 +1,12 @@
 ---
 title: "Initialize ELK"
 date: 2022-11-03T10:57:46+01:00
-weight: 52
-draft: true
+weight: 44
 ---
 
 # Initial ELK Setup
+
+{{< step title="Open ELK" >}}
 
 
 
@@ -15,10 +16,12 @@ draft: true
 
 1. Select **Logging**
 
+{{< /step >}}
+{{< step title="Initialize ELK" >}}
+
+
+
 1. Click `Allow selected permissions`
-
-
-
 
 1. Input `app*` for the index pattern
 	
@@ -40,4 +43,9 @@ draft: true
 	
 	
 
-	
+{{< /step >}}
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on creating Training Resources**\
+Please continue to the next chapter to learn how to Configure AIManager.
+{{< /hint >}}

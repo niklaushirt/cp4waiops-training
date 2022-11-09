@@ -6,14 +6,22 @@ weight: 184
 
 # Integrate Your Slack App
 
-### In the Slack App: 
+{{< step title="Integrate Your Slack App - in Slack" >}}
+
+
+
 
 1. In the `Basic Information` menu get the `Signing Secret` (not the Client Secret!) and jot it down
 
 3. In the `OAuth & Permissions` get the `Bot User OAuth Token` (not the User OAuth Token!) and jot it down
 
 
-### In AIManager:
+
+{{< /step >}}
+{{< step title="Integrate Your Slack App - in AIManager" >}}
+
+
+
 
 1. Go to `Data and tool connections`
 5. Under `Slack` select `Add integration`
@@ -26,7 +34,7 @@ weight: 184
 
 10. Test the connection and click save
 
-
+{{< /step >}}
 
 
 

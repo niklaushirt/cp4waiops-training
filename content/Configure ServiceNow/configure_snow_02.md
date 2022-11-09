@@ -10,7 +10,7 @@ weight: 193
 
 
 
-## Procure a ServiceNow Developer Instance
+{{< step title="Procure a ServiceNow Developer Instance" >}}
 
 Join the [ServiceNow Developer Program](https://developer.servicenow.com/dev.do), login with your credentials and request a Personal Developer Instance (PDI) with **version "Paris" and patch 4 or higher**. If you get a different version, you can release/return the instance you just got from the top right menu and request a new one. Then it will ask you to choose the version as shown below:
 
@@ -20,14 +20,15 @@ You can read about PDI [here](https://developer.servicenow.com/dev.do#!/guides/q
 
 Note that your instance will go to sleep after a few hours if not used and if you are inactive for ten or more days the developer instance will be deleted!. You will have two sets of credentials: one for your ServiceNow developer account and another set for the developer instance itself. The ServiceNow developer instance comes loaded with some test data such as open incidents, change requests, etc. 
 
-
-## Install the WAIOPS App in your ServiceNow Developer Instance
+{{< /step >}}
+{{< step title="Install the WAIOPS App in your ServiceNow Developer Instance" >}}
 
 Customers will typically install the WAIOPS app (or plug-in) from the official [ServiceNow App Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/632a6d81db102010253148703996197e/1.1.0). 
 
 In our case, because we have a developer instance, we will have to install it from a GitHub repo. 
 
-## Import app into ServiceNow instance
+{{< /step >}}
+{{< step title="Import app into ServiceNow instance" >}}
 
 #### Prepare GitHub access 
 
@@ -71,3 +72,4 @@ If you don't have one, follow the instructions [https://docs.github.com/en/free-
 1. Click `Import` to import the source code.
 
 
+{{< /step >}}

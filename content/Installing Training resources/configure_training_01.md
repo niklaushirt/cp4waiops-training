@@ -6,9 +6,9 @@ weight: 42
 
 # Installing Training resources
 
-{{< hint type=info title="Info" >}}
-This creates a `Job` in the `default` Namespace that will create and load all the stuff that you need for the next chapter. 
-{{< /hint >}}
+{{< step title="Launch the script to create the training resources" >}}
+
+
 
 Run the following code to start the creation of the Training Resources.
 
@@ -96,6 +96,7 @@ spec:
 EOF
 ```
 
+
 You should get:
 	
 ```bash
@@ -103,4 +104,9 @@ clusterrolebinding.rbac.authorization.k8s.io/installer-default-default created  
 job.batch/waiops-easy-install-aimanager-practicum created
 ```
 
+###
 
+> This creates a `Job` in the `default` Namespace that will create and load all the stuff that you need for the next chapter. 
+
+
+{{< /step >}}

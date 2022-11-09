@@ -11,9 +11,9 @@ weight: 2
 
 
 
-## In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
+### In this Training you will learn how to install IBM CloudPak for AIOps and how to configure some basic functionalities.
 
-The idea is to provide you with an fast and simple way to learn CP4WAIOPS.
+The idea is to provide you with an optimised way to learn how to do a basic setup of CP4WAIOPS.
 
 ## You will learn about the following topics:
 
@@ -27,9 +27,10 @@ The idea is to provide you with an fast and simple way to learn CP4WAIOPS.
   - Similar Incidents
   - Change Risk 
 - Create `Policies` for Story creation and Runbook assignment
-- Integrate AIManager with `Ansible Tower` and create Runbooks in AIManager
+- Integrate AIManager with `Ansible Tower` and create `Runbooks` in AIManager
 - Create a RobotShop Application `Topology`
-- Integrate AIManager with `Slack`
+- Integrate AIManager with `Slack` (optional)
+- Integrate AIManager with `Service Now` (optional)
 
 
 ## and those are the Topics that you are going to work on during this Training:
@@ -40,7 +41,7 @@ The idea is to provide you with an fast and simple way to learn CP4WAIOPS.
 In this chapter you will provision your `OpenShift Cluster` for the training.
 {{< /tab >}}
 
-{{< tab "Installing the Operator" "..." >}}
+{{< tab "The Operator" "..." >}}
 In this chapter you will prepare your Cluster for the installation of AIManager
 
 * Prepare your PC or Mac to run commands against your cluster
@@ -49,11 +50,11 @@ In this chapter you will prepare your Cluster for the installation of AIManager
 * Install the CP4WAIOPS `Operator`
 {{< /tab >}}
 
-{{< tab "Installing AIManager" "..." >}}
+{{< tab "The AIManager" "..." >}}
 IIn this chapter you will install `AIManager` into your Cluster.
 {{< /tab >}}
 
-{{< tab "Installing Training resources" "..." >}}
+{{< tab "Training Resources" "..." >}}
 In this chapter you will install resources that you will need for the configuration of AIManager in the next chapter.
 
 Those are assets that typically already exist at a customer:
@@ -82,7 +83,7 @@ This will also load `Training Data` for:
 	You can find documentation [here](./INTEGRATION_SNOW.md)
 {{< /tab >}}
 
-{{< tab "Configure AIManager" "..." >}}
+{{< tab "Configuration" "..." >}}
 In this chapter you will:
 
 - Integrate AIManager with `OpenLDAP` for user management
@@ -93,7 +94,7 @@ In this chapter you will:
 
 {{< /tab >}}
 
-{{< tab "Train the Models" "..." >}}
+{{< tab "Training" "..." >}}
 In this chapter you will:
 
 - Define and train `AI Models` for
@@ -109,7 +110,7 @@ In this chapter you will:
 In this chapter you will verify that your environment if working properly by simulating a test incident.
 {{< /tab >}}
 
-{{< tab "Configure Slack (optional)" "..." >}}
+{{< tab "Slack" "..." >}}
 In this chapter you will integrate AIManager with `Slack`
 {{< /tab >}}
 

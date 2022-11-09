@@ -8,6 +8,10 @@ weight: 181
 
 # Create your Slack Workspace
 
+{{< step title="Create your Slack Workspace" >}}
+
+
+
 1. Create a Slack workspace by going to https://slack.com/get-started#/createnew and logging in with an email <i>**which is not your IBM email**</i>. Your IBM email is part of the IBM Slack enterprise account and you will not be able to create an independent Slack workspace outside if the IBM slack service. 
 
     ![slack1](/cp4waiops-training/pics/slack/slack1.png)
@@ -43,3 +47,4 @@ At this point you have created your own Slack workspace where you are the admini
 ![slack6](/cp4waiops-training/pics/slack/slack6.png)
 
 > ❗ This Slack workspace is outside the control of IBM and must be treated as a **completely public environment**. Do not place any confidential material in this Slack workspace.
+{{< /step >}}

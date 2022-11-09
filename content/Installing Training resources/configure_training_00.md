@@ -9,7 +9,7 @@ weight: 41
 ![ibm](/cp4waiops-training/pics/ibm/1_CXk3Ocs_Gizl684EP5YC7Q.png)
 
 
-This will install resources that you will need for the configuration of AIManager in the next chapter.
+In this chapter you will install resources that are needed for the configuration of AIManager in the next chapter.
 
 Those are **assets that typically already exist at a customer**:
 

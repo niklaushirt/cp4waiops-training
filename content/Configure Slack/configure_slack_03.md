@@ -7,6 +7,10 @@ weight: 182
 
 # Create Your Slack App
 
+{{< step title="Create Your Slack App" >}}
+
+
+
 1. Create a Slack app, by going to https://api.slack.com/apps and clicking `Create New App`. 
 
    ![slack7](/cp4waiops-training/pics/slack/slack001.png)
@@ -23,9 +27,9 @@ weight: 182
 4. Adapt the Name and Display Name to your likings
 
 
-{{< hint type=note title="Tip" >}}
-Don't bother with the URLs just yet, we will adapt them as needed.
-{{< /hint >}}
+
+    > Don't bother with the URLs just yet, we will adapt them as needed.
+
 
 
 5. Click `Next`
@@ -39,3 +43,6 @@ Don't bother with the URLs just yet, we will adapt them as needed.
 8. Click save changes
 
 9. In the `Basic Information` menu click on `Install to Workspace` then click `Allow`
+
+
+{{< /step >}}

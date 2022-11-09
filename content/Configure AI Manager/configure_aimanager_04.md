@@ -6,12 +6,44 @@ weight: 54
 
 # Configure LDAP integration
 
+In this section you will connect to the existing LDAP Server and create a user with Administrative rights:
+
+
+###
+
+{{< task title="Create the LDAP Connection" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=authentication-configuring-ldap-connections" >}}
+
+
+
+Connect to the existing LDAP Server using the following parameters:
+
+```yaml
+Server type:          Custom
+
+Base DN:              dc=ibm,dc=com
+Bind DN:              cn=admin,dc=ibm,dc=com
+Bind DN password:     P4ssw0rd! 
+
+LDAP server URL:      ldap://openldap.openldap:389
+
+Group filter:         (&(cn=%v)(objectclass=groupOfUniqueNames))
+User filter:          (&(uid=%v)(objectclass=Person))     <-- Thats the only value you should have to change
+Group ID map:         *:cn
+User ID map:          *:uid
+Group member ID map:  groupOfUniqueNames:uniqueMember
+```
+
+{{< /task >}}
+
+
+{{< expand "Solution" "⬇" >}}
+
 ## Create LDAP provider
 
 
 1. In the `AIManager` "Hamburger" Menu select `Access Control`
 
-	![K8s CNI](/cp4waiops-training/pics/20_config.png)
+	![image](/cp4waiops-training/pics/20_config.png)
 
 1. In the top right Click `Identity provider configuration`
 
@@ -23,16 +55,9 @@ weight: 54
 
 1. Click `Next`
 
-1. 🔎 Get the data from your configuration info - section  `2.1 Configure LDAP` 
-
-    ```bash
-    ./tools/11_fzth/get_configuration_info.sh
-    ```
-
 
 1. Fill out the first section of fields:
 
-	![K8s CNI](/cp4waiops-training/pics/21_config.png)
 
     ```yaml
     Connection name:      LDAP
@@ -46,11 +71,13 @@ weight: 54
 
     ```
 
+	![image](/cp4waiops-training/pics/21_config.png)
+
+
 1. Click `Test connection`. You should get `Successful connection`
 
 1. Fill out the rest of the fields:
 
-	![K8s CNI](/cp4waiops-training/pics/22_config.png)
 
     ```yaml
     Group filter:         (&(cn=%v)(objectclass=groupOfUniqueNames))
@@ -60,20 +87,32 @@ weight: 54
     Group member ID map:  groupOfUniqueNames:uniqueMember
     ```
 
+	![image](/cp4waiops-training/pics/22_config.png)
+
 
 1. Click `Create`
 
 1. You should get a LDAP entry in the provider list
 
-	![K8s CNI](/cp4waiops-training/pics/23_config.png)
+	![image](/cp4waiops-training/pics/23_config.png)
+{{< /expand >}}
 
 
+# 
+{{< task title="Create a User in AIManager" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=control-adding-users" >}}
+Create a user in AIManager with Admin rights.
+{{< /task >}}
+
+
+
+
+{{< expand "Solution" "⬇" >}}
 
 ## Create User
 
 1. Go back to `AIManager`, click on the "Hamburger" Menu and select `Access Control`
 
-	![K8s CNI](/cp4waiops-training/pics/20_config.png)
+	![image](/cp4waiops-training/pics/20_config.png)
 
 1. In the top right Click `Add users`
 
@@ -98,7 +137,7 @@ weight: 54
 
 1. In `AIManager`, click on the round image in the top right and select `Log Out`
 
-	![K8s CNI](/cp4waiops-training/pics/24_config.png)
+	![image](/cp4waiops-training/pics/24_config.png)
 
 1. Click `Logout` 
 
@@ -107,3 +146,5 @@ weight: 54
 1. Enter credentials `demo` and `P4ssw0rd!` (this information is stored in the LDAP server)
 
 1. Welcome back in AIManager as user Demo
+
+{{< /expand >}}

@@ -7,6 +7,10 @@ weight: 183
 
 # Create Your Slack Channels
 
+{{< step title="Create Your Slack Channels" >}}
+
+
+
 
 1. In Slack add a two new channels:
 	* cp4waiops-stories
@@ -16,9 +20,9 @@ weight: 183
 
 
 
-{{< hint type=note title="Tip" >}}
-You can name the channel whatever you want.
-{{< /hint >}}
+
+	> You can name the channel whatever you want.
+
 
 2. Right click on each channel and select `Copy Link`
 
@@ -26,9 +30,8 @@ You can name the channel whatever you want.
 	The last part of the URL is the channel ID (i.e. C021QOY16BW). 
 	
 	
-{{< hint type=note title="Tip" >}}
-Write them down for both channels
-{{< /hint >}}
+	> Write them down for both channels
+
 
 3. Under Apps click Browse Apps
 
@@ -47,5 +50,5 @@ Write them down for both channels
 
 	You shoud get a message from <MyAppname> saying `was added to #<your-channel> by ...`
 
-
+{{< /step >}}
 

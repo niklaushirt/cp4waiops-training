@@ -7,6 +7,6 @@ weight: 10
 # Get your ROKS Cluster (IBMers and IBM Partners only)
 
 
-![K8s CNI](/cp4waiops-training/pics/roks00.png)
+![image](/cp4waiops-training/pics/roks00.png)
 
 In this chapter you will provision your cluster for the training.

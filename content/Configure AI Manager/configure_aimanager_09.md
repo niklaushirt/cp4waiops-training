@@ -7,9 +7,25 @@ weight: 59
 # Create valid Ingress Certificates
 
 
-{{< hint type=info title="Info" >}}
-This creates valid certificates for the OpenShift Ingress, so that you can integrate with Slack.
-{{< /hint >}}
+A signed certificate is needed on the NGNIX pods for the Slack and Teams integrations.\
+The AutomationUIConfig instance controls the certificates and the NGINX pods that use them.
+
+
+
+###
+
+{{< task title="Create valid Ingress Certificates" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
+Create valid Ingress Certificates
+
+{{< /task >}}
+
+
+{{< expand "Solution" "⬇" >}}
+
+
+
+
+
 
 
 
@@ -128,8 +144,18 @@ ibm-nginx-xxxxx-xxx                                       1/1     Running     0 
 ibm-nginx-xxxxx-xxx                                       1/1     Running     0               4h9m
 ```
 
+###
+
+> This creates valid certificates for the OpenShift Ingress, so that you can integrate with Slack.
+
+
+{{< /expand >}}
+
+#
+#
 
 {{< hint type=tip title="You have successfully finished this Chapter" >}}
 **You are now done with the chapter on Configuring AIManager**\
 Please continue to the next chapter to leanr how to train the AI Models.
 {{< /hint >}}
+

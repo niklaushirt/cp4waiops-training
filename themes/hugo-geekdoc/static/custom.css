@@ -29,23 +29,6 @@
         --code-copy-success-color: rgba(0, 200, 83, 0.45)
     }
 
-.gdoc-expand {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid var(--accent-color);
-    border-radius: 0.15rem;
-    overflow: hidden;
-    background-color: rgb(0, 0, 23);
-    font-size: smaller;
-}
-
-.gdoc-expand__head {
-    background-color: rgb(197, 174, 0);
-    color: black;
-    font-weight: bold;
-    font-size:large  !important;
-}
-
 
 .container {
     width: 100% !important;
@@ -135,23 +118,67 @@ code.language-bash  {
 
 
 .gdoc-markdown blockquote {
-    margin: 1rem 0;
-    padding: 0.5rem 1rem 0.5rem 0.75rem;
-    border-left: 5px solid rgb(255, 196, 0);
-    border-radius: 0.45rem;
-    background-color: rgb(34, 30, 20);
-    margin-left: 20px;
-
-}
-
-
-
-.gdoc-hint {
     border-left-width: 10px !important;
     border-left-style: solid;
     padding: 0;
-    margin-left: 25px !important;
+    margin-left: 10px;
+    background-color: rgba(134, 142, 150, .05);
+    border-left-color: #0091ea;
+    background-color: #f3f9fd;
+    color: #ffffff;
+    padding: 10px;
+    padding: .25rem 1rem;
+    background-color: rgba(134, 142, 150, .05);
+    font-weight:normal;
+    border-left-color: #0091ea;
+    background-color: #a1d6f9;
+    color: #343a40;
+    border-radius: 0.15rem;
+    font-size:medium  !important;
+    margin-left:5px  !important;
+    max-width: 70%;
 }
+
+
+
+.gdoc-expand {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 0.15rem;
+    overflow: hidden;
+    background-color: rgb(15, 15, 36);
+    font-size: smaller;
+    margin-top: 20px;
+
+}
+
+.gdoc-expand__head {
+    background-color: rgb(48, 1, 64);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:large  !important;
+    border-left-color: #de00ea;
+    border-left-style: solid;
+    border-left-width: 6px;
+}
+
+
+
+.gdoc-expand {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 0.15rem;
+    overflow: hidden;
+    background-color: rgb(15, 15, 36);
+    font-size:1em  !important;
+    margin-top: 20px;
+
+}
+
+
+
 
 
 
@@ -163,3 +190,128 @@ code.language-bash  {
     display: none;
     background-color: rgb(0, 18, 42);
 }
+
+
+
+.admonitionblock.link {
+    border-left-color: #0091ea;
+    background-color: #a6d6f5 !important;
+    color: #343a40
+}
+
+.admonitionblock table td:first-child.icon i.fa.icon-link {
+    background-image: url(img/geekdoc-stack.svg#gdoc_link)
+}
+.gdoc-hint.link {
+    border-left-color: #0091ea;
+    background-color: #dff0f9 !important;
+    color: #343a40;
+    padding: 0;
+    margin-left: 0px !important;
+    max-width: 100%;
+
+}
+.gdoc-hint__title i.fa.link {
+    background-image: url(img/geekdoc-stack.svg#gdoc_link)
+}
+
+.gdoc-props__tag.link {
+    border-color: #e5faee;
+    background-color: #e31d16
+}
+
+
+
+.gdoc-hint {
+    border-left-width: 10px !important;
+    border-left-style: solid;
+    padding: 0;
+    margin-left: 2px !important;
+}
+
+
+
+.gdoc_task {
+    background-color: rgb(6, 23, 135);
+    color: #ffffff;    
+    border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    padding: 10px;
+    border-left-color: #ff9900;
+    border-left-style: solid;
+    border-left-width: 6px;
+
+    margin-bottom: 0px !important;
+}
+
+
+.gdoc_task_inner {
+    border-left-color: #313aa2;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-bottom-color: #313aa2;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+}
+
+
+.gdoc_task_inner_empty {
+
+
+}
+
+.gdoc_step {
+    background-color: rgb(0, 65, 0) !important;
+    color: #dbffd3 !important;  
+    border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    padding: 10px;
+    border-left-color: #00ea42;
+    border-left-style: solid;
+    border-left-width: 6px;
+
+    margin-bottom: 0px !important;
+
+}
+
+.gdoc_step_inner {
+    border-left-color: #15461b;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-bottom-color: #15461b;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+h1 {
+    color: #ffffff;    
+    padding: 10px;
+    border-bottom-color: #263c74;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 0px;
+    margin-bottom: 0px !important;
+}
+
+h2 {
+    color: #ffffff;    
+    padding: 10px;
+    border-left-color: #263c74;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding: 0px !important;
+    padding-left: 10px !important;
+    margin-bottom: 0px !important;
+}
+

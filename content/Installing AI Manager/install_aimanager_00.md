@@ -6,14 +6,26 @@ weight: 31
 
 # Creating the AIManager Instance
 
-
-![K8s CNI](/cp4waiops-training/pics/54_aimanager_story.png)
-
-
-Now it's time to create the AIManager instance
+In this chapter you will install AIManager
 
 
 
+{{< task title="Create the AIManager Instance" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
+
+
+
+![image](/cp4waiops-training/pics/54_aimanager_story.png)
+
+
+Now it's time to create the AIManager instance.\
+To do this create an instance of the AI Manager custom resource called ibm-cp-watson-aiops.
+
+
+{{< /task >}}
+
+
+
+{{< expand "Solution" "⬇" >}}
 
 1. Run the following command to create an instance of AIManager.
 
@@ -43,9 +55,18 @@ Now it's time to create the AIManager instance
    EOF  
    ```
 
-{{< hint type=info title="Info" >}}
-This creates the `Installation` instance that the Operator will pick up and start the installation. 
-{{< /hint >}}
+   ##
+
+
+> This creates the `Installation` instance that the Operator will pick up and start the installation. 
+
+
+{{< /expand >}}
+
+
+#
+
+
 
 
 

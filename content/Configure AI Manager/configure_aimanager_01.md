@@ -6,25 +6,26 @@ weight: 51
 
 # Get the configuration Information
 
+
+{{< task title="Get the configuration Information" link="" >}}
+
+
+
 This will provide you with all the information and details that you need to configure AIManager in this chapter.
 
 
 
-![K8s CNI](/cp4waiops-training/pics/57_my_info.png)
+![image](/cp4waiops-training/pics/57_my_info.png)
 
-1. Run the following command to get a list of all the information that you will need for the configuration of AIManager in this chapter.
+1. Run the following command to save a list of all the information to the `MY_CONFIGURATION.txt` file.\
+  You will need this information for the configuration of AIManager in this chapter.
 
 
   ```bash
-  ./tools/11_fzth/get_configuration_info.sh
-  ```
-
-##
-
-{{< hint type=important  title="Important: You can also save the information to a file to keep it handy" >}}
-   ```bash
   ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
   ```
 
-{{< /hint >}}
+{{< /task >}}
+
+
 

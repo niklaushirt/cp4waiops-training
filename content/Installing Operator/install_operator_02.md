@@ -6,6 +6,21 @@ weight: 22
 
 # Preparing the Installation
 
+In order to install the AIManager Operator you first have to create the following resources:
+- Namespace
+- OperatorGroup
+- IBM Pull Secret (Entitlement)
+
+{{< doc_link "Solution" "⬇" >}}
+https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli
+{{< /doc_link >}}
+
+# 
+
+
+{{< task title="Create the Namespace" link="" >}}{{< /task >}}
+
+{{< expand "Solution" "⬇" >}}
 
 ## Create the namespace (project)
 
@@ -16,10 +31,24 @@ weight: 22
 	oc create namespace cp4waiops
     ```
 
+###
 
-{{< hint type=info title="Info" >}}
-This creates the `Namespace` in which you will install AIManager
-{{< /hint >}}
+> This creates the `Namespace` in which you will install AIManager
+
+{{< /expand >}}
+
+
+##
+
+
+
+
+
+
+{{< task title="Create the Operator Group" link="" >}}{{< /task >}}
+
+{{< expand "Solution" "⬇" >}}
+
 
 
 ## Create the OperatorGroup
@@ -42,11 +71,24 @@ This creates the `Namespace` in which you will install AIManager
 	EOF
     ```
 
+###
 
-{{< hint type=info title="Info" >}}
-This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
-{{< /hint >}}
+> This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
 
+
+
+
+{{< /expand >}}
+
+##
+
+
+
+
+
+{{< task title="Create the Pull Secret" link="" >}}{{< /task >}}
+
+{{< expand "Solution" "⬇" >}}
 
 
 
@@ -63,14 +105,18 @@ This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4
    ```bash
    oc create secret docker-registry ibm-entitlement-key \
        --docker-username=cp\
-       --docker-password=<entitlement-key> \
+       --docker-password=_entitlement-key_ \
        --docker-server=cp.icr.io \
        --namespace=cp4waiops
    ```
 
-    Where `<entitlement-key>` is the entitlement key that you copied in the previous step.
+    Where `_entitlement-key_` is the entitlement key that you copied in the previous step.
 
-{{< hint type=info title="Info" >}}
-This creates the `Secret` with your IBM Entitlement that will allow the images to be pulled from the IBM Container Registry
-{{< /hint >}}
+###
+
+> This creates the `Secret` with your IBM Entitlement that will allow the images to be pulled from the IBM Container Registry
+
+{{< /expand >}}
+
+
 

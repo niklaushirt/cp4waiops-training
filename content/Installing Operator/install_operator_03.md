@@ -8,6 +8,18 @@ weight: 23
 
 
 
+
+{{< task title="Install the IBM Catalog Source" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
+
+
+
+Add the AI Manager catalog source to your OpenShift cluster.
+
+{{< /task >}}
+
+
+{{< expand "Solution" "⬇" >}}
+
 1. Run the following command to create the CatalogSource.
 
    ```yaml
@@ -32,9 +44,16 @@ weight: 23
    oc patch catalogsource ibm-operator-catalog -n openshift-marketplace --type=json -p "[{ "op": "test", "path": "/spec/image", "value": "\"icr.io/cpopen/ibm-operator-catalog:latest\"" }, { "op": "replace", "path": "/spec/image", "value": "\"$IMGDIGEST\"" }]"
    ```
 
+###
+
+> This creates the `CatalogSource` that provides the available IBM Operators (not just CP4WAIOPS). 
+
+
+{{< /expand >}}
+
+##
 
 {{< hint type=info title="Info" >}}
-This creates the `CatalogSource` that provides the available IBM Operators (not just CP4WAIOPS). 
-
-You can go to Operators/OperatorHub in your Openshift Web Console to check out the available Operators 
+ibm-operator-catalog also contains the catalogs for other IBM Cloud Paks®. If multiple IBM Cloud Paks are installed on your cluster, then the polling attribute is configured for all of them.\
+You can go to Operators/OperatorHub in your Openshift Web Console to check out the available Operators .
 {{< /hint >}}

@@ -6,6 +6,16 @@ weight: 24
 
 # Installing the Operator
 
+{{< task title="Install the Operator" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
+
+Next you have to install the AIManager Operator.
+
+{{< /task >}}
+
+
+
+
+{{< expand "Solution" "⬇" >}}
 
 1. Run the following command:
  
@@ -23,10 +33,11 @@ weight: 24
 	  source: ibm-operator-catalog
 	  sourceNamespace: openshift-marketplace
 	EOF
-	```
 
 
-{{< hint type=info title="Info" >}}
-This creates the `Operator` instance that will be looking for an `Installation` definition and start the installation if it exists (you'll create this in one of the next steps). 
-{{< /hint >}}
 
+
+
+> This creates the `Operator` instance that will be looking for an `Installation` definition and start the installation if it exists (you'll create this in one of the next steps). 
+
+{{< /expand >}}

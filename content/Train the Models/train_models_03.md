@@ -4,6 +4,20 @@ date: 2022-11-03T10:57:46+01:00
 weight: 63
 ---
 
+# Define and run Similar Incidents Training
+
+{{< task title="Define and run Similar Incidents Training" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=algorithms-similar-incidents" >}}
+
+
+
+In this section you will set up and run training for this AI algorithm to enable the `discovery of historical incidents` (tickets) to `aid in the remediation` of current incidents. 
+{{< /task >}}
+
+{{< expand "Solution" "⬇" >}}
+
+
+
+
 # Define Similar Incidents Training
 
 
@@ -22,3 +36,4 @@ weight: 63
 1. And eventually say `Deployed`
 
 
+{{< /expand >}}

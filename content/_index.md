@@ -12,7 +12,7 @@ weight: 0
 
 
 In this Training you will learn how to manually install IBM CloudPak for AIOps and how to configure some basic functionalities.\
-The idea is to provide you with an optimised way to learn CP4WAIOPS.
+The idea is to provide you with an optimised way to learn how to do a basic setup of CP4WAIOPS.
 
 
 You will learn about the following topics:
@@ -27,9 +27,10 @@ You will learn about the following topics:
   - Similar Incidents
   - Change Risk 
 - Create `Policies` for Story creation and Runbook assignment
-- Integrate AIManager with `Ansible Tower` and create Runbooks in AIManager
+- Integrate AIManager with `Ansible Tower` and create `Runbooks` in AIManager
 - Create a RobotShop Application `Topology`
-- Integrate AIManager with `Slack`
+- Integrate AIManager with `Slack` (optional)
+- Integrate AIManager with `Service Now` (optional)
 
 ###
 
