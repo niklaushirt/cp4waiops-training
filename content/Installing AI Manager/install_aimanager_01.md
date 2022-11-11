@@ -32,7 +32,7 @@ This will list the Pods that are not Ready yet.
 ![image](/cp4waiops-training/pics/58_install_ok.png)
 
 
-✅ And **when done** you should get only the numbers, about `Ready: 126` and `Not Ready: 0`.
+✅ And **when done** you should get only the numbers, about `Ready: 129` and `Not Ready: 0`.
 
 
 
@@ -56,7 +56,7 @@ This will list the Pods that are not Ready yet.
 
 This allows you to follow along the progress of the installation.
 
-✅ **When done** you should have about 126 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`
+✅ **When done** you should have about 129 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`
 
 {{< /expand >}}
 
