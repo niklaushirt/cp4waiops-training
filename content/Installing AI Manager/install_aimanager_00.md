@@ -37,6 +37,7 @@ To do this create an instance of the AI Manager custom resource called ibm-cp-wa
      name: ibm-cp-watson-aiops
      namespace: cp4waiops
    spec:
+     enableConnectionModule: true
      imagePullSecret: ibm-entitlement-key
      license:
        accept: true
@@ -48,7 +49,7 @@ To do this create an instance of the AI Manager custom resource called ibm-cp-wa
      - name: aiManager
        enabled: true
      - name: connection
-       enabled: false
+       enabled: true
      size: small
      storageClass: ibmc-file-gold-gid
      storageClassLargeBlock: ibmc-block-gold
