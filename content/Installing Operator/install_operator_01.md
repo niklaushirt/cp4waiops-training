@@ -7,6 +7,22 @@ weight: 21
 # Preparing to run commands in your Terminal
 
 
+{{< task title="Clone the Training Repository" link="" >}}
+1. Open your terminal
+1. Clone the GitHub Repository into your directory of choice
+
+	```
+	git clone https://github.com/niklaushirt/cp4waiops-deployer.git
+	
+
+1. Go to the deployer directory
+
+	```
+	cd cp4waiops-deployer
+
+
+{{< /task >}}
+
 
 
 {{< task title="Connect to your OpenShift Cluster" link="" >}}
@@ -27,17 +43,6 @@ Connect the terminal to your ROKS Openshift Cluster with the OpenShift Web Conso
 
 1. Open your terminal
 1. Paste the `oc login ..` command from above
-1. Clone the GitHub Repository into your directory of choice
-
-	```
-	git clone https://github.com/niklaushirt/cp4waiops-deployer.git
-	
-
-1. Go to the deployer directory
-
-	```
-	cd cp4waiops-deployer
-
 	
 Now you're good to start with the installation.
 {{< /expand >}}
