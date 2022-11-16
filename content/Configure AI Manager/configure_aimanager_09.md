@@ -156,6 +156,6 @@ ibm-nginx-xxxxx-xxx                                       1/1     Running     0 
 
 {{< hint type=tip title="You have successfully finished this Chapter" >}}
 **You are now done with the chapter on Configuring AIManager**\
-Please continue to the next chapter to leanr how to train the AI Models.
+Please continue to the next chapter to learn how to train the AI Models.
 {{< /hint >}}
 

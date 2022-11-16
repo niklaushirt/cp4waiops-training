@@ -29,3 +29,6 @@ weight: 197
 
 
 
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Configuring Service Now**
+{{< /hint >}}

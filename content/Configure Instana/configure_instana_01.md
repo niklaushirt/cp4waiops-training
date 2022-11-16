@@ -1,0 +1,53 @@
+---
+title: "Instana Setup"
+date: 2022-11-03T10:57:46+01:00
+weight: 151
+---
+
+
+# Initial Instana Setup
+
+
+
+{{< step title="Create your Instana API Token" >}}
+
+
+
+1. Open Instana from the DemoUI and login with:
+    - User: `admin@instana.local`
+    - Password: `P4ssw0rd!`
+
+    ![slack1](/cp4waiops-training/pics/instana/instana_01.png)
+
+2. Select `Settings`
+
+    ![slack1](/cp4waiops-training/pics/instana/instana_02.png)
+
+ 
+
+
+2. Select `API Tokens`
+
+    ![slack1](/cp4waiops-training/pics/instana/instana_03.png)
+
+
+2. Click on `Add API Token`
+
+    ![slack1](/cp4waiops-training/pics/instana/instana_04.png)
+
+
+6. Give your API Token a unique name 
+
+
+    ![slack1](/cp4waiops-training/pics/instana/instana_05.png)
+
+    You may add team members to your new Slack workspace or skip this step.
+
+6. Click on the Eye Icon twice to copy the token. **SAVE IT** somewhere save, we'll need it in the next step.
+
+6. Click `Save`
+
+
+At this point you have created your own Ìnstana API Token.
+
+{{< /step >}}

@@ -1,7 +1,7 @@
 ---
 title: "Slack Reset"
 date: 2022-11-03T10:57:46+01:00
-weight: 187
+weight: 178
 draft: true
 ---
 
@@ -56,3 +56,9 @@ or
 ./tools/98_reset/14_reset-slack-changerisk.sh
 
 ```
+
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Configuring Slack**
+{{< /hint >}}
+

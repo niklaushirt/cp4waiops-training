@@ -26,3 +26,8 @@ weight: 103
 1. You will have to wait for about 10 minutes for them to disappear (you can recreate the incident earlier, which will just re-open the existing Stories )
 
 {{< /step >}}
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Test and Demo**
+{{< /hint >}}
+

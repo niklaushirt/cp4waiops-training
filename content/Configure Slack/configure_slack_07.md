@@ -1,7 +1,7 @@
 ---
 title: "Configure"
 date: 2022-11-03T10:57:46+01:00
-weight: 186
+weight: 177
 ---
 
 # Create Slack App Communications
@@ -88,3 +88,8 @@ The Slack app must be reinstalled, as several permissions have changed.
 Once the workspace request is approved, the Slack integration is complete. 
 
 {{< /step >}}
+
+
+{{< hint type=tip title="You have successfully finished this Chapter" >}}
+**You are now done with the chapter on Configuring Slack**
+{{< /hint >}}

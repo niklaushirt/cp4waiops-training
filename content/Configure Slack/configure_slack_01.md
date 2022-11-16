@@ -1,7 +1,7 @@
 ---
 title: "Slack Setup"
 date: 2022-11-03T10:57:46+01:00
-weight: 180
+weight: 171
 ---
 
 
