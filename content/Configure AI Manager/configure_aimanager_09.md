@@ -15,12 +15,12 @@ The AutomationUIConfig instance controls the certificates and the NGINX pods tha
 ###
 
 {{< task title="Create valid Ingress Certificates" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
-Create valid Ingress Certificates
+Create valid Ingress Certificates as described in the Documentation.
 
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

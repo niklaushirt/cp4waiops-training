@@ -25,7 +25,7 @@ API Token:            The API Token from the previous step
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

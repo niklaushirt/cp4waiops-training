@@ -15,7 +15,7 @@ In this section you will set up and run training for this AI algorithm to determ
 
 {{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

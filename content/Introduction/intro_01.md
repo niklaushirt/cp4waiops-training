@@ -52,7 +52,7 @@ If you get stuck or want to progress your installation rapidly you can click on 
 This gives you a step-by-step solution to the `Task` at hand.\
 💡 Click on the `Solution` below to test it and see more details.
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 1. This is an `example command` that you have to copy and execute in your terminal and that will create a Kubernetes Object
 

@@ -10,12 +10,12 @@ weight: 25
 
 {{< task title="Verify that the Operator is running" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
 
-Check that the Operator is running and that you can continue with the next chapter to install AIManager.
+Check that the Operator is running and that you can continue with the next chapter to install AIManager. You can do this by listing the ClusterServiceVersions (csv) for the `cp4waiops` Namespace.
 
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 * Either run the following:

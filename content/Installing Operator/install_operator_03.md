@@ -13,12 +13,12 @@ weight: 23
 
 
 
-Add the AI Manager catalog source to your OpenShift cluster.
+Add the AI Manager catalog source to your OpenShift cluster as described in the Documentation.
 
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 1. Run the following command to create the CatalogSource.
 
@@ -54,6 +54,6 @@ Add the AI Manager catalog source to your OpenShift cluster.
 ##
 
 {{< hint type=info title="Info" >}}
-ibm-operator-catalog also contains the catalogs for other IBM Cloud Paks®. If multiple IBM Cloud Paks are installed on your cluster, then the polling attribute is configured for all of them.\
+The IBM Operator Catalog also contains the catalogs for other IBM Cloud Paks®. If multiple IBM Cloud Paks are installed on your cluster, then the polling attribute is configured for all of them.\
 You can go to Operators/OperatorHub in your Openshift Web Console to check out the available Operators .
 {{< /hint >}}

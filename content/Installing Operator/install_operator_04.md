@@ -8,14 +8,14 @@ weight: 24
 
 {{< task title="Install the Operator" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
 
-Next you have to install the AIManager Operator.
+Next you have to install the AIManager Operator as described in the Documentation.
 
 {{< /task >}}
 
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 1. Run the following command:
  

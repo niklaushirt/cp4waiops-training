@@ -11,12 +11,20 @@ In this section you will create the connection to Ansible Tower and create your 
 ###
 
 {{< task title="Create the Ansible Tower Connection" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=connections-ansible" >}}
-Create the connection to Ansible Tower
+Create the connection to Ansible Tower using the following parameters:
+
+```yaml
+URL for REST API:      from MY_CONFIGURATION.txt
+Authentication type:   User ID/Password
+User:                  admin
+Password:              from MY_CONFIGURATION.txt
+```
+
 {{< /task >}}
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 
@@ -76,7 +84,7 @@ Create a Runbook based on the `CP4WAIOPS Mitigate Robotshop Ratings Outage` Ansi
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

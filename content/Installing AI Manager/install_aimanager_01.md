@@ -9,13 +9,15 @@ weight: 32
 {{< task title="Verify that the AIManager Installation is ready" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
 
 
-Check that AIManager is running and that you can continue with the next chapter to install the third-party systems that will support your training.
+Check that AIManager is running and that you can continue with the next chapter to install the third-party systems that will support your training.\
+You can do this by checking the running Pods in the `cp4waiops` Namespace.\
+There should be 129 Pods with Status `Running` and all should be `Ready` (meaning they have show 1/1, 2/2, 3/3, 4/4, ...)
 
 {{< /task >}}
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

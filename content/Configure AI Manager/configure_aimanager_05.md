@@ -54,7 +54,7 @@ Mapping:
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
 1. Click `Add connection`

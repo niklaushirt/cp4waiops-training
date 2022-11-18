@@ -26,11 +26,11 @@ weight: 21
 
 
 {{< task title="Connect to your OpenShift Cluster" link="" >}}
-Connect the terminal to your ROKS Openshift Cluster with the OpenShift Web Console.
+Connect to your ROKS Openshift Cluster from your local Terminal. Get the `oc login` command from the OpenShift Web Console.
 {{< /task >}}
 
 
-{{< expand "Solution" "..." >}}
+{{< expand "Need Help?" "⬇" >}}
 
 1. Open your Openshift Web Console
 1. Select `Copy Login Command`

@@ -18,7 +18,7 @@ AIManager provides two preset/of the box story creation policies. For story crea
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 
@@ -42,14 +42,14 @@ AIManager provides two preset/of the box story creation policies. For story crea
 
 
 
-For this training, you want to have a runbook take action when you receive alerts that the MySQL database is not reachable. 
-Create a policy to use this runbook every time alerts warn of of a problem with the MySQL database.
+For this training, you want to have a runbook take action when you receive alerts stating that the MySQL database is not reachable. 
+Create a policy to assign this runbook every time we get alerts related to a problem with the MySQL database.
 
 
 
 {{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

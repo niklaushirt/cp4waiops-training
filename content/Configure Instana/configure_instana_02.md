@@ -28,7 +28,7 @@ Filter:           Kubernetes.Namespace = robot-shop
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

@@ -16,7 +16,7 @@ This AI algorithm can start to discover groups after a pattern is learned, which
 In this section you will set up and run training for this AI algorithm to `learn patterns` in Event occurence and group patterns witt `temporal correlation`.
 {{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 

@@ -13,10 +13,11 @@ In this chapter you will install resources that are needed for the configuration
 
 Those are **assets that typically already exist at a customer**:
 
-* OpenLDAP
-* AWX (Open Source Ansible Tower) with preloaded Playbooks
+* ELK - for Log Collection
+* Instana - for Events, Metrics and Topology
+* OpenLDAP - for Authentication
+* AWX (Open Source Ansible Tower) with preloaded Playbooks - for Runbook Automation
 * RobotShop Demo App
-* Demo Service Account
 
 This will also load training data for:
 

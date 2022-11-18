@@ -20,7 +20,9 @@ https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manage
 
 {{< task title="Create the Namespace" link="" >}}{{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+Create a namespace called `cp4waiops`.
+
+{{< expand "Need Help?" "⬇" >}}
 
 ## Create the namespace (project)
 
@@ -47,7 +49,9 @@ https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manage
 
 {{< task title="Create the Operator Group" link="" >}}{{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+Create the Operator Group as described in the Documentation.
+
+{{< expand "Need Help?" "⬇" >}}
 
 
 
@@ -88,7 +92,10 @@ https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manage
 
 {{< task title="Create the Pull Secret" link="" >}}{{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+
+Create the Operator Group as described in the Documentation with your Entitlement Key from the [MyIBM Container Software Library](https://myibm.ibm.com/products-services/containerlibrary).
+
+{{< expand "Need Help?" "⬇" >}}
 
 
 

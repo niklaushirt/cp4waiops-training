@@ -36,7 +36,7 @@ Group member ID map:  groupOfUniqueNames:uniqueMember
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 ## Create LDAP provider
 
@@ -106,7 +106,7 @@ Create a user in AIManager with Admin rights.
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 ## Create User
 

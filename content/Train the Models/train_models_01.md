@@ -16,7 +16,7 @@ Set up and run training for Logs ingested `from March 3rd 2022 to March 4th 2022
 
 {{< /task >}}
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 # Define Log Anomalies Training

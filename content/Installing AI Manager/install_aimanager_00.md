@@ -18,14 +18,14 @@ In this chapter you will install AIManager
 
 
 Now it's time to create the AIManager instance.\
-To do this create an instance of the AI Manager custom resource called ibm-cp-watson-aiops.
+To do this create an instance of the AI Manager custom resource called ibm-cp-watson-aiops with `size: small` as we'll use this only for the training and not for production (see note below).
 
 
 {{< /task >}}
 
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 1. Run the following command to create an instance of AIManager.
 
@@ -83,4 +83,8 @@ The next step explains how to follow the installation progress.
 If you want to install on another platform you will have to adapt storageClass and storageClassLargeBlock to your available storage classes.
 {{< /hint >}}
 
-
+{{< hint type=info title="Note" >}}
+**This is only for non-production installations**\
+If you want to install AI Manager for production use please follow the documentation and make sure that you use `size: large`, as well as a recommended storage provider.\
+See here: [Online production installation of IBM Cloud Pak for Watson AIOps AI Manager](https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=installation-online-console)
+{{< /hint >}}

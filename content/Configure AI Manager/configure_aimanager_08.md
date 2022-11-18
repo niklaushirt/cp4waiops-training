@@ -20,7 +20,7 @@ Create a Kubernetes connection to create a Topology for the internal RoboShop ap
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 1. In the `AIManager` "Hamburger" Menu select `Define`/`Data and tool connections`
@@ -78,7 +78,7 @@ Create an application with all RobotShop related Resource Groups.
 {{< /task >}}
 
 
-{{< expand "Solution" "⬇" >}}
+{{< expand "Need Help?" "⬇" >}}
 
 
 1. In the `AIManager` "Hamburger" Menu select `Operate`/`Resource management`
