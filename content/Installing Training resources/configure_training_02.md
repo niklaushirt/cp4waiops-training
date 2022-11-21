@@ -10,13 +10,6 @@ weight: 43
 
 
 
-{{< hint type=caution  title="Important" >}}
-**This takes up to 20 minutes**\
-This takes some time depending on what region of ROKS you have chosen.\
-❗ Wait for the installation to complete before continuing. \
-The next step explains how to follow the installation progress.
-{{< /hint >}}
-
 You can follow along the process by running:
 	
 ```bash
@@ -49,3 +42,11 @@ localhost                  : ok=XXX    changed=XXX    unreachable=0    failed=0 
 
 
 {{< /step >}}
+
+
+{{< hint type=caution  title="Important" >}}
+**This takes up to 20 minutes**\
+This takes some time depending on what region of ROKS you have chosen.\
+❗ Wait for the installation to complete before continuing. \
+The next step explains how to follow the installation progress.
+{{< /hint >}}
