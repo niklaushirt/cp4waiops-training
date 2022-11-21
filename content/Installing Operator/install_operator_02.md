@@ -111,13 +111,13 @@ Create the Operator Group as described in the Documentation with your Entitlemen
 
    ```bash
    oc create secret docker-registry ibm-entitlement-key \
-       --docker-username=cp\
-       --docker-password=_entitlement-key_ \
+       --docker-username=cp \
+       --docker-password="_entitlement-key_from_step_2_" \
        --docker-server=cp.icr.io \
        --namespace=cp4waiops
    ```
 
-    Where `_entitlement-key_` is the entitlement key that you copied in the previous step.
+    Where `"_entitlement-key_"` is the entitlement key that you copied in the previous step.
 
 ###
 

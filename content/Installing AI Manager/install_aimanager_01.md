@@ -26,7 +26,7 @@ There should be 129 Pods with Status `Running` and all should be `Ready` (meanin
 Run the following:
 	
 ```bash
-while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; echo "---------------"; echo "Not Ready: $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v '0/' |wc -l| tr -d ' ')"; echo "Ready:     $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/' |wc -l| tr -d ' ')"; echo "---------------"; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/'; sleep 5; done
+while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; echo "---------------"; echo "Ready: $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v '0/' |wc -l| tr -d ' ')"; echo "Not Ready:     $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/' |wc -l| tr -d ' ')"; echo "---------------"; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/'; sleep 5; done
 ```
 
 This will list the Pods that are not Ready yet.

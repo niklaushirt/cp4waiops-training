@@ -41,7 +41,9 @@ Group member ID map:  groupOfUniqueNames:uniqueMember
 ## Create LDAP provider
 
 
-1. In the `AIManager` "Hamburger" Menu select `Access Control`
+1. In the `AIManager` "Hamburger" Menu select `Administration`
+
+1. Select `Access Control`
 
 	![image](/cp4waiops-training/pics/20_config.png)
 
@@ -110,7 +112,9 @@ Create a user in AIManager with Admin rights.
 
 ## Create User
 
-1. Go back to `AIManager`, click on the "Hamburger" Menu and select `Access Control`
+1. In the `AIManager` "Hamburger" Menu select `Administration`
+
+1. Select `Access Control`
 
 	![image](/cp4waiops-training/pics/20_config.png)
 

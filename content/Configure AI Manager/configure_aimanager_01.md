@@ -28,4 +28,11 @@ This will provide you with all the information and details that you need to conf
 {{< /task >}}
 
 
+{{< hint type=info title="Info" >}}
+You can ignore the following message:
+Command "get-token" is deprecated, and will be removed in the future version. Use oc create token instead.
+{{< /hint >}}
+
+
+
 
