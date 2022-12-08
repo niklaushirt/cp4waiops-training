@@ -1,0 +1,129 @@
+---
+title: "Configure Certificates"
+date: 2022-11-03T10:57:46+01:00
+weight: 59
+---
+
+
+
+
+A signed certificate is needed on the NGNIX pods for the Slack and Teams integrations.
+
+The AutomationUIConfig instance controls the certificates and the NGINX pods that use them.
+
+
+
+
+## 🚀 TASK: Create valid Ingress certificates
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: nline starter installation of CP4WAIOPS</a>
+
+
+
+Create valid Ingress Certificates as described in the Documentation.
+
+
+
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+
+
+
+
+
+
+
+## Patch NetworkPolicy
+
+1. Run the following command to patch the NetworkPolicy
+
+    ```bash
+    export WAIOPS_NAMESPACE=$(oc get po -A|grep aiops-orchestrator-controller |awk '{print$1}')
+
+    cat <<EOF | oc apply -f -
+    apiVersion: networking.k8s.io/v1
+    kind: NetworkPolicy
+    metadata:
+      name: allow-all-egress-and-ingress
+      annotations:
+        argocd.argoproj.io/sync-wave: "3"
+      namespace: $WAIOPS_NAMESPACE
+    spec:
+      egress:
+      - {}
+      ingress:
+      - {}
+      podSelector: {}
+      policyTypes:
+      - Egress
+      - Ingress
+    EOF
+    ```
+
+
+2. Run the following command to patch the Ingress Certificates
+
+    ```bash
+    PROJECT_CP4WAIOPS=cp4waiops
+
+	AUTO_UI_INSTANCE=$(oc get AutomationUIConfig -n ${PROJECT_CP4WAIOPS} --no-headers -o custom-columns=":metadata.name")
+
+	ingress_pod=$(oc get secrets -n openshift-ingress | grep tls | grep -v router-metrics-certs-default | awk '{print $1}')
+
+	oc get secret -n openshift-ingress -o 'go-template={{index .data "tls.crt"}}' ${ingress_pod} | base64 -d > cert.crt
+	oc get secret -n openshift-ingress -o 'go-template={{index .data "tls.key"}}' ${ingress_pod} | base64 -d > cert.key
+	oc get secret -n ${PROJECT_CP4WAIOPS} external-tls-secret -o yaml > external-tls-secret.yaml
+
+	oc patch AutomationUIConfig ${AUTO_UI_INSTANCE} \
+	-n ${PROJECT_CP4WAIOPS} \
+	--type merge \
+	--patch '{"spec": {"tls": {"caSecret": {"key":"ca.crt", "secretName": "external-tls-secret"}, "certificateSecret": { "secretName": "external-tls-secret"}}}}'
+
+	oc create secret generic -n ${PROJECT_CP4WAIOPS} external-tls-secret --from-file=cert.crt=cert.crt --from-file=cert.key=cert.key -o yaml --dry-run=client | oc apply -f -
+
+	REPLICAS=$(oc get Deployment/ibm-nginx -n ${PROJECT_CP4WAIOPS} -o jsonpath='{.spec.replicas}')
+	oc scale Deployment/ibm-nginx --replicas=0 -n ${PROJECT_CP4WAIOPS}
+	sleep 3
+	oc scale Deployment/ibm-nginx --replicas=${REPLICAS} -n ${PROJECT_CP4WAIOPS}
+    ```
+
+
+
+3. To check that the nginx Pods are back up, run the following:
+
+	```bash
+	export WAIOPS_NAMESPACE=$(oc get po -A|grep aiops-orchestrator-controller |awk '{print$1}')
+	while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; oc get po -n $WAIOPS_NAMESPACE | grep nginx|grep -v ibm-nginx-tester|grep -v setup-nginx-job ; sleep 2; done
+	```
+
+	This will list the Pods that are Ready.
+
+	Wait until you get two pods with `1/1` status
+
+	```yaml
+	ibm-nginx-xxxxx-xxx                                       1/1     Running     0               4h9m
+	ibm-nginx-xxxxx-xxx                                       1/1     Running     0               4h9m
+	```
+
+<InlineNotification kind="info">
+
+This creates valid certificates for the OpenShift Ingress, so that you can integrate with Slack.
+
+</InlineNotification>
+
+</AccordionItem>
+</Accordion>
+
+
+
+<InlineNotification kind="success">
+
+**You have successfully finished this Chapter**
+
+You are now done with the chapter on Configuring CP4WAIOPS.
+
+Please continue to the next chapter to learn how to train the AI Models.
+
+</InlineNotification>

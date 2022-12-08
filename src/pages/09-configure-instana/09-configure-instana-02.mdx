@@ -1,0 +1,85 @@
+---
+title: "Create Application"
+date: 2022-11-03T10:57:46+01:00
+weight: 152
+---
+
+
+
+
+
+
+## 🚀 TASK: Create RobotShop Application in Instana
+
+<a href="https://www.ibm.com/docs/en/instana-observability/current?topic=applications-application-perspectives#creating-an-application-perspective" target="_blank" >🌏 Documentation for the Task: Creating an application perspective</a>
+
+
+In this section you will create an Application Perspective for RobotShop instance using the following parameters:
+
+```yaml
+Kind:             Kubernetes or Container
+
+Filter:           Kubernetes.Namespace = robot-shop
+
+```
+
+
+
+
+
+
+
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+
+
+## Create the connection
+
+1. On `Instana` homepage click `New Applciation Perspective`
+
+    ![slack1](./../images/instana/instana_app_01.png)
+
+1. Select `Kubernetes or Container`
+
+    ![slack1](./../images/instana/instana_app_02.png)
+
+1. Click `Next`
+
+1. Click on `+ Add Filter`
+
+1. Type `namespace` in the search field
+
+1. Select `robot-shop` 
+
+    ![slack1](./../images/instana/instana_app_03.png)
+
+1. Click `Next`
+
+1. Name your Application Perspective `RobotShop`
+
+    ![slack1](./../images/instana/instana_app_04.png)
+
+1. Click `Create`
+
+1. After a short while you should see the application information
+
+    ![slack1](./../images/instana/instana_app_05.png)
+
+
+
+</AccordionItem>
+</Accordion>
+
+
+
+<InlineNotification kind="error"> 
+
+**Important - Data Collection takes some time**
+
+Data Collection can take 10-30 minutes.
+
+</InlineNotification>
+
+

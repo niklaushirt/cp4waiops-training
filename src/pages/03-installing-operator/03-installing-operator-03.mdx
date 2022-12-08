@@ -1,0 +1,133 @@
+---
+title: "Preparing the Installation"
+date: 2022-11-03T10:57:46+01:00
+weight: 22
+---
+
+
+
+In order to install the CP4WAIOPS Operator you first have to create the following resources:
+- Namespace
+- OperatorGroup
+- IBM Pull Secret (Entitlement)
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: Online starter installation of CP4WAIOPS</a>
+
+<br/>
+<br/>
+<hr/>
+
+## 🚀 TASK: Create the Namespace
+
+
+
+
+Create a namespace called `cp4waiops`.
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+### Create the namespace (project)
+
+
+1. Create a namespace called `cp4waiops`, by running the following command:
+
+	```
+	oc create namespace cp4waiops
+    ```
+
+
+
+> This creates the `Namespace` in which you will install CP4WAIOPS
+
+
+</AccordionItem>
+</Accordion>
+
+<br/>
+<hr/>
+
+## 🚀 TASK: Create the Operator Group
+
+Create the Operator Group as described in the Documentation.
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+
+
+### Create the OperatorGroup
+
+
+
+
+1. Create the Operator group by running the following command:
+
+	```yaml
+	cat << EOF | oc apply -f -
+	apiVersion: operators.coreos.com/v1
+	kind: OperatorGroup
+	metadata:
+	  name: cp4waiops-operator-group
+	  namespace: cp4waiops
+	spec:
+	  targetNamespaces:
+	    - cp4waiops
+	EOF
+    ```
+
+
+
+> This creates the `OperatorGroup` needed for the Operator to deploy into the `cp4waiops` Namespace
+
+
+
+
+
+</AccordionItem>
+</Accordion>
+
+
+<br/>
+<hr/>
+
+## 🚀 TASK: Create the Pull Secret
+
+
+Create the Operator Group as described in the Documentation with your Entitlement Key from the <a href="https://myibm.ibm.com/products-services/containerlibrary" target="_blank" >MyIBM Container Software Library</a>.
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+
+
+### Create the entitlement key pull secret
+
+
+
+1. Log in to <a href="https://myibm.ibm.com/products-services/containerlibrary" target="_blank" >MyIBM Container Software Library</a> with the IBMid.
+
+2. In the *Entitlement keys* section, select **Copy key** to copy your entitlement key to the clipboard.
+
+3. Run the following command:
+
+   ```bash
+   oc create secret docker-registry ibm-entitlement-key \
+       --docker-username=cp \
+       --docker-password="_entitlement-key_from_step_2_" \
+       --docker-server=cp.icr.io \
+       --namespace=cp4waiops
+   ```
+
+    Where `"_entitlement-key_"` is the entitlement key that you copied in the previous step.
+
+
+
+> This creates the `Secret` with your IBM Entitlement that will allow the images to be pulled from the IBM Container Registry
+
+
+</AccordionItem>
+</Accordion>
+
+
+

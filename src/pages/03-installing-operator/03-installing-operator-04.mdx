@@ -1,0 +1,65 @@
+---
+title: "Installing the IBM Catalog"
+date: 2022-11-03T10:57:46+01:00
+weight: 23
+---
+
+
+
+
+
+
+## 🚀 TASK: Install the IBM Catalog source
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: Online starter installation of CP4WAIOPS</a>
+
+Add the CP4WAIOPS catalog source to your OpenShift cluster as described in the Documentation.
+
+
+
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+1. Run the following command to create the CatalogSource.
+
+   ```yaml
+   cat << EOF | oc apply -f -
+   apiVersion: operators.coreos.com/v1alpha1
+   kind: CatalogSource
+   metadata:
+     name: ibm-operator-catalog
+     namespace: openshift-marketplace
+   spec:
+     displayName: ibm-operator-catalog
+     publisher: IBM Content
+     sourceType: grpc
+     image: icr.io/cpopen/ibm-operator-catalog:latest
+   EOF
+   ```
+   
+1. Update the CatalogSource to always use the current image digest by running the following commands:
+
+   ```bash
+   IMGDIGEST=`oc get pods -n openshift-marketplace -l=olm.catalogSource=ibm-operator-catalog --no-headers -o=jsonpath="{.items[0].status.containerStatuses[0].imageID}" -n openshift-marketplace` && \
+   oc patch catalogsource ibm-operator-catalog -n openshift-marketplace --type=json -p "[{ "op": "test", "path": "/spec/image", "value": "\"icr.io/cpopen/ibm-operator-catalog:latest\"" }, { "op": "replace", "path": "/spec/image", "value": "\"$IMGDIGEST\"" }]"
+   ```
+
+
+
+> This creates the `CatalogSource` that provides the available IBM Operators (not just CP4WAIOPS). 
+
+
+
+</AccordionItem>
+</Accordion>
+
+
+<InlineNotification kind="info">
+
+The IBM Operator Catalog also contains the catalogs for other IBM Cloud Paks®. If multiple IBM Cloud Paks are installed on your cluster, then the polling attribute is configured for all of them.
+
+You can go to Operators/OperatorHub in your Openshift Web Console to check out the available Operators .
+
+</InlineNotification>
+

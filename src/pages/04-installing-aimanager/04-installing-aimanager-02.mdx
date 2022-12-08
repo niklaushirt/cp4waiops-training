@@ -1,0 +1,120 @@
+---
+title: "Check CP4WAIOPS Installation"
+---
+
+
+## 🚀 TASK: Verify that the CP4WAIOPS Installation is ready
+
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: Online starter installation of CP4WAIOPS</a>
+
+
+
+Check that CP4WAIOPS is running and that you can continue with the next chapter to install the third-party systems that will support your training.
+
+You can do this by checking the running Pods in the `cp4waiops` Namespace.
+
+There should be 129 Pods with Status `Running` and all should be `Ready` (meaning they have show 1/1, 2/2, 3/3, 4/4, ...)
+
+
+<Link  to="https://mittalyashu.now.sh" inline>External page1</Link>
+
+
+<Accordion>
+<AccordionItem title="💡 💡 Need Help?">
+
+
+
+## Check with the Command Line
+
+Run the following:
+	
+```bash
+while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; echo "---------------"; echo "Ready: $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v '0/' |wc -l| tr -d ' ')"; echo "Not Ready:     $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/' |wc -l| tr -d ' ')"; echo "---------------"; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/'; sleep 5; done
+```
+
+This will list the Pods that are not Ready yet.
+
+![image](./../images/58_install_ok.png)
+
+
+✅ And **when done** you should get only the numbers, about `Ready: 129` and `Not Ready: 0`.
+
+
+
+
+## Check with your OpenShift Web Console
+
+1. Select `Pods` and your `cp4waiops` Project
+	
+	![image](./../images/03_fzth_aimanager_check.png)
+
+1. Filter for the relevant statuses
+	
+	![image](./../images/04_fzth_aimanager_check.png)
+	
+	The drop-down also shows you the number of Pods for the different statuses.
+
+1. Sort by `Ready` column
+	
+	![image](./../images/05_fzth_aimanager_check.png)
+
+This allows you to follow along the progress of the installation.
+
+✅ **When done** you should have about 129 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`
+
+
+</AccordionItem>
+</Accordion>
+
+
+
+<InlineNotification kind="error">
+
+**Important - This takes up to 60 minutes**
+
+This takes some time depending on what region of ROKS you have chosen.
+
+Wait for the installation to complete before continuing. 
+
+The next step explains how to follow the installation progress.
+
+</InlineNotification>
+
+
+
+
+<InlineNotification kind="warning">
+
+🛠️ **Troubleshooting - Topology-Search Pod not starting**
+
+If you have about 125 pods running and
+
+if the `aiops-topology-search-xxxx-xxxx` Pod is restarting (CrashLoopBackOff).
+
+🚀 Please execute the following:
+
+```shell
+oc patch deployment aiops-topology-search -n cp4waiops --patch-file "./ansible/roles/cp4waiops-ai-manager/templates/waiops/patches/aiops-topology-search-patch.yaml"
+```
+
+</InlineNotification>
+
+
+
+
+
+
+<InlineNotification kind="success">
+
+**You have successfully finished this Chapter**
+
+You are now done with the chapter on Installing CP4WAIOPS.
+
+Please continue to the next chapter to learn how to install the Training Resources.
+
+</InlineNotification>
+
+
+
+

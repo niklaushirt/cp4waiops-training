@@ -1,0 +1,47 @@
+---
+title: "Install the Operator"
+date: 2022-11-03T10:57:46+01:00
+weight: 24
+---
+
+
+
+## 🚀 TASK: Install the Operator
+<a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: Online starter installation of CP4WAIOPS</a>
+
+Next you have to install the CP4WAIOPS Operator as described in the Documentation.
+
+
+
+
+
+
+<Accordion>
+<AccordionItem title="💡 Need Help?">
+
+1. Run the following command:
+ 
+	```yaml
+	cat << EOF | oc apply -f -
+	apiVersion: operators.coreos.com/v1alpha1
+	kind: Subscription
+	metadata:
+	  name: ibm-aiops-orchestrator
+	  namespace: cp4waiops
+	spec:
+	  channel: v3.5
+	  installPlanApproval: Automatic
+	  name: ibm-aiops-orchestrator
+	  source: ibm-operator-catalog
+	  sourceNamespace: openshift-marketplace
+	EOF
+
+
+
+
+
+> This creates the `Operator` instance that will be looking for an `Installation` definition and start the installation if it exists (you'll create this in one of the next steps). 
+
+
+</AccordionItem>
+</Accordion>

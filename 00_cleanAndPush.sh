@@ -9,9 +9,9 @@ export gitCommitMessage=$(date +%Y%m%d-%H%M)
 echo "--------------------------------------------------------------------------------------------------------------------------------"
 echo "    🚀  Find File Copies"
 echo "--------------------------------------------------------------------------------------------------------------------------------"
-find . -name '*copy*' -type f | grep -v DO_NOT_DELIVER
-find . -name '*test*' -type f | grep -v DO_NOT_DELIVER
-find . -name '*tmp*' -type f | grep -v DO_NOT_DELIVER
+#find . -name '*copy*' -type f | grep -v DO_NOT_DELIVER
+#find . -name '*test*' -type f | grep -v DO_NOT_DELIVER
+#find . -name '*tmp*' -type f | grep -v DO_NOT_DELIVER
 
 
 echo "--------------------------------------------------------------------------------------------------------------------------------"
@@ -28,7 +28,7 @@ echo "--------------------------------------------------------------------------
 echo "    🚀  Update Branch to $actBranch"
 echo "--------------------------------------------------------------------------------------------------------------------------------"
 
-
+ 
 
 read -p " ❗❓ do you want to check-in the GitHub branch $actBranch with message $gitCommitMessage? [y,N] " DO_COMM
 if [[ $DO_COMM == "y" ||  $DO_COMM == "Y" ]]; then
