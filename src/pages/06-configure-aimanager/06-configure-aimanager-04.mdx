@@ -25,7 +25,9 @@ Bind DN:              cn=admin,dc=ibm,dc=com
 Bind DN password:     P4ssw0rd! 
 
 LDAP server URL:      ldap://openldap.openldap:389
+```
 
+```yaml
 Group filter:         (&(cn=%v)(objectclass=groupOfUniqueNames))
 User filter:          (&(uid=%v)(objectclass=Person))     <-- Thats the only value you should have to change
 Group ID map:         *:cn

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'IBM AIOps Training',
     description: 'IBM AIOps Training',
-    keywords: 'gatsby,theme,carbon',
+    keywords: 'ibm,watson,aiops,waiops',
   },
   pathPrefix: `/cp4waiops-training`,
   plugins: [
@@ -21,9 +21,18 @@ module.exports = {
     {
       resolve: 'gatsby-theme-carbon',
       options: {
+        iconPath: 'src/images/favicon.svg',
+        theme: {
+          homepage: 'dark',
+          interior: 'g10',
+        },
         mediumAccount: 'carbondesign',
+        repository: {
+          baseUrl:
+            'https://github.com/niklaushirt/cp4waiops-training',
+          subDirectory: '/',
+        },
         isSwitcherEnabled: 'false',
-        
       },
     },
   ],
