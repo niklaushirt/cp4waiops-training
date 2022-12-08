@@ -22,12 +22,8 @@ module.exports = {
       resolve: 'gatsby-theme-carbon',
       options: {
         mediumAccount: 'carbondesign',
-        repository: {
-          baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-        },
         isSwitcherEnabled: 'false',
+        iconPath: './../images/custom-icon-512.jpg'
       },
     },
   ],
