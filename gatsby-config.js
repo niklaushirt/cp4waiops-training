@@ -23,7 +23,7 @@ module.exports = {
       options: {
         mediumAccount: 'carbondesign',
         isSwitcherEnabled: 'false',
-        iconPath: './../images/custom-icon-512.jpg'
+        
       },
     },
   ],
