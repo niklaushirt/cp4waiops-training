@@ -25,7 +25,11 @@ User:                  admin
 Password:              from MY_CONFIGURATION.txt
 ```
 
+<InlineNotification kind="success">
 
+🔎 The parameters can also be found in your configuration file `MY_CONFIGURATION.txt` - section  **2.3 Configure Runbooks - Ansible Automation Controller**
+
+</InlineNotification>
 
 
 
@@ -41,7 +45,7 @@ Password:              from MY_CONFIGURATION.txt
 1. Under `Ansible Automation Controller`, click on `Add connection`
 1. Click `Connect`
 
-1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  `2.3 Configure Runbooks - Ansible Automation Controller`
+1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  **2.3 Configure Runbooks - Ansible Automation Controller**
 
     ```bash
     ./tools/11_fzth/get_configuration_info.sh > MY_CONFIGURATION.txt
@@ -78,10 +82,14 @@ Password:              from MY_CONFIGURATION.txt
 
 <a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=library-create-runbook" target="_blank" >🌏 Documentation for the Task: Creating a runbook</a>
 
-Create a Runbook based on the `CP4WAIOPS Mitigate Robotshop Ratings Outage` Ansible Playbook
+Create a Runbook based on the `CP4WAIOPS Mitigate Robotshop Ratings Outage` Ansible Playbook.
 
 
+<InlineNotification kind="success">
 
+🔎 The parameters can also be found in your configuration file `MY_CONFIGURATION.txt` - section  `2.4 Configure Runbooks - Runbook Parameters` 
+
+</InlineNotification>
 
 
 <Accordion>
@@ -111,7 +119,7 @@ Create a Runbook based on the `CP4WAIOPS Mitigate Robotshop Ratings Outage` Ansi
 
 	![image](./../images/32_runbook.png)
 
-1. Replace `PROVIDE: my_k8s_apiurl and my_k8s_apikey` in field `Default value (optional)` with the value from the script
+1. Replace `PROVIDE: my_k8s_apiurl and my_k8s_apikey` in field `Default value (optional)` with the **🗺️ Value** from the script
 
 1. Click `Save`
 1. Click `Save` again

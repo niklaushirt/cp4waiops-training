@@ -1,4 +1,8 @@
 // This is where your application styles could go.
+.Main-module--main--8vph2 > * + * {
+    width: calc(100% - 3rem) !important;
+}
+
 
 .Banner-module--grid--3L\+QD {
     height: 200px !important;
@@ -19,10 +23,22 @@
     padding-left: 10px;
 }
 
+
+
+
+.bx--inline-notification__subtitle {
+    width: calc(150%) !important;
+}
+
+
+.bx--accordion {
+    width: calc(150% - 3rem) !important;
+}
+
 .bx--accordion__item {
     background-color: #4da2f7;
     margin-bottom: 100px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 
@@ -40,12 +56,9 @@
 
 .bx--accordion__content {
     background-color: #deecfd;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
-.Main-module--main--8vph2 > * + * {
-    width: calc(150% - 3rem) !important;
-}
 
 h2 {
     width: calc(150% - 3rem) !important;
@@ -55,13 +68,10 @@ h2 {
 }
 
 .Code-module--row--Iifgu {
-    width: calc(80% - 3rem) !important;
+    width: calc(100% - 3rem) !important;
 }
 
 
-.bx--accordion {
-    width: calc(120% - 3rem) !important;
-}
 
 
 

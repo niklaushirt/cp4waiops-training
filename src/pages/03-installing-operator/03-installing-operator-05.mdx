@@ -9,10 +9,7 @@ weight: 24
 ## 🚀 TASK: Install the Operator
 <a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: Online starter installation of CP4WAIOPS</a>
 
-Next you have to install the CP4WAIOPS Operator as described in the Documentation.
-
-
-
+Next you have to install the CP4WAIOPS Operator by creating the `Subscription` as described in the Documentation.
 
 
 
@@ -36,12 +33,12 @@ Next you have to install the CP4WAIOPS Operator as described in the Documentatio
 	  sourceNamespace: openshift-marketplace
 	EOF
 
-
-
-
-
-> This creates the `Operator` instance that will be looking for an `Installation` definition and start the installation if it exists (you'll create this in one of the next steps). 
-
-
 </AccordionItem>
 </Accordion>
+
+<InlineNotification kind="info">
+
+This creates the Operator Instance via the `Subscription` that will be looking for an `Installation` definition and start the installation if it exists (you will create this in one of the next steps). 
+
+</InlineNotification>
+

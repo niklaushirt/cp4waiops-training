@@ -13,7 +13,7 @@ weight: 23
 
 <a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task: Online starter installation of CP4WAIOPS</a>
 
-Add the CP4WAIOPS catalog source to your OpenShift cluster as described in the Documentation.
+Add the CP4WAIOPS `CatalogSource` to your OpenShift cluster as described in the Documentation.
 
 
 
@@ -21,7 +21,7 @@ Add the CP4WAIOPS catalog source to your OpenShift cluster as described in the D
 <Accordion>
 <AccordionItem title="💡 Need Help?">
 
-1. Run the following command to create the CatalogSource.
+1. Run the following command to create the `CatalogSource`.
 
    ```yaml
    cat << EOF | oc apply -f -
@@ -38,7 +38,7 @@ Add the CP4WAIOPS catalog source to your OpenShift cluster as described in the D
    EOF
    ```
    
-1. Update the CatalogSource to always use the current image digest by running the following commands:
+1. Update the `CatalogSource` to always use the current image digest by running the following commands:
 
    ```bash
    IMGDIGEST=`oc get pods -n openshift-marketplace -l=olm.catalogSource=ibm-operator-catalog --no-headers -o=jsonpath="{.items[0].status.containerStatuses[0].imageID}" -n openshift-marketplace` && \

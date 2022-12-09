@@ -17,11 +17,8 @@ You can do this by checking the running Pods in the `cp4waiops` Namespace.
 There should be 129 Pods with Status `Running` and all should be `Ready` (meaning they have show 1/1, 2/2, 3/3, 4/4, ...)
 
 
-<Link  to="https://mittalyashu.now.sh" inline>External page1</Link>
-
-
 <Accordion>
-<AccordionItem title="💡 💡 Need Help?">
+<AccordionItem title="💡 Need Help?">
 
 
 
@@ -33,10 +30,15 @@ Run the following:
 while :; do clear; echo "Checking..."; echo "Exit with Ctrl-C"; echo "---------------"; echo "Ready: $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep -v '0/' |wc -l| tr -d ' ')"; echo "Not Ready:     $(oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/' |wc -l| tr -d ' ')"; echo "---------------"; oc get po -n cp4waiops | grep -v Completed | grep -v Error |grep '0/'; sleep 5; done
 ```
 
+<br/>
+
 This will list the Pods that are not Ready yet.
+
+<br/>
 
 ![image](./../images/58_install_ok.png)
 
+<br/>
 
 ✅ And **when done** you should get only the numbers, about `Ready: 129` and `Not Ready: 0`.
 
@@ -61,6 +63,9 @@ This will list the Pods that are not Ready yet.
 
 This allows you to follow along the progress of the installation.
 
+<br/>
+<br/>
+
 ✅ **When done** you should have about 129 Pods in Running status and all Pods should be `1/1, 2/2, 3/3, ...`
 
 
@@ -71,7 +76,7 @@ This allows you to follow along the progress of the installation.
 
 <InlineNotification kind="error">
 
-**Important - This takes up to 60 minutes**
+**Important - This takes up to 90 minutes**
 
 This takes some time depending on what region of ROKS you have chosen.
 

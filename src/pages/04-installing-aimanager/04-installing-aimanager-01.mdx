@@ -16,9 +16,9 @@ In this chapter you will install CP4WAIOPS
 ![image](./../images/54_aimanager_story.png)
 
 
-Now it's time to create the CP4WAIOPS instance.
+Now it's time to create the CP4WAIOPS Instance by creating the `Installation` resource.
 
-To do this create an instance of the CP4WAIOPS custom resource called ibm-cp-watson-aiops with `size: small` as we'll use this only for the training and not for production (see note below).
+To do this create an instance of the CP4WAIOPS `Installation` Custom Resource called `ibm-cp-watson-aiops` with `size: small` as we'll use this only for the training and not for production (see note below).
 
 
 
@@ -54,7 +54,7 @@ To do this create an instance of the CP4WAIOPS custom resource called ibm-cp-wat
      size: small
      storageClass: ibmc-file-gold-gid
      storageClassLargeBlock: ibmc-block-gold
-   EOF  
+   EOF
    ```
 
 
@@ -74,7 +74,7 @@ This creates the `Installation` instance that the Operator will pick up and star
 
 <InlineNotification kind="error">
 
-**Important - This takes up to 60 minutes**
+**Important - This takes up to 90 minutes**
 
 This takes some time depending on what region of ROKS you have chosen.
 
