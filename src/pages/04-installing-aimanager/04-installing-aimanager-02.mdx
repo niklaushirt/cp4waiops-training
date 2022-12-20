@@ -107,6 +107,19 @@ oc patch deployment aiops-topology-search -n cp4waiops --patch-file "./ansible/r
 
 
 
+<InlineNotification kind="warning">
+
+🛠️ **Troubleshooting - Policy-Registry-Service Pod not starting**
+
+If you have about 125 pods running and
+
+if the `aiops-ir-lifecycle-policy-registry-svc-xxxx-xxxx` Pod is restarting (CrashLoopBackOff).
+
+🚀 Please delete the Pod (you might have to do this several times). It should come up eventually.
+
+
+</InlineNotification>
+
 
 
 
