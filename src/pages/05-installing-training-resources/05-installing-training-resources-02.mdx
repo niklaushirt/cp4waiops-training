@@ -75,15 +75,6 @@ spec:
 
 
               echo "------------------------------------------------------------------------------------------------------------------------------"
-              echo " 🚀 Injecting Licenses"
-              echo "     INSTANA_SALES_KEY: $INSTANA_SALES_KEY"
-              echo "     INSTANA_AGENT_KEY: $INSTANA_AGENT_KEY"
-              cp ./ansible/configs/cp4waiops-roks-aimanager-practicum.yaml /tmp/cp4waiops-roks-practicum.yaml
-              sed -i -e "s/sales_key: 'NONE'/sales_key: '$INSTANA_SALES_KEY'/g" /tmp/cp4waiops-roks-practicum.yaml
-              sed -i -e "s/agent_key: 'NONE'/agent_key: '$INSTANA_AGENT_KEY'/g" /tmp/cp4waiops-roks-practicum.yaml
-
-
-              echo "------------------------------------------------------------------------------------------------------------------------------"
               echo " 🚀 Starting Installation"
               ansible-playbook ./ansible/00_cp4waiops-install.yaml -e "config_file_path=/tmp/cp4waiops-roks-practicum.yaml"
               echo ""
@@ -96,38 +87,13 @@ spec:
               do
                 sleep 1000
               done
-          env:
-          - name: INSTANA_SALES_KEY
-            value : "<YOUR_SALES_KEY>"
-          - name: INSTANA_AGENT_KEY
-            value : "<YOUR_AGENT_KEY>"
       restartPolicy: Never
   backoffLimit: 4
 EOF
 ```
 
 
-2. Replace the <YOUR_SALES_KEY> and <YOUR_AGENT_KEY> with the keys obtained from your instructor.
-
-```yaml
-          env:
-          - name: INSTANA_SALES_KEY
-            value : "<YOUR_SALES_KEY>"
-          - name: INSTANA_AGENT_KEY
-            value : "<YOUR_AGENT_KEY>"
-```
-
-<InlineNotification kind="warning">
-
-**Warning - If you don't have the license keys**
-
-If you don't have the license keys, Instana can not be installed and you won't be able to perform the step on integrating Instana.
-
- ❗But the course will **work for all other steps**.
-
-</InlineNotification>
-
-3. Run the modified script to start the creation of the Training Resources.
+2. Run the modified script to start the creation of the Training Resources.
 
 
 

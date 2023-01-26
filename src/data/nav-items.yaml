@@ -103,12 +103,14 @@
 
 - title: Configure Instana (optional)
   pages:
-    - title: Instana Setup
+    - title: Installing Instana
       path: /09-configure-instana/09-configure-instana-01
-    - title: Create Application
+    - title: Instana Setup
       path: /09-configure-instana/09-configure-instana-02
-    - title: Instana Integration
+    - title: Create Application
       path: /09-configure-instana/09-configure-instana-03
+    - title: Instana Integration
+      path: /09-configure-instana/09-configure-instana-04
 
 - title: Configure Slack (optional)
   pages:
@@ -142,6 +144,26 @@
       path: /11-configure-servicenow/11-configure-servicenow-05
     - title: Custom Data
       path: /11-configure-servicenow/11-configure-servicenow-06
+
+
+- title: Installing Turbonomic (optional)
+  pages:
+    - title: Turbonomic
+      path: /12-install-turbonomic/12-install-turbonomic-01
+    - title: Create Turbonomic Operator
+      path: /12-install-turbonomic/12-install-turbonomic-02
+    - title: Installing Turbonomic
+      path: /12-install-turbonomic/12-install-turbonomic-03
+
+- title: Configure Turbonomic (optional)
+  pages:
+    - title: Turbonomic Setup
+      path: /13-configure-turbonomic/13-configure-turbonomic-01
+    - title: Create Targets
+      path: /13-configure-turbonomic/13-configure-turbonomic-02
+    # - title: Create Topology
+    #   path: /13-configure-turbonomic/13-configure-turbonomic-03
+
 
 - title: Troubleshooting
   pages:
