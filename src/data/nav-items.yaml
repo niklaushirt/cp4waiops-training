@@ -154,12 +154,15 @@
     - title: Installing Instana
       path: /09-configure-instana/09-configure-instana-00
 
-- title: Instana (optional)
+- title: Install Instana
   pages:
     - title: Instana
       path: /09-configure-instana/09-configure-instana-00
     - title: Installing Instana
       path: /09-configure-instana/09-configure-instana-01
+
+- title: Configure Instana
+  pages:
     - title: Instana Setup
       path: /09-configure-instana/09-configure-instana-02
     - title: Create Application
@@ -172,7 +175,7 @@
   pages:
     - title: Turbonomic
       path: /12-install-turbonomic/12-install-turbonomic-01
-- title: Turbonomic (optional)
+- title: Install Turbonomic
   pages:
     - title: Turbonomic
       path: /12-install-turbonomic/12-install-turbonomic-01
@@ -180,6 +183,8 @@
       path: /12-install-turbonomic/12-install-turbonomic-02
     - title: Installing Turbonomic
       path: /12-install-turbonomic/12-install-turbonomic-03
+- title: Configure Turbonomic
+  pages:
     - title: Turbonomic Setup
       path: /13-configure-turbonomic/13-configure-turbonomic-01
     - title: Create Targets
