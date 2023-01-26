@@ -4,10 +4,6 @@
       path: /01-introduction/01-introduction
     - title: Course Nomenclature
       path: /01-introduction/02-nomenclature
-    - title: Basic Architecture
-      path: /01-introduction/03-basic-architecture
-    - title: Training Architecture
-      path: /01-introduction/04-training-architecture
       
 - title: Prerequisites
   pages:
@@ -19,8 +15,16 @@
 
 - title: CP4WAIOPS
   pages:
-    - title: Preparing to run commands
-      path: /03-installing-operator/03-installing-operator-02
+    - title: Basic Architecture
+      path: /01-introduction/03-basic-architecture
+
+- title: Installing the Operator
+  pages:
+    - title: Basic Architecture
+      path: /01-introduction/03-basic-architecture
+    - title: Training Architecture
+      path: /01-introduction/04-training-architecture
+
 
 - title: Installing the Operator
   pages:

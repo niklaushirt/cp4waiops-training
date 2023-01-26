@@ -26,7 +26,7 @@ To do this create an instance of the CP4WAIOPS `Installation` Custom Resource ca
 
 
 <Accordion>
-<AccordionItem title="💡 Need Help?">
+<AccordionItem title="💡 Need Help (Classic ROKS)?">
 
 1. Run the following command to create an instance of CP4WAIOPS.
 
@@ -68,7 +68,48 @@ This creates the `Installation` instance that the Operator will pick up and star
 </AccordionItem>
 </Accordion>
 
+<Accordion>
+<AccordionItem title="💡 Need Help (IPI with ODF)?">
 
+1. Run the following command to create an instance of CP4WAIOPS.
+
+   ```yaml
+   cat << EOF | oc apply -f -
+   apiVersion: orchestrator.aiops.ibm.com/v1alpha1
+   kind: Installation
+   metadata:
+     name: ibm-cp-watson-aiops
+     namespace: cp4waiops
+   spec:
+     enableConnectionModule: true
+     imagePullSecret: ibm-entitlement-key
+     license:
+       accept: true
+     pakModules:
+     - name: aiopsFoundation
+       enabled: true
+     - name: applicationManager
+       enabled: true
+     - name: aiManager
+       enabled: true
+     - name: connection
+       enabled: true
+     size: small
+     storageClass: ocs-storagecluster-cephfs
+     storageClassLargeBlock: ocs-storagecluster-ceph-rbd
+   EOF
+   ```
+
+
+<InlineNotification kind="info">
+
+This creates the `Installation` instance that the Operator will pick up and start the installation. 
+
+</InlineNotification>
+
+
+</AccordionItem>
+</Accordion>
 
 
 
