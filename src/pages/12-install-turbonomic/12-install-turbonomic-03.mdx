@@ -44,39 +44,99 @@ In this section you will deploy a Turbonomic Instance into your Cluster using 
     apiVersion: charts.helm.k8s.io/v1
     kind: Xl
     metadata:
-      name: turbo-training
+      name: xl-release
       namespace: turbonomic
     spec:
-        global:
-            customImageNames: false
-            repository: registry.connect.redhat.com/turbonomic
-            storageClassName: ibmc-block-gold
-            storageSelector: false
-            tag: 8.7.5
-        vcenter:
-            enabled: true
-        kubeturbo:
-            enabled: true
-        prometheus:
-            enabled: true
-        prometurbo:
-            enabled: true
-        ucs:
-            enabled: true
-        udt:
-            enabled: true
-        hyperv:
-            enabled: true
-        instana:
-            enabled: true
-        azure:
-            enabled: true
-        gcp:
-            enabled: true
-        aws:
-            enabled: true
-        openshiftingress:
-            enabled: true
+      webhook:
+        enabled: true
+      servicenow:
+        enabled: true
+      websphere:
+        enabled: true
+      jvm:
+        enabled: true
+      actionscript:
+        enabled: true
+      xen:
+        enabled: false
+      mysql:
+        enabled: true
+      global:
+        customImageNames: false
+        repository: registry.connect.redhat.com/turbonomic
+        storageClassName: ibmc-block-gold
+        storageSelector: false
+        tag: 8.7.5
+      tomcat:
+        enabled: true
+      netapp:
+        enabled: true
+      hyperflex:
+        enabled: true
+      ucs:
+        enabled: true
+      udt:
+        enabled: true
+      mssql:
+        enabled: true
+      nutanix:
+        enabled: true
+      weblogic:
+        enabled: false
+      hyperv:
+        enabled: true
+      vcenter:
+        enabled: true
+      hpe3par:
+        enabled: true
+      oneview:
+        enabled: true
+      vmax:
+        enabled: true
+      instana:
+        enabled: true
+      azure:
+        enabled: true
+      actionstream-kafka:
+        enabled: false
+      scaleio:
+        enabled: false
+      wmi:
+        enabled: true
+      newrelic:
+        enabled: true
+      gcp:
+        enabled: true
+      appdynamics:
+        enabled: true
+      vmm:
+        enabled: true
+      jboss:
+        enabled: true
+      pure:
+        enabled: true
+      ibmstorage-flashsystem:
+        enabled: true
+      horizon:
+        enabled: true
+      appinsights:
+        enabled: true
+      dynatrace:
+        enabled: true
+      aws:
+        enabled: true
+      openshiftingress:
+        enabled: true
+      snmp:
+        enabled: true
+      oracle:
+        enabled: true
+      kubeturbo:
+        enabled: true
+      prometheus:
+        enabled: true
+      prometurbo:
+        enabled: true
     ```
 
 4.  The result should look like this.
@@ -87,6 +147,60 @@ In this section you will deploy a Turbonomic Instance into your Cluster using 
 4.  Click on `Create`
 
     ![turbo](./../images/turbonomic/14_turbo.png)
+
+
+
+## Create ClusterRolesBindings
+
+1. Open your Openshift Web Console
+1. Click on the `+` in the upper right corner
+
+	![image](./../images/prereqs/01_prereqs.png)
+
+1. Copy and paste the following code
+
+    ```yaml
+    kind: ClusterRoleBinding
+    apiVersion: rbac.authorization.k8s.io/v1
+    metadata:
+    name: turbonomic-admin1
+    subjects:
+    - kind: ServiceAccount
+        name: t8c-operator
+        namespace: turbonomic
+    roleRef:
+    apiGroup: rbac.authorization.k8s.io
+    kind: ClusterRole
+    name: cluster-admin
+    ---
+    kind: ClusterRoleBinding
+    apiVersion: rbac.authorization.k8s.io/v1
+    metadata:
+    name: turbonomic-admin2
+    subjects:
+    - kind: ServiceAccount
+        name: turbo-user
+        namespace: turbonomic
+    roleRef:
+    apiGroup: rbac.authorization.k8s.io
+    kind: ClusterRole
+    name: cluster-admin
+    ---
+    kind: ClusterRoleBinding
+    apiVersion: rbac.authorization.k8s.io/v1
+    metadata:
+    name: turbonomic-admin2
+    subjects:
+    - kind: ServiceAccount
+        name: default
+        namespace: turbonomic
+    roleRef:
+    apiGroup: rbac.authorization.k8s.io
+    kind: ClusterRole
+    name: cluster-admin
+    ```
+
+4. Click `Create`
 
 
 
