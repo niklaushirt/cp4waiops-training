@@ -1,16 +1,29 @@
 ---
-title: "Installing Training Resources"
+title: "Install Prerequisites"
 
 ---
 
 
+## 📥 STEP: Install Prerequisites
 
-## 📥 STEP: Launch the script to create the training resources
 
-1. Copy the following code 
+In order to gain some time during the course you can pre-install the following prerequisites:
+* ELK - for Log Collection
+* OpenLDAP - for Authentication
+* AWX (Open Source Ansible Tower) with preloaded Playbooks - for Runbook Automation
+* RobotShop Demo App
+
+
+
+
+1. Open your Openshift Web Console
+1. Click on the `+` in the upper right corner
+
+	![image](./../images/prereqs/01_prereqs.png)
+
+1. Copy and paste the following code
 
 ```yaml
-cat << 'EOF' | oc apply -f -
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -27,7 +40,7 @@ subjects:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: waiops-easy-install-aimanager-practicum
+  name: waiops-easy-install-aimanager-practicum-prerequisites
   namespace: default
 spec:
   serviceAccountName: installer-default-default
@@ -59,7 +72,7 @@ spec:
               echo ""
               echo "------------------------------------------------------------------------------------------------------------------------------"
               echo " 📥 Clone Repo https://github.com/niklaushirt/cp4waiops-deployer.git"
-              git clone https://github.com/niklaushirt/cp4waiops-deployer.git -b cp4waiops_stable
+              git clone https://github.com/niklaushirt/cp4waiops-deployer.git -b 3.6_dev
               cd cp4waiops-deployer
               echo ""
               echo ""
@@ -76,7 +89,7 @@ spec:
 
               echo "------------------------------------------------------------------------------------------------------------------------------"
               echo " 🚀 Starting Installation"
-              ansible-playbook ./ansible/00_cp4waiops-install.yaml -e "config_file_path=./configs/cp4waiops-roks-aimanager-practicum.yaml"
+              ansible-playbook ./ansible/00_cp4waiops-install.yaml -e "config_file_path=./configs/cp4waiops-roks-aimanager-practicum-prereqs.yaml"
               echo ""
               echo ""
               echo "*****************************************************************************************************************************"
@@ -89,40 +102,31 @@ spec:
               done
       restartPolicy: Never
   backoffLimit: 4
-EOF
+
+
 ```
 
 
-2. Run the modified script to start the creation of the Training Resources.
+![image](./../images/prereqs/02_prereqs.png)
 
-
-
-
-You should get:
-	
-```bash
-clusterrolebinding.rbac.authorization.k8s.io/installer-default-default created       or unchanged if you have already lauched it once
-job.batch/waiops-easy-install-aimanager-practicum created
-```
-
-
-
-<InlineNotification kind="info">
-
-This creates a `Job` in the `default` Namespace that will create and load all the stuff that you need for the next chapter. 
-
-</InlineNotification>
-
+4. Click `Create`
 
 
 <InlineNotification kind="error">
 
-**Important - This takes up to 60 minutes**
+**Important - This takes up to 20 minutes**
 
-This takes some time depending on what region of ROKS you have chosen.
+This takes some time depending on what infrastructure you have chosen.
 
-Wait for the installation to complete before continuing. 
+The installation will run and complete in the background. 
 
-The next step explains how to follow the installation progress.
+</InlineNotification>
+
+
+<InlineNotification kind="success">
+
+**You have successfully finished this Chapter**
+
+You are now done with installing the Course Prerequisites and are ready to start the course.
 
 </InlineNotification>

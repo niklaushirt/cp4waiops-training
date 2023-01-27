@@ -11,6 +11,9 @@
       path: /02-prerequisites/02-prerequisites-01
     - title: Important remarks
       path: /02-prerequisites/02-prerequisites-02
+    - title: Install Prerquisites
+      path: /02-prerequisites/02-prerequisites-03
+
   hasDivider: true
 
 - title: CP4WAIOPS

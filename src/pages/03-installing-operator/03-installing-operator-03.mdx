@@ -96,6 +96,16 @@ Create the `Operator Group` as described in the Documentation.
 
 Create the `Pull Secret` as described in the Documentation with your Entitlement Key from the <a href="https://myibm.ibm.com/products-services/containerlibrary" target="_blank" >MyIBM Container Software Library</a>.
 
+
+<InlineNotification kind="error">
+
+**Important - This step is crucial to the installation**
+
+If you don't create a secret with a valid Image Pull Token, your installation will fail. 
+
+</InlineNotification>
+
+
 <Accordion>
 <AccordionItem title="💡 Need Help?">
 
@@ -114,12 +124,12 @@ Create the `Pull Secret` as described in the Documentation with your Entitlement
    ```bash
    oc create secret docker-registry ibm-entitlement-key \
        --docker-username=cp \
-       --docker-password="_entitlement-key_from_step_2_" \
+       --docker-password="_entitlement_key_from_step_2_" \
        --docker-server=cp.icr.io \
        --namespace=cp4waiops
    ```
 
-    Where `"_entitlement-key_"` is the entitlement key that you copied in the previous step.
+    Where `"_entitlement_key_from_step_2_"` is the entitlement key that you copied in the previous step.
 
 
 
