@@ -14,7 +14,7 @@ subjects:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: waiops-easy-install-aimanager-practicum-prerequisites
+  name: waiops-install-aimanager-prerequisites
   namespace: default
 spec:
   serviceAccountName: installer-default-default
@@ -40,7 +40,7 @@ spec:
 
 
               echo "*****************************************************************************************************************************"
-              echo " ✅ STARTING: INSTALL CP4WAIOPS with Demo Content"
+              echo " ✅ STARTING: Install CP4WAIOPS Prerequisites"
               echo "*****************************************************************************************************************************"
               echo ""
               echo ""
