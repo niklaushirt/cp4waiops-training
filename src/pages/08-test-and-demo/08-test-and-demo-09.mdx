@@ -1,0 +1,70 @@
+---
+title: "Examine the Alerts"
+date: 2022-11-03T10:57:46+01:00
+weight: 102
+---
+
+
+
+## 📥 STEP: Examine the Alerts
+
+>**🚀 <u>Action</u>**
+Close the ServiceNow page and click the **Alerts** Tab. 
+
+![image](./../images/demo/image.061.png)  
+
+**📣 <u>Narration</u>**
+
+Notice, that alerts are not sorted by severity, but the AI engine ranked them by relevance. The ones that are likely related to the root cause are at the top. Let’s look at the first row for some more details. 
+
+>**🚀 <u>Action</u>**
+Click on the first Alert in the list. 
+
+**📣 <u>Narration</u>**
+
+In the **Alert details,** you can see different types of groupings explaining why the specific alert was added to the story.
+
+<div style="page-break-after: always;"></div>
+
+## 📥 STEP: Scope based grouping
+
+>**🚀 <u>Action</u>**
+Click **Scope-based grouping**. 
+
+
+![image](./../images/demo/image.027.png)
+
+**📣 <u>Narration</u>**
+
+Some alerts were added to the story because they occurred on the same resource within a short period (default is 15 minutes)
+
+## 📥 STEP: Topological grouping
+
+>**🚀 <u>Action</u>**
+Click **Topological grouping**. 
+
+
+![image](./../images/demo/image.028.png)
+
+**📣 <u>Narration</u>**
+
+Other alerts were grouped because they occurred on the logically or physically related resources. This correlation is using the application topology service that stitches topology information from different sources.
+
+<div style="page-break-after: always;"></div>
+
+## 📥 STEP: Temporal grouping
+
+>**🚀 <u>Action</u>**
+Click **Temporal correlation**. 
+
+
+![image](./../images/demo/image.029.png)
+
+
+**📣 <u>Narration</u>**
+
+Finally, the temporal correlation adds to the story events that previously, in history, are known to occur close to each other in the short time window. What is most important here is the fact that all these correlations happen automatically – there is no need to define any rules or program anything. In highly dynamic and distributed cloud-native applications this is a huge advantage that saves a lot of time and effort.
+
+
+>**🚀 <u>Action</u>**
+**Close** the Alert details window. 

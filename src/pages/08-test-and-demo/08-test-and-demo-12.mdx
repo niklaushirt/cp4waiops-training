@@ -1,0 +1,65 @@
+---
+title: "Topology in-depth (optional)"
+date: 2022-11-03T10:57:46+01:00
+weight: 102
+---
+
+
+
+## 📥 STEP: [Optional] Topology in-depth
+
+![image](./../images/demo/image.070.png)
+
+>**🚀 <u>Action</u>**
+>Find the resource which displays resource name “mysql”. Then, right-click and select **Open in Topology Viewer.** 
+>
+>***Result**: Topology Viewer displays.*
+
+
+
+![image](./../images/demo/image.071.png)
+
+
+
+**📣 <u>Narration</u>**
+
+The interface shows the topology surrounding the mysql resource. I can see that the **mysql** deployment is being called by the **ratings** service and that it runs on a certain worker node. 
+
+
+
+
+
+![image](./../images/demo/image.072.png)
+
+>**🚀 <u>Action</u>**
+>Change the number of hops to `4` and click **Render**.** 
+>
+>***Result**: Topology Viewer refreshes with bigger topology.*
+
+
+
+**📣 <u>Narration</u>**
+
+ I can also increase the size of the graph, still based on the **mysql** deployment.
+
+
+
+![image](./../images/demo/image.073.png)
+
+>**🚀 <u>Action</u>**
+>Right-click om mysql and select **Show last change in timeline** and check **Delta**
+>
+>***Result**: Topology Viewer refreshes and shows the events over time.*
+
+
+
+![image](./../images/demo/image.074.png)
+
+
+
+**📣 <u>Narration</u>**
+
+ Now I will examine the historical events for the **mysql** component. I can see the **Alerts** that have been raised on the **mysql** resource over time.
+
+
+
