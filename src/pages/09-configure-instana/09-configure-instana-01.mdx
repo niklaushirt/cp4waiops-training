@@ -75,7 +75,7 @@ cat << 'EOF' | oc apply -f -
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: installer-default-default
+  name: installer-default-default-admin
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -91,7 +91,7 @@ metadata:
   name: waiops-easy-install-instana-practicum
   namespace: default
 spec:
-  serviceAccountName: installer-default-default
+  serviceAccountName: installer-default-default-admin
   template:
     spec:
       containers:
@@ -192,7 +192,7 @@ If you don't have the license keys, Instana can not be installed and you won't b
 You should get:
 	
 ```bash
-clusterrolebinding.rbac.authorization.k8s.io/installer-default-default created       or unchanged if you have already lauched it once
+clusterrolebinding.rbac.authorization.k8s.io/installer-default-default-admin created       or unchanged if you have already lauched it once
 job.batch/waiops-easy-install-instana-practicum created
 ```
 
