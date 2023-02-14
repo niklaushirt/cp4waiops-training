@@ -4,40 +4,42 @@ title: "Get your ROKS Cluster"
 ---
 
 
-## 📥 STEP: Reserve a ROKS Cluster (IBMers and IBM Partners only)
+## 📥 STEP: Reserve an OpenShift Cluster (IBMers and IBM Partners only)
+
+IBMers and Partners can get a temporary cluster from [**Techzone**](https://techzone.ibm.com/collection/tech-zone-certified-base-images).
 
 
+1. Select `OpenShift Cluster (VMware on IBM Cloud) - IPI - Public` Openshift that you want to use above
 
-IBMers and IBM Business Partners can get a temporary Cluster from <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests" target="_blank" >Techzone</a> (usually valid for up to 8 days)
+1. Create a cluster for `Practice/Self Education` or `Test` if you don't have an Opportunity Number
 
-1. Select `IBM RedHat Openshift Kubernetes Service (ROKS Classic)`
+1. Select your preferred Geograpy
 
-1. Select `Reserve Now`
+  ![K8s CNI](./../images/roks01.png)
 
-1. Give it a meaningful name 
+1. Select the maximum end date that fits your needs (you can extend the duration once after creation)
 
-1. Select `Practice/Self Education` if you don't have an Opportunity Number
+	![K8s CNI](./../images/roks03.png)
 
-	![image](./../images/roks01.png)
+1. Select Openshift Storage
 
-1. Input any `Purpose Description` you like
+   - Storage OCS/ODF Size: **2TiB** - This is important as with the 500MiB option your installation will run out of space rapidly.
 
-1. Select `Preferred Geography` - prefer **Dallas or London** (others might be slower). However this does not guarantee 100% that the Cluster will be created in this Geo.
+   - OpenShift Version: **4.10**
 
-1. Select the maximum end date that fits your needs - usually 72h (you can extend the duration once after creation)
 
-	![image](./../images/roks03.png)
-	
-1. Fill-in the remaining fields
+	![K8s CNI](./../images/roks02.png)
 
-	2. Worker node count: **5**
-	3. Flavour: **b3c.16x64** ❗
-	4. OpenShift Version: **4.10**
+1. Select the Cluster Size
 
-	![image](./../images/roks02.png)
+	- Worker node count: **5**
+	- Flavour: **32 vCPU X 128 GB** ❗ 
+
+	> ❗ If you want to install AIManager, Event Manager, Trubonomic and Instana please select **32 vCPU X 128 GB** 
+
+	![K8s CNI](./../images/roks04.png)
 
 1. Click `Submit`
-	
 1. Once the cluster is provisioned, don't forget to extend it to 8 days if needed.
 
 
@@ -45,6 +47,6 @@ IBMers and IBM Business Partners can get a temporary Cluster from <a href="https
 
 **Other types of environment**
 
-You can also use `OpenShift Cluster (VMware on IBM Cloud) - IPI`, depending on the degree of control you need over your Cluster.
+You can also use classic ROKS Clusters, depending on the degree of control you need over your Cluster.
 
 </InlineNotification> 
