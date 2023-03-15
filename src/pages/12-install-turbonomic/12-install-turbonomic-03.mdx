@@ -22,6 +22,7 @@ In this section you will deploy a Turbonomic Instance into your Cluster using 
 
 
 
+1.  Click on `Installed Operators` in the left-side menu
 
 1.  Click on `Turbonomic Platform Operator`
 
@@ -64,9 +65,9 @@ In this section you will deploy a Turbonomic Instance into your Cluster using 
       global:
         customImageNames: false
         repository: registry.connect.redhat.com/turbonomic
-        storageClassName: ibmc-block-gold
+        storageClassName: ocs-storagecluster-ceph-rbd
         storageSelector: false
-        tag: 8.7.5
+        tag: 8.8.1
       tomcat:
         enabled: true
       netapp:
@@ -147,60 +148,6 @@ In this section you will deploy a Turbonomic Instance into your Cluster using 
 4.  Click on `Create`
 
     ![turbo](./../images/turbonomic/14_turbo.png)
-
-
-
-## Create ClusterRolesBindings
-
-1. Open your Openshift Web Console
-1. Click on the `+` in the upper right corner
-
-	![image](./../images/prereqs/01_prereqs.png)
-
-1. Copy and paste the following code
-
-    ```yaml
-    kind: ClusterRoleBinding
-    apiVersion: rbac.authorization.k8s.io/v1
-    metadata:
-    name: turbonomic-admin1
-    subjects:
-    - kind: ServiceAccount
-        name: t8c-operator
-        namespace: turbonomic
-    roleRef:
-    apiGroup: rbac.authorization.k8s.io
-    kind: ClusterRole
-    name: cluster-admin
-    ---
-    kind: ClusterRoleBinding
-    apiVersion: rbac.authorization.k8s.io/v1
-    metadata:
-    name: turbonomic-admin2
-    subjects:
-    - kind: ServiceAccount
-        name: turbo-user
-        namespace: turbonomic
-    roleRef:
-    apiGroup: rbac.authorization.k8s.io
-    kind: ClusterRole
-    name: cluster-admin
-    ---
-    kind: ClusterRoleBinding
-    apiVersion: rbac.authorization.k8s.io/v1
-    metadata:
-    name: turbonomic-admin2
-    subjects:
-    - kind: ServiceAccount
-        name: default
-        namespace: turbonomic
-    roleRef:
-    apiGroup: rbac.authorization.k8s.io
-    kind: ClusterRole
-    name: cluster-admin
-    ```
-
-4. Click `Create`
 
 
 
