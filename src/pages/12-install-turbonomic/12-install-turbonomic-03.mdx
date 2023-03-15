@@ -64,10 +64,10 @@ In this section you will deploy a Turbonomic Instance into your Cluster using 
         enabled: true
       global:
         customImageNames: false
-        repository: registry.connect.redhat.com/turbonomic
+        repository: icr.io/cpopen/turbonomic
         storageClassName: ocs-storagecluster-ceph-rbd
         storageSelector: false
-        tag: 8.8.1
+        tag: 8.8.2
       tomcat:
         enabled: true
       netapp:
