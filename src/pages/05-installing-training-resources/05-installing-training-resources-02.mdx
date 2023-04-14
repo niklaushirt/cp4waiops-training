@@ -3,7 +3,13 @@ title: "Installing Training Resources"
 
 ---
 
+This will configure the assets that you will integrate with CP4WAIOPS.
 
+<InlineNotification kind="info">
+
+If you have not installed the prerequisites in the first chapter this will install them as well.
+
+</InlineNotification>
 
 ## 📥 STEP: Launch the script to create the training resources
 
@@ -27,7 +33,7 @@ subjects:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: waiops-easy-install-aimanager-practicum
+  name:  training-step2-configuration
   namespace: default
 spec:
   serviceAccountName: installer-default-default-admin
