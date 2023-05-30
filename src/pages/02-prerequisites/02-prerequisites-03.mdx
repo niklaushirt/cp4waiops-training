@@ -64,7 +64,6 @@ In order to gain some time during the course you can pre-install the following p
                 #!/bin/bash
                 #set -x
 
-
                 echo "*****************************************************************************************************************************"
                 echo " ✅ STARTING: Install CP4WAIOPS Prerequisites"
                 echo "*****************************************************************************************************************************"
@@ -72,7 +71,7 @@ In order to gain some time during the course you can pre-install the following p
                 echo ""
                 echo "------------------------------------------------------------------------------------------------------------------------------"
                 echo " 📥 Clone Repo https://github.com/niklaushirt/cp4waiops-deployer.git"
-                git clone https://github.com/niklaushirt/cp4waiops-deployer.git -b 3.6_dev
+                git clone https://github.com/niklaushirt/cp4waiops-deployer.git -b cp4waiops_stable
                 cd cp4waiops-deployer
                 echo ""
                 echo ""
@@ -102,6 +101,8 @@ In order to gain some time during the course you can pre-install the following p
         restartPolicy: Never
     backoffLimit: 4
   ```
+
+
 
   Or use the [ this file here](https://raw.githubusercontent.com/niklaushirt/cp4waiops-training/main/static/assets/prerequisites.yaml) 
 
